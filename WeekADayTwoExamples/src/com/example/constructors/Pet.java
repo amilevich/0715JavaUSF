@@ -1,4 +1,4 @@
-package com.examples.constructors;
+package com.example.constructors;
 
 public class Pet {
 	

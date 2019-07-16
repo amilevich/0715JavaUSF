@@ -1,4 +1,4 @@
-package com.examples.methods;
+package com.example.methods;
 
 public class MyClass {
 	

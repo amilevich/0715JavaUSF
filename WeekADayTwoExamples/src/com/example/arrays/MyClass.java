@@ -1,4 +1,4 @@
-package com.examples.arrays;
+package com.example.arrays;
 
 public class MyClass {
 	/*
