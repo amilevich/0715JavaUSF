@@ -4,13 +4,12 @@ import java.util.Stack;
 
 public class ViewController
 {
-	private static ViewController instance;
+	private static ViewController instance = null;
 	
 	private static Stack<View> viewStack;
 	
 	private ViewController()
 	{
-		instance = new ViewController();
 		viewStack = new Stack<View>();
 	}
 	
@@ -18,7 +17,7 @@ public class ViewController
 	{
 		if(instance == null)
 		{
-			new ViewController();
+			instance = new ViewController();
 		}
 		return instance;
 	}
