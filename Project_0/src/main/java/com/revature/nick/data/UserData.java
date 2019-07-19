@@ -2,17 +2,30 @@ package com.revature.nick.data;
 
 public class UserData
 {
+	private int id;
+	
 	private String username;
 	
 	private String password;
 	
 	private String type;
 	
-	public UserData(String username, String password, String type)
+	public UserData(int id,String username, String password, String type)
 	{
+		this.id = id;
 		this.username = username;
 		this.password = password;
 		this.type = type;
+	}
+	
+	public int getId()
+	{
+		return id;
+	}
+
+	public void setId(int id)
+	{
+		this.id = id;
 	}
 
 	public String getUsername()
