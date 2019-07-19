@@ -11,6 +11,8 @@ public class ViewController
 	private ViewController()
 	{
 		viewStack = new Stack<View>();
+		View loginView = new LoginView();
+		viewStack.push(loginView);
 	}
 	
 	public static ViewController getInstance()
@@ -44,12 +46,12 @@ public class ViewController
 		}
 	}
 	
-	public void getNextView(View view)
+	public static void getNextView(View view)
 	{
 		viewStack.push(view);
 	}
 	
-	public void getLastView()
+	public static void getLastView()
 	{
 		viewStack.pop();
 	}
