@@ -26,16 +26,8 @@ public class Account
 		return balance;
 	}
 
-	public void withdraw(double amount)
+	public void setBalance(double newBalance)
 	{
-		if (this.balance > amount)
-		{
-			this.balance -= amount;
-		}
-	}
-	
-	public void deposit(double amount)
-	{
-		this.balance += amount;
+		this.balance = newBalance;
 	}
 }
