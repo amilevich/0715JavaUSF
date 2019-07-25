@@ -1,5 +1,6 @@
 package com.revature.nick.views;
 
+import com.revature.nick.events.Event;
 import com.revature.nick.events.Subscriber;
 
 public class ViewFactory implements Subscriber
@@ -18,13 +19,13 @@ public class ViewFactory implements Subscriber
 			break;
 			
 		default: 
-			System.out.println("Not a valid view");
+			break;
 		}
 	}
 
 	@Override
-	public void notify(String message)
+	public void notify(Event event)
 	{
-		this.generateView(message);	
+		this.generateView(event.getMessage());	
 	}
 }

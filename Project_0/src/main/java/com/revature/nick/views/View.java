@@ -2,9 +2,10 @@ package com.revature.nick.views;
 
 import java.util.Scanner;
 
+import com.revature.nick.events.Subscriber;
 import com.revature.nick.utility.Printer;
 
-public interface View
+public interface View extends Subscriber
 {
 	Printer p = new Printer();
 	

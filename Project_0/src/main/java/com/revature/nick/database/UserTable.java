@@ -25,6 +25,20 @@ public class UserTable
 		return instance;
 	}
 	
+	public String getPassword(String username)
+	{
+		String result = "";
+		
+		for (Integer i : userMap.keySet())
+		{
+			if (userMap.get(i).getUsername().equals(username))
+			{
+				result = userMap.get(i).getPassword();
+			}
+		}
+		return result;
+	}
+	
 	public UserData getUser(int id)
 	{
 		UserData user = null;
@@ -66,5 +80,18 @@ public class UserTable
 				userMap.remove(i);
 			}
 		}
+	}
+	
+	public UserData getUserByUsername(String username)
+	{
+		UserData user = null;
+		for (Integer i : userMap.keySet())
+		{
+			if (userMap.get(i).getUsername().equals(username))
+			{
+				user = userMap.get(i);
+			}
+		}
+		return user;
 	}
 }

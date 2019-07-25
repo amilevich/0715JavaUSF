@@ -2,9 +2,12 @@ package com.revature.nick.database;
 
 import java.util.ArrayList;
 
+import com.revature.nick.events.Event;
+import com.revature.nick.events.Subscriber;
 import com.revature.nick.model.Customer;
 
-public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<Customer>, Update<Customer>
+public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<Customer>, 
+	Update<Customer>, Subscriber
 {
 	Customers customerData = Customers.getInstance();
 	
@@ -36,6 +39,13 @@ public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<C
 	public void insert(Customer obj)
 	{
 		customerData.addCustomer(obj);
+	}
+
+	@Override
+	public void notify(Event event)
+	{
+		// TODO Auto-generated method stub
+		
 	}
 
 }
