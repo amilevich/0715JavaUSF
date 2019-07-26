@@ -1,18 +1,13 @@
 package com.example.demo.database;
 
 import com.example.demo.data.UserData;
-import com.example.demo.events.DataEventProcessor;
-import com.example.demo.events.Event;
-import com.example.demo.events.Subscriber;
 
 import java.util.ArrayList;
 
 
-public class UserDAO implements Insert<UserData>, Delete<UserData>, Select<UserData>, Subscriber
+public class UserDAO implements Insert<UserData>, Delete<UserData>, Select<UserData>
 {
 	private UserTable table = UserTable.getInstance();
-	
-	DataEventProcessor eventProcessor;
 
 	@Override
 	public UserData selectOne(int id)
@@ -42,17 +37,4 @@ public class UserDAO implements Insert<UserData>, Delete<UserData>, Select<UserD
 	{
 		return table.getUserByUsername(username);
 	}
-
-	@Override
-	public void notify(Event event)
-	{
-		switch(event.getMessage())
-		{
-		case "username" :
-//			Message<UserData> newMessage = new Message<>("user", ) 
-//			this.eventProcessor.publish(event);
-			break; 
-		}
-	}
-	
 }

@@ -1,13 +1,10 @@
 package com.example.demo.database;
 
-
-import com.example.demo.events.Event;
-import com.example.demo.events.Subscriber;
 import com.example.demo.model.Account;
 
 import java.util.ArrayList;
 
-public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Account>, Subscriber
+public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Account>
 {
 	private Accounts accountData = Accounts.getInstance();
 
@@ -34,12 +31,4 @@ public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Acco
 	{
 		accountData.addAccount(obj);
 	}
-
-	@Override
-	public void notify(Event event)
-	{
-		// TODO Auto-generated method stub
-		
-	}
-
 }
