@@ -20,7 +20,6 @@ public class Login
 				success = true;
 			}
 		}
-
 		
 		return success;
 	}
