@@ -12,11 +12,15 @@ public class Login
 		UserData user = dao.selectByUsername(username);
 		
 		boolean success = false;
-		
-		if (user.getPassword().equals(password))
+
+		if (user != null)
 		{
-			success = true;
+			if (user.getPassword().equals(password))
+			{
+				success = true;
+			}
 		}
+
 		
 		return success;
 	}
