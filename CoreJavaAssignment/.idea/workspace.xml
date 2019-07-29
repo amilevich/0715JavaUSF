@@ -3,52 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8e90f36a-8209-4cae-8f23-9b788554f996" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/model/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/app/MyApp.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/app/Styles.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/components/LoginComponent.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/controllers/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/data/CurrentLoggedInCustomer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/AccountDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Accounts.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/CustomerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Customers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Delete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Insert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Select.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/Update.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/database/UserTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/model/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/utility/Login.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/revature/nick/view/MainView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/LoginComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/AccountDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/CustomerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/Customers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/events/DataEventProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/events/Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/events/EventProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/events/Subscriber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/events/UIEventProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/utility/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/utility/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/utility/Printer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/utility/ScannerInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$$special$$inlined$inject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$$special$$inlined$inject$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/CustomerRegistration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/CustomerRegistration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/Insert.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/Select.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/Select.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/utility/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/utility/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CoreJavaAssignment/core/java/assignment/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CoreJavaAssignment/core/java/assignment/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/java/assignment/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/java/assignment/main/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

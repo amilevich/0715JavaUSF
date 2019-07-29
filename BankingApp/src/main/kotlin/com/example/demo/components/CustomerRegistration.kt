@@ -11,9 +11,9 @@ class CustomerRegistration : Fragment("My View")
 {
     override val root = Form()
 
-    val customerModel = CustomerViewModel(Customer())
+    private val customerModel = CustomerViewModel(Customer())
 
-    val controller = RegistrationController()
+    private val controller = RegistrationController()
 
     init {
         with(root)

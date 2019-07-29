@@ -1,7 +1,7 @@
 package com.example.demo.utility;
 
 import com.example.demo.data.UserData;
-import com.example.demo.database.UserDAO;
+import com.example.demo.DAO.UserDAO;
 
 public class Login
 {

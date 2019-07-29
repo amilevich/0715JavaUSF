@@ -2,8 +2,8 @@ package com.example.demo.controllers;
 
 import com.example.demo.data.UserData;
 import com.example.demo.model.Customer;
-import com.example.demo.database.CustomerDAO;
-import com.example.demo.database.UserDAO;
+import com.example.demo.DAO.CustomerDAO;
+import com.example.demo.DAO.UserDAO;
 import com.example.demo.utility.IdGenerator;
 
 public class RegistrationController

@@ -1,11 +1,12 @@
-package com.example.demo.database;
+package com.example.demo.DAO;
 
+import com.example.demo.database.Customers;
 import com.example.demo.model.Customer;
 
 import java.util.ArrayList;
 
 public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<Customer>,
-	Update<Customer>
+        Update<Customer>
 {
 	Customers customerData = Customers.getInstance();
 

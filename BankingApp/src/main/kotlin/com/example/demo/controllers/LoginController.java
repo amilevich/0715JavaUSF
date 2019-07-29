@@ -1,7 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.data.UserData;
-import com.example.demo.database.UserDAO;
+import com.example.demo.DAO.UserDAO;
 import com.example.demo.utility.Login;
 
 public class LoginController

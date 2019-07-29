@@ -1,6 +1,10 @@
-package com.example.demo.database;
+package com.example.demo.DAO;
 
+import com.example.demo.DAO.Delete;
+import com.example.demo.DAO.Insert;
+import com.example.demo.DAO.Select;
 import com.example.demo.data.UserData;
+import com.example.demo.database.UserTable;
 
 import java.util.ArrayList;
 
