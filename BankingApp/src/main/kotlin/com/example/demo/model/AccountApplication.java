@@ -8,13 +8,10 @@ public class AccountApplication
 
     private int applicationId;
 
-    private IdGenerator generator;
-
-    public AccountApplication()
+    public AccountApplication(int id)
     {
         this.approved = false;
-        this.generator = new IdGenerator();
-        this.applicationId = generator.generateId();
+        this.applicationId = id;
     }
 
     public boolean isApproved() {
