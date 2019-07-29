@@ -2,7 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1beba19-492e-4df0-8bce-e71a862c743f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/app/MyApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/app/Styles.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/components/LoginComponent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/data/CurrentLoggedInCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/data/UserData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/AccountDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Accounts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/CustomerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Customers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Delete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Insert.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Select.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Update.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/UserTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/utility/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/view/MainView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/AccountDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/events/DataEventProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/events/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/events/EventProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/events/Subscriber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/events/UIEventProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utility/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/utility/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utility/Printer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/utility/ScannerInstance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$$special$$inlined$inject$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$$special$$inlined$inject$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$root$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJavaAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJavaAssignment/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJavaAssignment/out/production/CoreJavaAssignment/core/java/assignment/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJavaAssignment/out/production/CoreJavaAssignment/core/java/assignment/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJavaAssignment/src/core/java/assignment/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJavaAssignment/src/core/java/assignment/main/Main.java" afterDir="false" />
     </list>
     <ignored path="tornadofx-empty-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -38,83 +84,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginComponent.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#37#157#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/AccountDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#604#605#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CustomerDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="272">
+              <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#496#497#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
+                <element signature="e#37#142#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/UserDAO.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerRegistration.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-              <folding>
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#506#507#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#594#595#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#796#797#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/UserTable.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/CustomerViewModel.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Customers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,21 +145,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Account.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#225#226#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,38 +159,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-              <folding>
-                <element signature="e#388#389#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#624#625#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#888#889#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="495">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -187,9 +179,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
         <option value="TornadoFX Code View" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -207,14 +199,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/no/tornado/Styles.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/no/tornado/MyApp.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/no/tornado/view/MainView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/app/MyApp.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/app/Styles.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/view/MainView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/Styles.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/MyApp.kt" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Delete.java" />
@@ -225,25 +213,43 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/EventProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Subscriber.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Printer.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/ScannerInstance.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CurrentLoggedInCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Accounts.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Customers.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/UIEventProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/UserTable.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/DataEventProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/MainViewController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/MainViewController.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginComponent.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/AccountDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/WelcomeComponent.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/IdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/Registration.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/RegistrationConfirmation.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginComponent.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/RegisterComponent.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/viewmodel/CustomerViewModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/model/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/components/LoginForm.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/components/CustomerRegistration.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/controllers/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/revature/nick/database/Customers.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/MyApp.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/UserViewModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Customers.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/CustomerViewModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerRegistration.kt" />
       </list>
     </option>
   </component>
@@ -263,7 +269,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -275,6 +281,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,7 +322,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
@@ -325,24 +332,6 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
@@ -371,11 +360,19 @@
               <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="viewmodel" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -591,7 +588,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info id="Project" order="0" visible="true" weight="0.3090129" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="UI Designer" order="3" />
@@ -601,8 +598,8 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3976971" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -629,6 +626,45 @@
       <window_info anchor="right" id="Cargo" order="13" />
       <window_info anchor="right" id="Mongo Explorer" order="14" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39759037" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32891566" />
+      <window_info anchor="bottom" id="JRebel remote servers log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="JRebel Executor" order="12" />
+      <window_info anchor="bottom" id="RoboVM" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Designer" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" x="896" y="759" width="2400" height="1128" id="Documentation" order="8" type="FLOATING" />
+      <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" id="Kotlin Bytecode" order="10" weight="0.32975337" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
+      <window_info anchor="right" id="Cargo" order="13" />
+      <window_info anchor="right" id="Mongo Explorer" order="14" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -641,21 +677,23 @@
       <collection />
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/no/tornado/app/MyApp.kt" />
-    <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -677,20 +715,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.5.5/tornadofx-1.5.5-sources.jar!/tornadofx/Component.kt" />
     <entry file="jar://$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.5.5/tornadofx-1.5.5-sources.jar!/tornadofx/osgi/StylesheetProvider.kt" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/javafx-src.zip!/javafx/scene/control/TableView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/Styles.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/MyApp.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Select.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -705,20 +729,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/EventProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Subscriber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/EventProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Subscriber.java" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Update.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -740,24 +752,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Accounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Customers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -774,94 +769,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/DataEventProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/UIEventProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/ScannerInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginComponent.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#37#157#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/DataEventProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/UIEventProcessor.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/ScannerInstance.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Event.java" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/AccountDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#383#384#0" expanded="true" />
@@ -944,49 +859,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Printer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/Styles.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        <state relative-caret-position="60">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/WelcomeComponent.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
           <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Printer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding>
-            <element signature="e#93#94#0" expanded="true" />
-            <element signature="e#126#127#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/RegisterComponent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding>
+            <element signature="e#37#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/RegistrationConfirmation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="e#37#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/app/MyApp.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding>
+            <element signature="e#31#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/UserViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+          <folding>
+            <element signature="e#36#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginComponent.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Customers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/CustomerViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <folding>
+            <element signature="e#37#142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerRegistration.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="39" column="47" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="47" />
         </state>
       </provider>
     </entry>

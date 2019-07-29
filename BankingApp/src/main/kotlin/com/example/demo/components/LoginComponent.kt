@@ -2,13 +2,12 @@ package com.example.demo.components
 
 import com.example.demo.controllers.LoginController
 import javafx.beans.property.SimpleStringProperty
-import javafx.geometry.Insets
 import javafx.geometry.Pos
 import tornadofx.*
 
-class LoginComponent : View("My View")
+class LoginComponent : View()
 {
-    private val controller = LoginController();
+    private val controller = LoginController()
 
     var username = SimpleStringProperty()
 
@@ -18,7 +17,7 @@ class LoginComponent : View("My View")
 
     override val root = vbox {
         spacing = 20.0
-        padding = Insets(50.0, 50.0, 50.0, 50.0);
+        paddingAll = 50.0
         alignment = Pos.CENTER
 
         label("Username:")
@@ -27,11 +26,23 @@ class LoginComponent : View("My View")
         label("Password:")
         textfield(password)
 
-        button("Submit") {
-            action {
-                labelValue.set(controller.checkCredentials(username.value, password.value).toString())
+        hbox {
+            spacing = 30.0
+            paddingAll = 10.0
+            button("Login") {
+                action {
+                    labelValue.set(controller.checkCredentials(username.value, password.value).toString())
+                }
+            }
+
+            button("Register") {
+                action {
+                    replaceWith<CustomerRegistration>()
+                }
             }
         }
+
+
 
         label(labelValue)
     }

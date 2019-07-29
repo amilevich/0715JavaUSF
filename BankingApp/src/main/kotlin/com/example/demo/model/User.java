@@ -1,34 +1,42 @@
 package com.example.demo.model;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class User
 {
-	private String username;
+	private SimpleStringProperty username;
 	
-	private String password;
+	private SimpleStringProperty password;
 	
 	public User(String username, String password)
 	{
-		this.username = username;
-		this.password = password;
+		this.username = new SimpleStringProperty(username);
+		this.password = new SimpleStringProperty(password);
 	}
 
-	public String getUsername()
+	public User()
+	{
+		this.username = new SimpleStringProperty("");
+		this.password = new SimpleStringProperty("");
+	}
+
+	public SimpleStringProperty getUsername()
 	{
 		return username;
 	}
 
 	public void setUsername(String username)
 	{
-		this.username = username;
+		this.username.set(username);
 	}
 
-	public String getPassword()
+	public SimpleStringProperty getPassword()
 	{
 		return password;
 	}
 
 	public void setPassword(String password)
 	{
-		this.password = password;
+		this.password.set(password);
 	}
 }

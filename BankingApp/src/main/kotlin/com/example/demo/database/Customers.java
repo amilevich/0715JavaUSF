@@ -43,9 +43,9 @@ public class Customers
 	public void updateCustomer(Customer update)
 	{
 		int key = update.getCustomerID();
-		this.customerMap.get(key).setAddress(update.getAddress());
-		this.customerMap.get(key).setFirstname(update.getFirstname());
-		this.customerMap.get(key).setLastname(update.getLastname());
+		this.customerMap.get(key).setAddress(update.getAddress().getValue());
+		this.customerMap.get(key).setFirstname(update.getFirstname().getValue());
+		this.customerMap.get(key).setLastname(update.getLastname().getValue());
 	}
 	
 	public ArrayList<Customer> getAllCustomers()

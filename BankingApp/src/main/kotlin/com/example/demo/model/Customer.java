@@ -1,52 +1,54 @@
 package com.example.demo.model;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Customer extends User
 {
-	private String firstname;
+	private SimpleStringProperty firstname;
 	
-	private String lastname;
+	private SimpleStringProperty lastname;
 	
-	private String address;
+	private SimpleStringProperty address;
 	
 	private int customerID;
 	
-	public Customer(String username, String password)
+	public Customer()
 	{
-		super(username, password);
-		this.address = "";
-		this.firstname = "";
-		this.lastname = "";
+		super();
+		this.address = new SimpleStringProperty("");
+		this.firstname = new SimpleStringProperty("");
+		this.lastname = new SimpleStringProperty("");
 		this.customerID = 0;
 	}
 
-	public String getFirstname()
+	public SimpleStringProperty getFirstname()
 	{
 		return firstname;
 	}
 
 	public void setFirstname(String firstname)
 	{
-		this.firstname = firstname;
+		this.firstname.set(firstname);
 	}
 
-	public String getLastname()
+	public SimpleStringProperty getLastname()
 	{
 		return lastname;
 	}
 
 	public void setLastname(String lastname)
 	{
-		this.lastname = lastname;
+		this.lastname.set(lastname);
 	}
 
-	public String getAddress()
+	public SimpleStringProperty getAddress()
 	{
 		return address;
 	}
 
 	public void setAddress(String address)
 	{
-		this.address = address;
+		this.address.set(address);
 	}
 
 	public int getCustomerID()

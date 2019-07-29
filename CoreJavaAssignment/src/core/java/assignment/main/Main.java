@@ -5,8 +5,6 @@ import core.java.assignment.question2.Fibonacci;
 import core.java.assignment.question3.StringReverse;
 import core.java.assignment.question4.Factorial;
 
-import java.util.ArrayList;
-import java.util.Queue;
 
 public class Main
 {
