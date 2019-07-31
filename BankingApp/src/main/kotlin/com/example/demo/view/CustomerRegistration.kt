@@ -1,8 +1,8 @@
-package com.example.demo.components
+package com.example.demo.view
 
+import com.example.demo.components.RegistrationConfirmation
 import com.example.demo.controllers.RegistrationController
 import com.example.demo.model.Customer
-import com.example.demo.view.MainView
 import com.example.demo.viewmodel.CustomerViewModel
 import javafx.geometry.Pos
 import tornadofx.*
@@ -51,8 +51,10 @@ class CustomerRegistration : Fragment("My View")
                     }
                 }
                 button("Back") {
-                    close()
-                    find(MainView::class).openWindow()
+                    action {
+                        close()
+                        find(MainView::class).openWindow()
+                    }
                 }
             }
 

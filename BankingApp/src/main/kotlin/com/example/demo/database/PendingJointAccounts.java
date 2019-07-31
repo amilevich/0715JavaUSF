@@ -1,5 +1,7 @@
 package com.example.demo.database;
 
+import com.example.demo.DAO.ApplicationDAO;
+import com.example.demo.DAO.JointAppManagerDAO;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.IdGenerator;
@@ -14,6 +16,10 @@ public class PendingJointAccounts
     private HashMap<AccountApplication, ArrayList<Customer>> jointAppMap;
 
     private IdGenerator generator;
+
+    private JointAppManagerDAO jointDAO = new JointAppManagerDAO();
+
+    ApplicationDAO applicationDAO = new ApplicationDAO();
 
     private PendingJointAccounts()
     {
@@ -44,5 +50,14 @@ public class PendingJointAccounts
     public ArrayList<Customer> getCustomersByApplication(AccountApplication application)
     {
         return this.jointAppMap.get(application);
+    }
+
+    public void approveCustomer(int id)
+    {
+        AccountApplication app = applicationDAO.selectOne(id);
+        ArrayList<Customer> customers = jointAppMap.get(app);
+
+        this.jointAppMap.remove(app);
+        this.jointDAO.insert(customers);
     }
 }

@@ -1,6 +1,6 @@
 package com.example.demo.components
 
-import com.example.demo.view.MainView
+import com.example.demo.view.CustomerRegistration
 import javafx.geometry.Pos
 import tornadofx.*
 

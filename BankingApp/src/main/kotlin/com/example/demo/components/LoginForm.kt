@@ -6,13 +6,13 @@ import com.example.demo.viewmodel.UserViewModel
 import javafx.beans.property.SimpleStringProperty
 import tornadofx.*
 
-class LoginForm : View("My View")
+class LoginForm : Fragment("My View")
 {
     override val root = Form()
 
     private val controller = LoginController()
 
-    val userModel = UserViewModel(User())
+    private val userModel = UserViewModel(User())
 
     var labelValue = SimpleStringProperty()
 

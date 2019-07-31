@@ -1,5 +1,7 @@
 package com.example.demo.database;
 
+import com.example.demo.DAO.AppManagerDAO;
+import com.example.demo.DAO.ApplicationDAO;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.IdGenerator;
@@ -13,6 +15,10 @@ public class PendingAccounts
     private HashMap<AccountApplication, Customer> applicationMap;
 
     private IdGenerator generator;
+
+    ApplicationDAO appDAO = new ApplicationDAO();
+
+    AppManagerDAO managerDAO = new AppManagerDAO();
 
     private PendingAccounts()
     {
@@ -43,5 +49,14 @@ public class PendingAccounts
     public Customer getCustomerByApplication(AccountApplication application)
     {
         return applicationMap.get(application);
+    }
+
+    public void approveCustomer(int id)
+    {
+        AccountApplication app = appDAO.selectOne(id);
+        Customer customer = applicationMap.get(app);
+
+        this.applicationMap.remove(app);
+        this.managerDAO.insert(customer);
     }
 }
