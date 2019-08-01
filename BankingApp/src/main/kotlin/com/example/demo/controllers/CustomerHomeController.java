@@ -1,6 +1,6 @@
 package com.example.demo.controllers;
 
-public class CustomerInfoController
+public class CustomerHomeController
 {
 
 }

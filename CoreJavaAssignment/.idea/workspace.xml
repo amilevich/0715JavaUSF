@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="8e90f36a-8209-4cae-8f23-9b788554f996" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/CustomerInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/CustomerInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/CustomerInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/view/CustomerHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/view/CustomerHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/CustomerInfo$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/CustomerInfo$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/CustomerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/CustomerInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/CustomerInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
