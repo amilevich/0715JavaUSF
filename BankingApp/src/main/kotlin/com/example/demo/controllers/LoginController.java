@@ -1,5 +1,6 @@
 package com.example.demo.controllers;
 
+import com.example.demo.DAO.AppManagerDAO;
 import com.example.demo.DAO.CustomerDAO;
 import com.example.demo.data.CurrentLoggedInCustomer;
 import com.example.demo.data.UserData;
@@ -13,6 +14,8 @@ public class LoginController
 
     private void populateUsers()
     {
+        AppManagerDAO appManagerDAO = new AppManagerDAO();
+
         UserData user1 = new UserData(1, "nick", "password", "admin");
         UserData user2 = new UserData(2, "dan", "password", "customer");
 
@@ -28,6 +31,7 @@ public class LoginController
 
         CustomerDAO customerDAO = new CustomerDAO();
         customerDAO.insert(customer);
+        appManagerDAO.insert(customer);
     }
 
     public boolean checkCredentials(String username, String password)

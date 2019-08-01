@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="8e90f36a-8209-4cae-8f23-9b788554f996" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/components/ApplicationCreation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/CheckingAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/database/CheckingAccounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/view/CustomerHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/src/main/kotlin/com/example/demo/view/CustomerHome.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/DAO/AppManagerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/DAO/AppManagerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/ApplicationCreationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/ApplicationCreationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/CustomerHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/CustomerHomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/CheckingAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/database/CheckingAccounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingApp/target/classes/com/example/demo/view/CustomerHome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/java/assignment/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="107">
@@ -93,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/core/java/assignment/question10/TernaryMin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+            <state relative-caret-position="105">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
               <folding>
                 <element signature="e#189#190#0" expanded="true" />
                 <element signature="e#225#226#0" expanded="true" />
@@ -228,6 +232,13 @@
               <item name="assignment" type="462c0819:PsiDirectoryNode" />
               <item name="question6" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CoreJavaAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CoreJavaAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assignment" type="462c0819:PsiDirectoryNode" />
+              <item name="question10" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -289,7 +300,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -298,7 +309,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,17 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/java/assignment/question10/TernaryMin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="e#189#190#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/core/java/assignment/question11_2/FloatHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -490,6 +490,17 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2102#2112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/java/assignment/question10/TernaryMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
           </folding>
         </state>
       </provider>

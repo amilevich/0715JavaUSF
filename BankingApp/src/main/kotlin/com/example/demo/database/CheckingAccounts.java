@@ -5,6 +5,7 @@ import com.example.demo.model.Account;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.IdGenerator;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class CheckingAccounts
@@ -48,5 +49,18 @@ public class CheckingAccounts
     public Customer getCustomerByAccount(Account account)
     {
         return accountMap.get(account);
+    }
+
+    public ArrayList<Account> getAccountsByCustomer(Customer customer)
+    {
+        ArrayList<Account> accounts = new ArrayList<>();
+        for(Account acc : accountMap.keySet())
+        {
+            if(accountMap.get(acc).equals(customer))
+            {
+                accounts.add(acc);
+            }
+        }
+        return accounts;
     }
 }
