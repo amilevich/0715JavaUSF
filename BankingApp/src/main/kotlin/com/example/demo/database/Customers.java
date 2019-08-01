@@ -3,6 +3,8 @@ package com.example.demo.database;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.example.demo.DAO.UserDAO;
+import com.example.demo.data.UserData;
 import com.example.demo.model.Customer;
 
 public class Customers
@@ -50,7 +52,7 @@ public class Customers
 	
 	public ArrayList<Customer> getAllCustomers()
 	{
-		ArrayList<Customer> list = new ArrayList<Customer>();
+		ArrayList<Customer> list = new ArrayList<>();
 		
 		for(int i : this.customerMap.keySet())
 		{
@@ -59,4 +61,15 @@ public class Customers
 		
 		return list;
 	}
+
+	public Customer getCustomerByUsername(String username)
+	{
+		Customer customer = null;
+		UserDAO userDAO = new UserDAO();
+		UserData user = userDAO.selectByUsername(username);
+		customer = customerMap.get(user.getId());
+
+		return customer;
+	}
+
 }

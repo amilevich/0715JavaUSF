@@ -1,7 +1,9 @@
 package com.example.demo.controllers;
 
+import com.example.demo.DAO.CustomerDAO;
 import com.example.demo.data.UserData;
 import com.example.demo.DAO.UserDAO;
+import com.example.demo.model.Customer;
 import com.example.demo.utility.Login;
 
 public class LoginController
@@ -22,5 +24,11 @@ public class LoginController
     {
         this.populateUsers();
         return loginUtil.login(username,password);
+    }
+
+    public void SetLoggedInCustomer(String username)
+    {
+        CustomerDAO customerDAO = new CustomerDAO();
+
     }
 }
