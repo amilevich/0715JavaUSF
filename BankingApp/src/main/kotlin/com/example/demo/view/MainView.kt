@@ -5,7 +5,7 @@ import com.example.demo.components.LoginForm
 import com.example.demo.components.RegisterComponent
 import tornadofx.*
 
-class MainView : View("Banking App")
+class MainView : View("Log In/Register")
 {
     val login = LoginForm()
     val register: RegisterComponent by inject()

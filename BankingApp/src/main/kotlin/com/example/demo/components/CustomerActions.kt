@@ -38,7 +38,7 @@ class CustomerActions : View("My View")
             }
             button("Apply for account") {
                 action {
-
+                    find<ApplicationCreation>().apply { openModal() }
                 }
             }
         }

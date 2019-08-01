@@ -7,7 +7,7 @@ import com.example.demo.viewmodel.CustomerViewModel
 import javafx.geometry.Pos
 import tornadofx.*
 
-class CustomerRegistration : Fragment("My View")
+class CustomerRegistration : Fragment("Registration")
 {
     override val root = Form()
 
