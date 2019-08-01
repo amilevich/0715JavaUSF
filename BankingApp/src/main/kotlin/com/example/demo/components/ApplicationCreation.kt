@@ -24,7 +24,12 @@ class ApplicationCreation : Fragment("Apply for Account")
             spacing = 20.0
             alignment = Pos.CENTER
             button("Apply") {
-                controller.createApplication(selectedType.value)
+                enableWhen(selectedType.isNotNull)
+                action {
+                    controller.createApplication(selectedType.value)
+                    close()
+                    find<ApplicationConfirmation>().apply { openModal() }
+                }
             }
             button("Back") {
                 action {

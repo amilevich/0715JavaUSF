@@ -13,8 +13,8 @@ public class LoginController
 
     private void populateUsers()
     {
-        UserData user1 = new UserData(1, "Nick", "password", "admin");
-        UserData user2 = new UserData(2, "Dan", "password", "customer");
+        UserData user1 = new UserData(1, "nick", "password", "admin");
+        UserData user2 = new UserData(2, "dan", "password", "customer");
 
         Customer customer = new Customer();
         customer.setCustomerID(1);

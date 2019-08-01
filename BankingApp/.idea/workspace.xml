@@ -3,18 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d1beba19-492e-4df0-8bce-e71a862c743f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerHome.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerHome.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerRegistration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerRegistration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerRegistration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CoreJavaAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJavaAssignment/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="tornadofx-empty-project.iws" />
@@ -60,22 +56,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="290">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+              <folding>
+                <element signature="e#37#238#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationConfirmation.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+            <state relative-caret-position="240">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
-                <element signature="e#37#238#0" expanded="true" />
+                <element signature="e#37#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,6 +111,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/RegistrationConfirmation.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -126,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="372">
+              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="69" />
               <folding>
                 <element signature="e#37#173#0" expanded="true" />
               </folding>
@@ -141,8 +152,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="TornadoFX Code View" />
         <option value="Class" />
+        <option value="TornadoFX Code View" />
       </list>
     </option>
   </component>
@@ -160,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CustomerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/WelcomeComponent.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/IdGenerator.java" />
@@ -202,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/TransactionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CustomerAccounts.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerInfo.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" />
@@ -210,6 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerRegistration.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/MainView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationConfirmation.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" />
       </list>
     </option>
@@ -578,7 +589,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info id="Project" order="0" visible="true" weight="0.3090129" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="UI Designer" order="3" />
@@ -588,7 +599,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -672,7 +683,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/events/Event.java" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1071,16 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerInfo.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1112,16 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="e#37#173#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,10 +1159,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="69" />
+          <folding>
+            <element signature="e#37#173#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationConfirmation.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="e#37#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state relative-caret-position="290">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
           <folding>
             <element signature="e#37#238#0" expanded="true" />
           </folding>
