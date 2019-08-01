@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.DAO.CustomerDAO;
+import com.example.demo.data.CurrentLoggedInCustomer;
 import com.example.demo.data.UserData;
 import com.example.demo.DAO.UserDAO;
 import com.example.demo.model.Customer;
@@ -29,6 +30,8 @@ public class LoginController
     public void SetLoggedInCustomer(String username)
     {
         CustomerDAO customerDAO = new CustomerDAO();
-
+        CurrentLoggedInCustomer currentCustomer = CurrentLoggedInCustomer.getInstance();
+        Customer customer = customerDAO.getCustomerByUsername(username);
+        currentCustomer.setLoggedInCustomer(customer);
     }
 }
