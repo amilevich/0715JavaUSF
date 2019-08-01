@@ -1,0 +1,8 @@
+2019-08-01 15:49:17 INFO  MyClass:10 - this is info
+2019-08-01 15:49:17 ERROR MyClass:11 - message about error
+2019-08-01 15:49:17 FATAL MyClass:12 - fatal message
+2019-08-01 15:49:17 WARN  MyClass:13 - warning message
+2019-08-01 15:50:19 INFO  MyClass:10 - this is info
+2019-08-01 15:50:19 ERROR MyClass:11 - message about error
+2019-08-01 15:50:19 FATAL MyClass:12 - fatal message
+2019-08-01 15:50:19 WARN  MyClass:13 - warning message
