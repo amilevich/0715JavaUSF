@@ -25,9 +25,12 @@ public class Cereal implements Serializable{
 	 */
 	
 	private String brand;
-	private String color;
-	private double gramsOfSugar;
-	private boolean isCrunchy;
+	private transient String color;
+	private transient double gramsOfSugar; 
+	//transient keyword hides data in the process of deserialization
+	//it prints out the default value for that data type instead of the
+	//actual value
+	private transient boolean isCrunchy;
 	
 	public Cereal() {
 	}
