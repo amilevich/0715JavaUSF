@@ -2,11 +2,12 @@ package com.example.demo.view
 
 import com.example.demo.Scopes.AccountScope
 import com.example.demo.components.AccountTable
+import com.example.demo.modals.Deposit
 import com.example.demo.modals.Withdraw
 import javafx.geometry.Pos
 import tornadofx.*
 
-class AccountView : View("Account View")
+class AccountView : Fragment("Account View")
 {
     private val accountScope = super.scope as AccountScope
 
@@ -27,10 +28,16 @@ class AccountView : View("Account View")
             alignment = Pos.CENTER
             button("Withdraw") {
                 action {
-                    find(Withdraw::class,accountScope).apply { openModal() }
+                    find(Withdraw::class,accountScope).openWindow()
+                    close()
                 }
             }
-            button("Deposit") {  }
+            button("Deposit") {
+                action {
+                    find(Deposit::class,accountScope).openWindow()
+                    close()
+                }
+            }
             button("Transfer") {  }
             button("Done") {
                 action {

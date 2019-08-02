@@ -17,4 +17,12 @@ public class TransactionController
         accountDAO.update(account);
         appManagerDAO.update(account);
     }
+
+    public void deposit(int accountNumber, double amount)
+    {
+        Account account = accountDAO.selectOne(accountNumber);
+        account.setBalance(account.getBalance() + amount);
+        accountDAO.update(account);
+        appManagerDAO.update(account);
+    }
 }

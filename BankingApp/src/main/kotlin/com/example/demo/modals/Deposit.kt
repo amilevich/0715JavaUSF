@@ -5,10 +5,9 @@ import com.example.demo.controllers.TransactionController
 import com.example.demo.data.Amount
 import com.example.demo.view.AccountView
 import com.example.demo.viewmodel.AmountViewModel
-import javafx.geometry.Pos
 import tornadofx.*
 
-class Withdraw : View("Withdrawal")
+class Deposit : View("My View")
 {
     override val root = Form()
 
@@ -24,38 +23,32 @@ class Withdraw : View("Withdrawal")
     {
         with(root)
         {
-            fieldset("Withdrawal") {
+            fieldset("Deposit") {
                 label("Balance: ${model.balance.value}")
-                field("Amount: ") {
+                field("Amount:") {
                     textfield(amountModel.amount) {
                         filterInput { it.controlNewText.isDouble() }
                         validator {
                             if (it.isNullOrBlank())
                             {
                                 error("Must enter an amount to withdraw.")
-                            }
-                            else if (amountModel.amount.value.toDouble() > model.balance.value)
-                            {
-                                error("You can not withdraw more than your balance.")
                             } else null
                         }
                     }
                 }
                 hbox {
-                    paddingTop = 10.0
                     spacing = 20.0
-                    alignment = Pos.CENTER_LEFT
-                    button("Withdraw") {
-                        enableWhen(amountModel.valid)
+                    paddingTop = 10.0
+
+                    button("Deposit") {
                         action {
-                            controller.withdraw(model.accountNumber.value, amountModel.amount.value.toDouble())
-                            model.balance.value -= amountModel.amount.value.toDouble()
+                            controller.deposit(model.accountNumber.value, amountModel.amount.value.toDouble())
+                            model.balance.value += amountModel.amount.value.toDouble()
                             close()
                             find(AccountView::class, accountScope).openWindow()
                         }
                     }
-                    button("Close")
-                    {
+                    button("Close") {
                         action {
                             close()
                             find(AccountView::class, accountScope).openWindow()
