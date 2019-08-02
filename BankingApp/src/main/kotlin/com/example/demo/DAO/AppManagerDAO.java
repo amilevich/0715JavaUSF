@@ -6,7 +6,7 @@ import com.example.demo.model.Customer;
 
 import java.util.ArrayList;
 
-public class AppManagerDAO implements Insert<Customer>, Delete<Account>
+public class AppManagerDAO implements Insert<Customer>, Delete<Account>, Update<Account>
 {
     CheckingAccounts checkingAccounts = CheckingAccounts.getInstance();
 
@@ -26,7 +26,11 @@ public class AppManagerDAO implements Insert<Customer>, Delete<Account>
 
     public ArrayList<Account> getAllCustomerAccounts(Customer customer)
     {
-
         return checkingAccounts.getAccountsByCustomer(customer);
+    }
+
+    @Override
+    public void update(Account obj) {
+        checkingAccounts.updateAccountBalance(obj);
     }
 }

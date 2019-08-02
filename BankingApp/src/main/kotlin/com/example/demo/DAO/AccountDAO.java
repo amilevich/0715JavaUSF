@@ -5,7 +5,7 @@ import com.example.demo.model.Account;
 
 import java.util.ArrayList;
 
-public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Account>
+public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Account>, Update<Account>
 {
 	private Accounts accountData = Accounts.getInstance();
 
@@ -31,5 +31,10 @@ public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Acco
 	public void insert(Account obj)
 	{
 		accountData.addAccount(obj);
+	}
+
+	@Override
+	public void update(Account obj) {
+		accountData.updateAccount(obj);
 	}
 }

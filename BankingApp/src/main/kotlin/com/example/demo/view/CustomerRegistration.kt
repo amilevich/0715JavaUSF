@@ -1,6 +1,6 @@
 package com.example.demo.view
 
-import com.example.demo.components.RegistrationConfirmation
+import com.example.demo.modals.RegistrationConfirmation
 import com.example.demo.controllers.RegistrationController
 import com.example.demo.model.Customer
 import com.example.demo.viewmodel.CustomerViewModel

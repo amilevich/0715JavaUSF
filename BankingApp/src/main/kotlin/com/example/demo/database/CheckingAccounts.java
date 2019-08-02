@@ -63,4 +63,15 @@ public class CheckingAccounts
         }
         return accounts;
     }
+
+    public void updateAccountBalance(Account account)
+    {
+        for (Account acc : accountMap.keySet())
+        {
+            if (account.getAccountNumber() == acc.getAccountNumber())
+            {
+                acc.setBalance(account.getBalance());
+            }
+        }
+    }
 }

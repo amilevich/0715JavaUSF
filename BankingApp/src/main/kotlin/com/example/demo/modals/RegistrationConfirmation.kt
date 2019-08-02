@@ -1,4 +1,4 @@
-package com.example.demo.components
+package com.example.demo.modals
 
 import javafx.geometry.Pos
 import tornadofx.*

@@ -14,7 +14,7 @@ class CustomerHome : View("Home")
     private val accountTable = AccountTable()
 
     override val root = borderpane {
-        paddingAll = 50.0
+        paddingAll = 10.0
         top = customerInfo.root
         center = accountTable.root
         bottom = customerActions.root
