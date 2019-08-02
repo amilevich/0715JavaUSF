@@ -19,7 +19,7 @@ public class PrimePrinter
     /*
      * Uses the modulus operator to determine whether a given number is prime.
      */
-    private static boolean isPrime(int number)
+    public static boolean isPrime(int number)
     {
         boolean prime = true;
         if(number <= 1)

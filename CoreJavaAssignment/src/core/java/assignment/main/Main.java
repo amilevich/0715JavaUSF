@@ -5,7 +5,13 @@ import core.java.assignment.question10.TernaryMin;
 import core.java.assignment.question11.FloatPrinter;
 import core.java.assignment.question12.EvenNumberPrinter;
 import core.java.assignment.question13.TrianglePrinter;
+import core.java.assignment.question14.SwitchCases;
+import core.java.assignment.question15.ArithmaticDefinition;
+import core.java.assignment.question17.InterestCalculator;
+import core.java.assignment.question18.StringChecker;
+import core.java.assignment.question19.ArrayListActions;
 import core.java.assignment.question2.Fibonacci;
+import core.java.assignment.question20.FileReader;
 import core.java.assignment.question3.StringReverse;
 import core.java.assignment.question4.Factorial;
 import core.java.assignment.question5.Substring;
@@ -19,6 +25,7 @@ import core.java.assignment.question9.PrimePrinter;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 
 public class Main
@@ -127,6 +134,74 @@ public class Main
         //a simple group of print statements to accomplish this.
         System.out.println("Question 13: ");
         TrianglePrinter.printTriangle(4);
+
+        //Q14. Write a program that demonstrates the switch case. Implement the following
+        //functionalities in the cases:
+        //Case 1: Find the square root of a number using the Math class method.
+        //Case 2: Display today’s date.
+        //Case 3: Split the following string and store it in a string array.
+        System.out.println("Please enter an action (sqrt, split, date): ");
+        Scanner scanner = new Scanner(System.in);
+        SwitchCases.checkCases(scanner.nextLine());
+
+        //Q15. Write a program that defines an interface having the following methods: addition,
+        //subtraction, multiplication, and division. Create a class that implements this interface
+        //and provides appropriate functionality to carry out the required operations. Hard code
+        //two operands in a test class having a main method that calls the implementing class.
+        int x = 12;
+        int y = 4;
+        ArithmaticDefinition definition = new ArithmaticDefinition();
+        System.out.println("Question 15: " + definition.add(x,y) + " " + definition.subtract(x,y) + " "
+                + definition.multiply(x,y) + " " + definition.divide(x,y));
+
+        //Q16. Write a program to display the number of characters for a string input. The string
+        //should be entered as a command line argument using (String [ ] args).
+
+        //Q17. Write a program that calculates the simple interest on the principal, rate of interest
+        //and number of years provided by the user. Enter principal, rate and time through the
+        //console using the Scanner class.
+        //Interest = Principal* Rate* Time
+        System.out.println("Question 17: " + InterestCalculator.calculateInterest(1000,.04, 80));
+
+        //Q18. Write a program having a concrete subclass that inherits three abstract methods
+        //from a superclass. Provide the following three implementations in the subclass
+        //corresponding to the abstract methods in the superclass:
+        //1. Check for uppercase characters in a string, and return ‘true’ or ‘false’ depending
+        //if any are found.
+        //2. Convert all of the lower case characters to uppercase in the input string, and
+        //return the result.
+        //3. Convert the input string to integer and add 10, output the result to the console.
+        //Create an appropriate class having a main method to test the above setup.
+        StringChecker checker = new StringChecker();
+        System.out.print("Question 18: " + checker.convertToUppercase("sTrIng") + " ");
+        System.out.print(checker.convertStringToInt("18") + " ");
+        System.out.print(checker.checkForUppercase("String"));
+        System.out.println();
+
+        // Q19 . Create an ArrayList and insert integers 1 through 10. Display the ArrayList. Add all
+        //the even numbers up and display the result. Add all the odd numbers up and display the
+        //result. Remove the prime numbers from the ArrayList and print out the remaining
+        //ArrayList.
+        ArrayListActions actions = new ArrayListActions(10);
+        System.out.println("Question 19: ");
+        actions.displayArrayList();
+        actions.addAllEvens();
+        actions.displayArrayList();
+        actions.removePrimes();
+        actions.displayArrayList();
+
+        //Q20. Create a notepad file called Data.txt and enter the following:
+        //Mickey:Mouse:35:Arizona
+        //Hulk:Hogan:50:Virginia
+        //Roger:Rabbit:22:California
+        //Wonder:Woman:18:Montana
+        //Write a program that would read from the file and print it out to the screen in the
+        //following format:
+        //Name: Mickey Mouse
+        //Age: 35 years
+        //State: Arizona State
+        System.out.println("Question 20: ");
+        FileReader.readTextFromFile("/Users/Nick/JavaTraning/0715JavaUSF/CoreJavaAssignment/Recources/Data.txt");
 
 
     }
