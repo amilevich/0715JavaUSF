@@ -4,7 +4,9 @@ import com.example.demo.controllers.ApproveOrDenyController
 import com.example.demo.data.CustomerApplicationJoin
 import com.example.demo.modals.Approved
 import com.example.demo.modals.Denied
+import com.example.demo.modals.NothingSelected
 import com.example.demo.viewmodel.AppJoinViewModel
+import javafx.beans.property.SimpleBooleanProperty
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
 import javafx.geometry.Pos
@@ -36,16 +38,31 @@ class ApproveOrDeny : Fragment("Open Applications")
             spacing = 20.0
             button("Approve") {
                 action {
-                    controller.approveApp(appModel.appId.value.toInt())
-                    tableRows.setAll(controller.allOpenApplications)
-                    find(Approved::class).openModal()
+                    if (appModel.item != null)
+                    {
+                        controller.approveApp(appModel.appId.value.toInt())
+                        tableRows.setAll(controller.allOpenApplications)
+                        find(Approved::class).openModal()
+                    }
+                    else
+                    {
+                        find(NothingSelected::class).openModal()
+                    }
                 }
             }
             button("Deny") {
                 action {
-                    controller.denyApp(appModel.appId.value.toInt())
-                    tableRows.setAll(controller.allOpenApplications)
-                    find(Denied::class).openModal()
+
+                    if (appModel.item != null)
+                    {
+                        controller.denyApp(appModel.appId.value.toInt())
+                        tableRows.setAll(controller.allOpenApplications)
+                        find(Denied::class).openModal()
+                    }
+                    else
+                    {
+                        find(NothingSelected::class).openModal()
+                    }
                 }
             }
             button("Done") {
