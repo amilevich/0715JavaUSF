@@ -6,11 +6,23 @@ import com.example.demo.database.PendingJointAccounts;
 
 public class Employee extends User
 {
-    private ApplicationDAO dao = new ApplicationDAO();
+    private ApplicationDAO dao;
 
-    public Employee(String username, String password)
+    private int id;
+
+    public Employee(int id, String username, String password)
     {
         super(username, password);
+        this.dao = new ApplicationDAO();
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void approveApplication(int id)

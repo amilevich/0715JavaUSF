@@ -3,6 +3,7 @@ package com.example.demo.components
 import com.example.demo.controllers.LoginController
 import com.example.demo.model.User
 import com.example.demo.view.CustomerHome
+import com.example.demo.view.EmployeeHome
 import com.example.demo.viewmodel.UserViewModel
 import javafx.beans.property.SimpleStringProperty
 import tornadofx.*
@@ -36,9 +37,18 @@ class LoginForm : Fragment("My View")
                     val user = userModel.item
                     if (controller.checkCredentials(user.username.value, user.password.value))
                     {
-                        controller.SetLoggedInCustomer(user.username.value)
-                        close()
-                        find(CustomerHome::class).openWindow()
+                        if (controller.getType(user.username.value).equals("customer"))
+                        {
+                            controller.SetLoggedInCustomer(user.username.value)
+                            close()
+                            find(CustomerHome::class).openWindow()
+                        }
+                        else if (controller.getType(user.username.value).equals("employee"))
+                        {
+                            controller.setLoggedInEmployee(user.username.value,user.password.value)
+                            close()
+                            find(EmployeeHome::class).openWindow()
+                        }
                     }
                 }
             }
