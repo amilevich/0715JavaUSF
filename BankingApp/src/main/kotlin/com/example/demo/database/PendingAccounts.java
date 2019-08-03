@@ -37,8 +37,10 @@ public class PendingAccounts
 
     public void addPendingAccount(Customer customer)
     {
+        ApplicationDAO applicationDAO = new ApplicationDAO();
         AccountApplication application = new AccountApplication(generator.generateId());
         applicationMap.put(application, customer);
+        applicationDAO.insert(application);
     }
 
     public void deletePendingAccount(AccountApplication application)

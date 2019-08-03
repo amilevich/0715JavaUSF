@@ -1,16 +1,19 @@
 package com.example.demo.view
 
 import com.example.demo.components.CustomerTable
+import com.example.demo.components.EmployeeActions
 import com.example.demo.data.CurrentLoggedInEmployee
 import tornadofx.*
 
 class EmployeeHome : Fragment("My View")
 {
-    val customerTable = CustomerTable()
+    private val customerTable = CustomerTable()
 
-    val loggedInEmployee = CurrentLoggedInEmployee.getInstance()
+    private val loggedInEmployee = CurrentLoggedInEmployee.getInstance()
 
-    val welcome = vbox {
+    private val employeeActions = EmployeeActions()
+
+    private val welcome = vbox {
         label("Welcome!")
         label("Employee ID: ${loggedInEmployee.employee.id}")
     }
@@ -19,5 +22,6 @@ class EmployeeHome : Fragment("My View")
         paddingAll = 10.0
         top = welcome
         center = customerTable.root
+        bottom = employeeActions.root
     }
 }

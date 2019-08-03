@@ -14,7 +14,7 @@ import tornadofx.*
 class AccountTable : Fragment("My View")
 {
     private val controller = CustomerHomeController()
-    
+
     override val root = vbox {
         paddingTop = 25.0
         spacing = 20.0
