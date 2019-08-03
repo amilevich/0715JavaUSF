@@ -3,6 +3,7 @@ package com.example.demo.view
 import com.example.demo.Scopes.AccountScope
 import com.example.demo.components.AccountTable
 import com.example.demo.modals.Deposit
+import com.example.demo.modals.Transfer
 import com.example.demo.modals.Withdraw
 import javafx.geometry.Pos
 import tornadofx.*
@@ -38,7 +39,12 @@ class AccountView : Fragment("Account View")
                     close()
                 }
             }
-            button("Transfer") {  }
+            button("Transfer") {
+                action {
+                    find(Transfer::class,accountScope).openWindow()
+                    close()
+                }
+            }
             button("Done") {
                 action {
                     close()

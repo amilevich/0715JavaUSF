@@ -12,7 +12,7 @@ public class LoginController
 {
     Login loginUtil = new Login();
 
-    private void populateUsers()
+    public void populateUsers()
     {
         AppManagerDAO appManagerDAO = new AppManagerDAO();
 
@@ -25,18 +25,25 @@ public class LoginController
         customer.setLastname("Helgeland");
         customer.setAddress("3359 state route 36");
 
+        Customer customer2 = new Customer();
+        customer2.setCustomerID(2);
+        customer2.setFirstname("Dan");
+        customer2.setLastname("Hecker");
+        customer2.setAddress("Hartford, Connecticut");
+
         UserDAO dao = new UserDAO();
         dao.insert(user1);
         dao.insert(user2);
 
         CustomerDAO customerDAO = new CustomerDAO();
         customerDAO.insert(customer);
+        customerDAO.insert(customer2);
         appManagerDAO.insert(customer);
+        appManagerDAO.insert(customer2);
     }
 
     public boolean checkCredentials(String username, String password)
     {
-        this.populateUsers();
         return loginUtil.login(username,password);
     }
 

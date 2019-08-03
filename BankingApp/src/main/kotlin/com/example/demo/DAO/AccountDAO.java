@@ -37,4 +37,9 @@ public class AccountDAO implements Insert<Account>, Select<Account>, Delete<Acco
 	public void update(Account obj) {
 		accountData.updateAccount(obj);
 	}
+
+	public ArrayList<Integer> getAllAccountNumbers()
+	{
+		return accountData.getAllKeys();
+	}
 }

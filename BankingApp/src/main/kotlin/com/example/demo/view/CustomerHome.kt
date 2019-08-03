@@ -5,7 +5,7 @@ import com.example.demo.components.CustomerActions
 import com.example.demo.components.CustomerInfo
 import tornadofx.*
 
-class CustomerHome : View("Home")
+class CustomerHome : Fragment("Home")
 {
     private val customerInfo = CustomerInfo()
 

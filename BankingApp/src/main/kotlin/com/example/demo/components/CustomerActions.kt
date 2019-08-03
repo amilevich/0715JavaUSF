@@ -1,6 +1,7 @@
 package com.example.demo.components
 
 import com.example.demo.controllers.CustomerHomeController
+import com.example.demo.view.MainView
 import javafx.geometry.Pos
 import javafx.scene.layout.VBox
 import tornadofx.*
@@ -21,6 +22,12 @@ class CustomerActions : View("My View")
             button("Apply for account") {
                 action {
                     find<ApplicationCreation>().apply { openModal() }
+                }
+            }
+            button("Logout") {
+                action {
+                    close()
+                    find(MainView::class).openWindow()
                 }
             }
         }

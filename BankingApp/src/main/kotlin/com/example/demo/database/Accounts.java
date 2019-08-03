@@ -56,4 +56,9 @@ public class Accounts
 	{
 		this.accountMap.get(update.getAccountNumber()).setBalance(update.getBalance());
 	}
+
+	public ArrayList<Integer> getAllKeys()
+	{
+		return new ArrayList<Integer>(accountMap.keySet());
+	}
 }

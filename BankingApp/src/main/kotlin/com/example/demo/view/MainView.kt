@@ -3,6 +3,7 @@ package com.example.demo.view
 import com.example.demo.app.Styles
 import com.example.demo.components.LoginForm
 import com.example.demo.components.RegisterComponent
+import com.example.demo.controllers.LoginController
 import tornadofx.*
 
 class MainView : View("Log In/Register")
@@ -16,5 +17,6 @@ class MainView : View("Log In/Register")
         }
         top = register.root
         center = login.root
+
     }
 }

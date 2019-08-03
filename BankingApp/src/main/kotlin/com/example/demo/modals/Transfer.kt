@@ -2,19 +2,20 @@ package com.example.demo.modals
 
 import com.example.demo.Scopes.AccountScope
 import com.example.demo.controllers.TransactionController
-import com.example.demo.data.Amount
+import com.example.demo.data.TransferAmount
 import com.example.demo.view.AccountView
-import com.example.demo.viewmodel.AmountViewModel
+import com.example.demo.viewmodel.TransferViewModel
+import javafx.collections.FXCollections
 import javafx.geometry.Pos
 import tornadofx.*
 
-class Transfer : View("My View")
+class Transfer : View("Transfer")
 {
     private val accountScope = super.scope as AccountScope
 
     private val model = accountScope.model
 
-    private val amountModel = AmountViewModel(Amount(""))
+    private val transferModel = TransferViewModel(TransferAmount())
 
     private val controller = TransactionController()
 
@@ -24,17 +25,28 @@ class Transfer : View("My View")
     {
         with(root)
         {
-            fieldset("Withdrawal") {
+            fieldset("Transfer Funds") {
                 label("Balance: ${model.balance.value}")
-                field("Amount: ") {
-                    textfield(amountModel.amount) {
+                field("Account #:") {
+                    textfield(transferModel.accountNumber) {
+                        filterInput { it.controlNewText.isInt() }
+                        validator {
+                            if (it.isNullOrBlank())
+                            {
+                                error("Must enter an account number to transfer to.")
+                            } else null
+                        }
+                    }
+                }
+                field("Amount:") {
+                    textfield(transferModel.amount) {
                         filterInput { it.controlNewText.isDouble() }
                         validator {
                             if (it.isNullOrBlank())
                             {
                                 error("Must enter an amount to transfer.")
                             }
-                            else if (amountModel.amount.value.toDouble() > model.balance.value)
+                            else if (transferModel.amount.value.toDouble() > model.balance.value)
                             {
                                 error("You can not transfer more than your balance.")
                             } else null
@@ -45,13 +57,21 @@ class Transfer : View("My View")
                     paddingTop = 10.0
                     spacing = 20.0
                     alignment = Pos.CENTER_LEFT
-                    button("Withdraw") {
-                        enableWhen(amountModel.valid)
+                    button("Transfer") {
+                        enableWhen(transferModel.valid)
                         action {
-                            controller.withdraw(model.accountNumber.value, amountModel.amount.value.toDouble())
-                            model.balance.value -= amountModel.amount.value.toDouble()
-                            close()
-                            find(AccountView::class, accountScope).openWindow()
+                            if (controller.checkAccountNumber(transferModel.accountNumber.value.toInt()))
+                            {
+                                controller.transfer(model.accountNumber.value, transferModel.accountNumber.value.toInt(),
+                                        transferModel.amount.value.toDouble())
+                                model.balance.value -= transferModel.amount.value.toDouble()
+                                close()
+                                find(AccountView::class, accountScope).openWindow()
+                            }
+                            else
+                            {
+                                find(NoSuchAccount::class).openModal()
+                            }
                         }
                     }
                     button("Close")
