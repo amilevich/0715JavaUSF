@@ -59,6 +59,14 @@ public class PendingAccounts
         Customer customer = applicationMap.get(app);
 
         this.applicationMap.remove(app);
+        appDAO.delete(id);
         this.managerDAO.insert(customer);
+    }
+
+    public void denyCustomer(int id)
+    {
+        AccountApplication app = appDAO.selectOne(id);
+        this.applicationMap.remove(app);
+        appDAO.delete(id);
     }
 }

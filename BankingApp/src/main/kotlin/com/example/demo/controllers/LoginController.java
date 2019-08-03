@@ -22,13 +22,6 @@ public class LoginController
         UserData user1 = new UserData(1, "nick", "password", "employee");
         UserData user2 = new UserData(2, "dan", "password", "customer");
 
-        Customer customer = new Customer();
-        customer.setCustomerID(1);
-        customer.setFirstname("Nick");
-        customer.setLastname("Helgeland");
-        customer.setAddress("3359 state route 36");
-        customer.setUsername(user1.getUsername());
-
         Customer customer2 = new Customer();
         customer2.setCustomerID(2);
         customer2.setFirstname("Dan");
@@ -41,9 +34,7 @@ public class LoginController
         dao.insert(user2);
 
         CustomerDAO customerDAO = new CustomerDAO();
-        customerDAO.insert(customer);
         customerDAO.insert(customer2);
-        appManagerDAO.insert(customer);
         appManagerDAO.insert(customer2);
     }
 

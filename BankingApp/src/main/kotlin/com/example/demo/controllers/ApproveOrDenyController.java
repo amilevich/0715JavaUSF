@@ -15,4 +15,14 @@ public class ApproveOrDenyController
     {
         return FXCollections.observableArrayList(pendingApplicationDAO.selectAll());
     }
+
+    public void approveApp(int id)
+    {
+        pendingApplicationDAO.approveApplication(id);
+    }
+
+    public void denyApp(int id)
+    {
+        pendingApplicationDAO.denyApplication(id);
+    }
 }

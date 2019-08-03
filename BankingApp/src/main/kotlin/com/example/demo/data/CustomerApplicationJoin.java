@@ -1,54 +1,56 @@
 package com.example.demo.data;
 
 import com.example.demo.utility.IdGenerator;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 
 public class CustomerApplicationJoin
 {
-    private int applicationId;
+    private SimpleIntegerProperty applicationId;
 
-    private String firstname;
+    private SimpleStringProperty firstname;
 
-    private String lastname;
+    private SimpleStringProperty lastname;
 
-    private String address;
+    private SimpleStringProperty address;
 
     public CustomerApplicationJoin()
     {
-        this.applicationId = new IdGenerator().generateId();
-        this.firstname = "";
-        this.lastname = "";
-        this.address = "";
+        this.applicationId = new SimpleIntegerProperty(new IdGenerator().generateId());
+        this.firstname = new SimpleStringProperty("");
+        this.lastname = new SimpleStringProperty("");
+        this.address = new SimpleStringProperty("");
     }
 
-    public int getApplicationId() {
+    public SimpleIntegerProperty getApplicationId() {
         return applicationId;
     }
 
     public void setApplicationId(int applicationId) {
-        this.applicationId = applicationId;
+        this.applicationId.set(applicationId);
     }
 
-    public String getFirstname() {
+    public SimpleStringProperty getFirstname() {
         return firstname;
     }
 
     public void setFirstname(String firstname) {
-        this.firstname = firstname;
+        this.firstname.set(firstname);
     }
 
-    public String getLastname() {
+    public SimpleStringProperty getLastname() {
         return lastname;
     }
 
     public void setLastname(String lastname) {
-        this.lastname = lastname;
+        this.lastname.set(lastname);
     }
 
-    public String getAddress() {
+    public SimpleStringProperty getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        this.address.set(address);
     }
 }

@@ -47,4 +47,14 @@ public class PendingApplicationDAO implements Select<CustomerApplicationJoin>
 
         return joinList;
     }
+
+    public void approveApplication(int id)
+    {
+        pendingAccounts.approveCustomer(id);
+    }
+
+    public void denyApplication(int id)
+    {
+        pendingAccounts.denyCustomer(id);
+    }
 }

@@ -4,7 +4,7 @@ import com.example.demo.Scopes.CustomerScope
 import com.example.demo.components.AccountTable
 import tornadofx.*
 
-class PersonalInfo : Fragment("My View")
+class PersonalInfo : Fragment("Customer Info")
 {
     private val accountTable = AccountTable()
 
@@ -18,9 +18,21 @@ class PersonalInfo : Fragment("My View")
         label("Address: ${customerScope.model.address.value}")
     }
 
+    val actions = hbox {
+        spacing = 20.0
+        paddingTop = 10.0
+        button("Back") {
+            action {
+                close()
+                find(EmployeeHome::class).openWindow()
+            }
+        }
+    }
+
     override val root = borderpane {
         paddingAll = 10.0
         top = personalInfo
         center = accountTable.root
+        bottom = actions
     }
 }
