@@ -21,6 +21,7 @@ public class LoginController
 
         UserData user1 = new UserData(1, "nick", "password", "admin");
         UserData user2 = new UserData(2, "dan", "password", "customer");
+        UserData user3 = new UserData(3, "emp", "password", "employee");
 
         Customer customer2 = new Customer();
         customer2.setCustomerID(2);
@@ -32,6 +33,7 @@ public class LoginController
         UserDAO dao = new UserDAO();
         dao.insert(user1);
         dao.insert(user2);
+        dao.insert(user3);
 
         CustomerDAO customerDAO = new CustomerDAO();
         customerDAO.insert(customer2);

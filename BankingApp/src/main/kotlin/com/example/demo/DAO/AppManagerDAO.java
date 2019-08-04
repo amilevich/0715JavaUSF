@@ -33,4 +33,9 @@ public class AppManagerDAO implements Insert<Customer>, Delete<Account>, Update<
     public void update(Account obj) {
         checkingAccounts.updateAccountBalance(obj);
     }
+
+    public void updateCustomer(Customer customer)
+    {
+        checkingAccounts.updateCustomer(customer);
+    }
 }

@@ -2,13 +2,22 @@ package com.example.demo.view
 
 import com.example.demo.Scopes.CustomerScope
 import com.example.demo.components.AccountTable
+import com.example.demo.controllers.PersonalInfoController
+import com.example.demo.data.CurrentLoggedInEmployee
+import javafx.beans.property.SimpleBooleanProperty
 import tornadofx.*
 
 class PersonalInfo : Fragment("Customer Info")
 {
     private val accountTable = AccountTable()
 
-    val customerScope = super.scope as CustomerScope
+    private val customerScope = super.scope as CustomerScope
+
+    private val controller = PersonalInfoController()
+
+    private val loggedInEmployee = CurrentLoggedInEmployee.getInstance()
+
+    private val isAdmin = SimpleBooleanProperty(controller.checkType(loggedInEmployee.employee.username.value))
 
     val personalInfo = vbox {
         spacing = 10.0
@@ -25,6 +34,13 @@ class PersonalInfo : Fragment("Customer Info")
             action {
                 close()
                 find(EmployeeHome::class).openWindow()
+            }
+        }
+        button("Edit") {
+            visibleWhen(isAdmin)
+            action {
+                close()
+                find(EditInfo::class, customerScope).openWindow()
             }
         }
     }

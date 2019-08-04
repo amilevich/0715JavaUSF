@@ -74,4 +74,17 @@ public class CheckingAccounts
             }
         }
     }
+
+    public void updateCustomer(Customer customer)
+    {
+        for (Account acc : accountMap.keySet())
+        {
+            if (accountMap.get(acc).getUsername().getValue().equals(customer.getUsername().getValue()))
+            {
+                accountMap.put(acc,customer);
+//                accountMap.get(acc).setFirstname(customer.getFirstname().getValue());
+//                accountMap.get(acc).setAddress(customer.getAddress().getValue());
+            }
+        }
+    }
 }
