@@ -43,7 +43,8 @@ class LoginForm : Fragment("My View")
                             close()
                             find(CustomerHome::class).openWindow()
                         }
-                        else if (controller.getType(user.username.value).equals("employee"))
+                        else if (controller.getType(user.username.value).equals("employee") ||
+                                controller.getType(user.username.value).equals("admin"))
                         {
                             controller.setLoggedInEmployee(user.username.value,user.password.value)
                             close()

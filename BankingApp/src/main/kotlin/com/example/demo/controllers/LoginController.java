@@ -19,7 +19,7 @@ public class LoginController
     {
         AppManagerDAO appManagerDAO = new AppManagerDAO();
 
-        UserData user1 = new UserData(1, "nick", "password", "employee");
+        UserData user1 = new UserData(1, "nick", "password", "admin");
         UserData user2 = new UserData(2, "dan", "password", "customer");
 
         Customer customer2 = new Customer();

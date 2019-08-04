@@ -15,6 +15,8 @@ class AccountTable : Fragment("My View")
 {
     private val controller = CustomerHomeController()
 
+    private val loggedInEmployee = CurrentLoggedInEmployee.getInstance()
+
     override val root = vbox {
         paddingTop = 25.0
         spacing = 20.0
@@ -22,7 +24,14 @@ class AccountTable : Fragment("My View")
             maxHeight = 200.0
             minWidth = 400.0
             onUserSelect {customerAccountJoin ->
-                if (CurrentLoggedInEmployee.getInstance().employee == null)
+                if (loggedInEmployee.employee == null)
+                {
+                    val accountScope = AccountScope()
+                    accountScope.model.item = customerAccountJoin
+                    close()
+                    find(AccountView::class, accountScope).openWindow()
+                }
+                else if (controller.checkType(loggedInEmployee.employee.username.value))
                 {
                     val accountScope = AccountScope()
                     accountScope.model.item = customerAccountJoin
