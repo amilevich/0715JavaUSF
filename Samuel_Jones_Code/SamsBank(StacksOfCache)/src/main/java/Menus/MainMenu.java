@@ -13,7 +13,7 @@ public class MainMenu {
 	static String[] optionsArray = { "1. Customer", "2. Employee", "3. Admin", "4. Return to login menu." };
 
 	public static void firstLoginMenu() {
-		Dummies.addDummies();
+//		Dummies.addDummies();
 		sc = new Scanner(System.in);
 		boolean flag = true;
 		System.out.println("Welcome to Stacks of Cache Bank.");

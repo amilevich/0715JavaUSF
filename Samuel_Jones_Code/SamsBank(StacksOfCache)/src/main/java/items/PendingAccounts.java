@@ -30,7 +30,7 @@ public class PendingAccounts implements Serializable {
 
 	public static void deserialize() throws FileNotFoundException {
 		ArrayList<Account> accounts = new ArrayList<Account>();
-		accounts.add((Account) Persistence.readData("./pendingaccounts.txt"));
+		accounts.addAll(Persistence.readData("./pendingaccounts.txt"));
 //		System.out.println("Deserialization successful from pending.");
 		addAll(accounts);
 	}

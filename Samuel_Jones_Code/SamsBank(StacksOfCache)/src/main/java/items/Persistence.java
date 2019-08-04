@@ -103,16 +103,17 @@ public class Persistence {
 //		
 //	}
 	
-	public static Object readData(String filename) {
+	public static ArrayList<Account> readData(String filename) {
 
 
 		try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filename))) {
-			Object pendingList = ois.readObject();
-			
+			ArrayList<Account> pendingList = (ArrayList<Account>)ois.readObject();
 			return pendingList;
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return null;

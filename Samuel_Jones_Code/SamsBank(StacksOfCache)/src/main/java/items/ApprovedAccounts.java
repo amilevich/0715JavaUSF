@@ -37,7 +37,7 @@ public class ApprovedAccounts implements Serializable {
 		ArrayList<Account> accounts = new ArrayList<Account>();
 		System.out.println("deserialize inside of approved.");
 //		accounts.add((Account) Persistence.readData("./approvedaccounts.txt")); if there is only one account in the txt file
-		accounts.addAll((ArrayList)Persistence.readData("./approvedaccounts.txt"));
+		accounts.addAll(Persistence.readData("./approvedaccounts.txt"));
 		addAll(accounts);
 	}
 
