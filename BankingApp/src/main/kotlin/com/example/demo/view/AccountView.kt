@@ -2,6 +2,9 @@ package com.example.demo.view
 
 import com.example.demo.Scopes.AccountScope
 import com.example.demo.components.AccountTable
+import com.example.demo.controllers.TransactionController
+import com.example.demo.data.CurrentLoggedInEmployee
+import com.example.demo.modals.ConfirmDelete
 import com.example.demo.modals.Deposit
 import com.example.demo.modals.Transfer
 import com.example.demo.modals.Withdraw
@@ -13,6 +16,8 @@ class AccountView : Fragment("Account View")
     private val accountScope = super.scope as AccountScope
 
     private val accountModel = accountScope.model
+
+    private val controller = TransactionController()
 
     override val root = vbox {
         spacing = 10.0
@@ -45,10 +50,24 @@ class AccountView : Fragment("Account View")
                     close()
                 }
             }
+            button("Delete") {
+                action {
+                    close()
+                    find(ConfirmDelete::class).openWindow()
+                }
+            }
             button("Done") {
                 action {
                     close()
-                    find(CustomerHome::class).openWindow()
+                    if (CurrentLoggedInEmployee.getInstance().employee != null)
+                    {
+                        val customerScope = controller.getCustomerScope(accountScope.model.accountNumber.value)
+                        find(PersonalInfo::class, customerScope).openWindow()
+                    }
+                    else
+                    {
+                        find(CustomerHome::class).openWindow()
+                    }
                 }
             }
         }

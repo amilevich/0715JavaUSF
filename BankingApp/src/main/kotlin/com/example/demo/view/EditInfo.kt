@@ -2,6 +2,7 @@ package com.example.demo.view
 
 import com.example.demo.Scopes.CustomerScope
 import com.example.demo.controllers.EditInfoController
+import com.example.demo.data.CurrentLoggedInCustomer
 import tornadofx.*
 
 class EditInfo : Fragment("My View")
@@ -27,12 +28,6 @@ class EditInfo : Fragment("My View")
                 field("Address:") {
                     textfield(customerScope.model.address)
                 }
-                field("Username:") {
-                    textfield(customerScope.model.username)
-                }
-                field("Password:") {
-                    textfield(customerScope.model.password)
-                }
             }
             hbox {
                 spacing = 20.0
@@ -40,6 +35,7 @@ class EditInfo : Fragment("My View")
                 button("Submit") {
                     action {
                         controller.sendUpdate(controller.getCustomer(customerScope.model))
+                        //CurrentLoggedInCustomer.getInstance().loggedInCustomer = controller.getCustomer(customerScope.model)
                         close()
                         find(PersonalInfo::class, customerScope).openWindow()
                     }

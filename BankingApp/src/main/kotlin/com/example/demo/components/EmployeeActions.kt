@@ -1,5 +1,6 @@
 package com.example.demo.components
 
+import com.example.demo.data.CurrentLoggedInEmployee
 import com.example.demo.view.ApproveOrDeny
 import com.example.demo.view.MainView
 import javafx.geometry.Pos
@@ -24,6 +25,7 @@ class EmployeeActions : Fragment("My View")
             button("Logout") {
                 action {
                     close()
+                    CurrentLoggedInEmployee.getInstance().employee = null
                     find(MainView::class).openWindow()
                 }
             }

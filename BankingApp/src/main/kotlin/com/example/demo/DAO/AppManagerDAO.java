@@ -38,4 +38,9 @@ public class AppManagerDAO implements Insert<Customer>, Delete<Account>, Update<
     {
         checkingAccounts.updateCustomer(customer);
     }
+
+    public Customer getCustomerByAccount(Account account)
+    {
+        return checkingAccounts.getCustomerByAccount(account);
+    }
 }
