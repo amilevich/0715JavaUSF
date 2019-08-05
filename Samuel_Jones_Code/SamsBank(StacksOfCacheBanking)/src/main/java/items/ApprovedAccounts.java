@@ -26,16 +26,16 @@ public class ApprovedAccounts implements Serializable {
 	// private static Logger log = Logger.getLogger(ApprovedAccounts.class);
 
 	public static void addAll(ArrayList<Account> data) {
-		System.out.println(data.toString());
+//		System.out.println(data.toString());
 		for (Account a : data) {
 			approvedAccounts.put(a.getUsername(), a);
-			System.out.println(a.getUsername() + " added");
+//			System.out.println(a.getUsername() + " added");
 		}
 	}
 
 	public static void deserialize() throws FileNotFoundException {
 		ArrayList<Account> accounts = new ArrayList<Account>();
-		System.out.println("deserialize inside of approved.");
+		System.out.println("Deserialized approved accounts.");
 //		accounts.add((Account) Persistence.readData("./approvedaccounts.txt")); if there is only one account in the txt file
 		accounts.addAll(Persistence.readData("./approvedaccounts.txt"));
 		addAll(accounts);
