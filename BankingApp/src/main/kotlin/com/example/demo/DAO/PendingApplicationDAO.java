@@ -35,14 +35,17 @@ public class PendingApplicationDAO implements Select<CustomerApplicationJoin>
 
         for(AccountApplication app : appList)
         {
-            Customer customer = pendingAccounts.getCustomerByApplication(app);
-            CustomerApplicationJoin join = new CustomerApplicationJoin();
-            join.setApplicationId(app.getApplicationId());
-            join.setFirstname(customer.getFirstname().getValue());
-            join.setLastname(customer.getLastname().getValue());
-            join.setAddress(customer.getAddress().getValue());
+            if (pendingAccounts.getCustomerByApplication(app) != null)
+            {
+                Customer customer = pendingAccounts.getCustomerByApplication(app);
+                CustomerApplicationJoin join = new CustomerApplicationJoin();
+                join.setApplicationId(app.getApplicationId());
+                join.setFirstname(customer.getFirstname().getValue());
+                join.setLastname(customer.getLastname().getValue());
+                join.setAddress(customer.getAddress().getValue());
 
-            joinList.add(join);
+                joinList.add(join);
+            }
         }
 
         return joinList;

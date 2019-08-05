@@ -6,7 +6,7 @@ import com.example.demo.model.Customer;
 
 import java.util.ArrayList;
 
-public class JointAppManagerDAO implements Insert<ArrayList<Customer>>, Delete<Account>
+public class JointAppManagerDAO implements Insert<ArrayList<Integer>>, Delete<Account>
 {
     JoinAccounts joinAccounts = JoinAccounts.getInstance();
 
@@ -19,7 +19,7 @@ public class JointAppManagerDAO implements Insert<ArrayList<Customer>>, Delete<A
     }
 
     @Override
-    public void insert(ArrayList<Customer> obj)
+    public void insert(ArrayList<Integer> obj)
     {
         joinAccounts.addJointAccount(obj);
     }

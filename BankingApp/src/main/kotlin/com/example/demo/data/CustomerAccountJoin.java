@@ -8,6 +8,8 @@ public class CustomerAccountJoin
 
     private String name;
 
+    private String name2;
+
     private String type;
 
     public CustomerAccountJoin(int accountNumber, double balance, String name, String type)
@@ -48,5 +50,15 @@ public class CustomerAccountJoin
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getName2()
+    {
+        return name2;
+    }
+
+    public void setName2(String name2)
+    {
+        this.name2 = name2;
     }
 }

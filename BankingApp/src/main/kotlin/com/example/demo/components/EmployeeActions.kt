@@ -14,11 +14,11 @@ class EmployeeActions : Fragment("My View")
     override val root = vbox {
         paddingAll = 10.0
         spacing = 10.0
-        alignment = Pos.CENTER
+        alignment = Pos.CENTER_LEFT
 
         hbox {
             spacing = 20.0
-            alignment = Pos.CENTER
+            alignment = Pos.CENTER_LEFT
             button("View All Open Applications") {
                 action {
                     close()

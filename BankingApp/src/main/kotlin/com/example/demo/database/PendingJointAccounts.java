@@ -13,7 +13,7 @@ public class PendingJointAccounts
 {
     private static PendingJointAccounts instance = null;
 
-    private HashMap<AccountApplication, ArrayList<Customer>> jointAppMap;
+    private HashMap<AccountApplication, ArrayList<Integer>> jointAppMap;
 
     private IdGenerator generator;
 
@@ -36,18 +36,19 @@ public class PendingJointAccounts
         return instance;
     }
 
-    public HashMap<AccountApplication, ArrayList<Customer>> getJointAppMap() {
+    public HashMap<AccountApplication, ArrayList<Integer>> getJointAppMap() {
         return jointAppMap;
     }
 
-    public void setJointAppMap(HashMap<AccountApplication, ArrayList<Customer>> jointAppMap) {
+    public void setJointAppMap(HashMap<AccountApplication, ArrayList<Integer>> jointAppMap) {
         this.jointAppMap = jointAppMap;
     }
 
-    public void addJointApplication(ArrayList<Customer> customers)
+    public void addJointApplication(ArrayList<Integer> customers)
     {
         AccountApplication application = new AccountApplication(generator.generateId());
-        this.jointAppMap.put(application, customers);
+        jointAppMap.put(application, customers);
+        applicationDAO.insert(application);
     }
 
     public void deleteJointApplication(AccountApplication app)
@@ -55,17 +56,39 @@ public class PendingJointAccounts
         this.jointAppMap.remove(app);
     }
 
-    public ArrayList<Customer> getCustomersByApplication(AccountApplication application)
-    {
-        return this.jointAppMap.get(application);
-    }
-
     public void approveCustomer(int id)
     {
         AccountApplication app = applicationDAO.selectOne(id);
-        ArrayList<Customer> customers = jointAppMap.get(app);
+        ArrayList<Integer> customers = getCustomersByAppId(id);
 
         this.jointAppMap.remove(app);
+        applicationDAO.delete(id);
         this.jointDAO.insert(customers);
+    }
+
+    public void denyCustomer(int id)
+    {
+        for (AccountApplication app : jointAppMap.keySet())
+        {
+            if (app.getApplicationId() == id)
+            {
+                jointAppMap.remove(app);
+                break;
+            }
+        }
+        applicationDAO.delete(id);
+    }
+
+    public ArrayList<Integer> getCustomersByAppId(int id)
+    {
+        ArrayList<Integer> resultList = null;
+        for (AccountApplication app : jointAppMap.keySet())
+        {
+            if (app.getApplicationId() == id)
+            {
+                resultList = jointAppMap.get(app);
+            }
+        }
+        return resultList;
     }
 }

@@ -31,7 +31,8 @@ class ApproveOrDeny : Fragment("Open Applications")
             column("Application ID",CustomerApplicationJoin::getApplicationId)
             column("First Name", CustomerApplicationJoin::getFirstname)
             column("Last Name", CustomerApplicationJoin::getLastname)
-            column("Address", CustomerApplicationJoin::getAddress)
+            column("First Name", CustomerApplicationJoin::getFirstname2)
+            column("Last Name", CustomerApplicationJoin::getLastname2)
         }
         hbox {
             alignment = Pos.CENTER
@@ -40,7 +41,14 @@ class ApproveOrDeny : Fragment("Open Applications")
                 action {
                     if (appModel.item != null)
                     {
-                        controller.approveApp(appModel.appId.value.toInt())
+                        if (appModel.item.firstname2.value.equals(""))
+                        {
+                            controller.approveApp(appModel.appId.value.toInt())
+                        }
+                        else
+                        {
+                            controller.approveJointApp(appModel.appId.value.toInt())
+                        }
                         tableRows.setAll(controller.allOpenApplications)
                         find(Approved::class).openModal()
                     }
@@ -55,7 +63,14 @@ class ApproveOrDeny : Fragment("Open Applications")
 
                     if (appModel.item != null)
                     {
-                        controller.denyApp(appModel.appId.value.toInt())
+                        if (appModel.item.firstname2.value.equals(""))
+                        {
+                            controller.denyApp(appModel.appId.value.toInt())
+                        }
+                        else
+                        {
+                            controller.denyJointApp(appModel.appId.value.toInt())
+                        }
                         tableRows.setAll(controller.allOpenApplications)
                         find(Denied::class).openModal()
                     }

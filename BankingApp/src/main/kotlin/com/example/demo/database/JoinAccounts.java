@@ -12,7 +12,7 @@ public class JoinAccounts
 {
     private static JoinAccounts instance = null;
 
-    private HashMap<Account, ArrayList<Customer>> jointAccountMap;
+    private HashMap<Account, ArrayList<Integer>> jointAccountMap;
 
     private IdGenerator generator;
 
@@ -34,15 +34,15 @@ public class JoinAccounts
         return instance;
     }
 
-    public HashMap<Account, ArrayList<Customer>> getJointAccountMap() {
+    public HashMap<Account, ArrayList<Integer>> getJointAccountMap() {
         return jointAccountMap;
     }
 
-    public void setJointAccountMap(HashMap<Account, ArrayList<Customer>> jointAccountMap) {
+    public void setJointAccountMap(HashMap<Account, ArrayList<Integer>> jointAccountMap) {
         this.jointAccountMap = jointAccountMap;
     }
 
-    public void addJointAccount(ArrayList<Customer> customers)
+    public void addJointAccount(ArrayList<Integer> customers)
     {
         Account account = new Account(generator.generateId());
         jointAccountMap.put(account, customers);
@@ -55,7 +55,7 @@ public class JoinAccounts
         dao.delete(account.getAccountNumber());
     }
 
-    public ArrayList<Customer> getCustomersByAccount(Account account)
+    public ArrayList<Integer> getCustomersByAccount(Account account)
     {
         return jointAccountMap.get(account);
     }

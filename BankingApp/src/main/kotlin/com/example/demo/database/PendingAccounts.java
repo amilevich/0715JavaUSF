@@ -73,7 +73,7 @@ public class PendingAccounts
     public void approveCustomer(int id)
     {
         AccountApplication app = appDAO.selectOne(id);
-        Customer customer = applicationMap.get(app);
+        Customer customer = getCustomerByApplication(app);
 
         this.applicationMap.remove(app);
         appDAO.delete(id);
@@ -82,8 +82,14 @@ public class PendingAccounts
 
     public void denyCustomer(int id)
     {
-        AccountApplication app = appDAO.selectOne(id);
-        this.applicationMap.remove(app);
+        for (AccountApplication app : applicationMap.keySet())
+        {
+            if (app.getApplicationId() == id)
+            {
+                applicationMap.remove(app);
+                break;
+            }
+        }
         appDAO.delete(id);
     }
 }
