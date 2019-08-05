@@ -1,0 +1,47 @@
+2019-08-04 21:29:35 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:29:35 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:29:35 INFO  CustomerDAOImpl:69 - 50.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-04 21:30:10 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:30:10 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:30:10 INFO  CustomerDAOImpl:69 - 50.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-04 21:30:35 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:30:35 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:30:35 INFO  CustomerDAOImpl:69 - 50.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-04 21:33:23 INFO  CustomerDAOImpl:53 - 200.0 was deposited into [barton, stacy]'s Account
+2019-08-04 21:34:01 INFO  CustomerDAOImpl:41 - 100.0 was withdrawn from [barton, stacy]'s Account
+2019-08-04 21:36:10 INFO  CustomerDAOImpl:53 - 100.0 was deposited into [barton, stacy]'s Account
+2019-08-04 21:40:35 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [barton, stacy]'s Account
+2019-08-04 21:49:54 INFO  CustomerDAOImpl:69 - 20.0 was withdrawn from [barton, stacy] and depositied into [lester]
+2019-08-05 07:03:33 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [barton, stacy]'s Account
+2019-08-05 07:05:23 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [barton]'s Account
+2019-08-05 07:05:23 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [barton]'s Account
+2019-08-05 07:05:23 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [barton]'s Account
+2019-08-05 07:05:23 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-05 07:08:10 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:08:10 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:08:10 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:08:10 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [lester]
+2019-08-05 07:08:31 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:08:31 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:08:31 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:08:31 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [lester]
+2019-08-05 07:08:54 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:08:54 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:08:54 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:08:54 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [lester]
+2019-08-05 07:09:28 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:09:28 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:09:28 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:09:28 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [lester]
+2019-08-05 07:10:34 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:10:34 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:10:34 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:12:51 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:12:51 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:12:51 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:12:51 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [test2]
+2019-08-05 07:25:25 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [test]'s Account
+2019-08-05 07:25:25 INFO  CustomerDAOImpl:41 - 50.0 was withdrawn from [test]'s Account
+2019-08-05 07:25:25 INFO  CustomerDAOImpl:54 - 50.0 was deposited into [test]'s Account
+2019-08-05 07:25:25 INFO  CustomerDAOImpl:71 - 50.0 was withdrawn from [test] and depositied into [test2]
+2019-08-05 07:25:42 INFO  CustomerDAOImpl:54 - 100.0 was deposited into [barton, stacy]'s Account
