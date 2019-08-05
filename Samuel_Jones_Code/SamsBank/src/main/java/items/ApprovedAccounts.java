@@ -112,7 +112,8 @@ public class ApprovedAccounts implements Serializable {
 		} else if (pw.equals(a.getPassword())) {
 			CustomerMenu.actionMenu(a);
 		} else {
-			System.out.println("Incorrect password.");
+			System.out.println("Incorrect password. Entered " + pw + "On file: " + a.getPassword());
+			System.out.println(a.toString());
 			MainMenu.mainMenu();
 		}
 	}

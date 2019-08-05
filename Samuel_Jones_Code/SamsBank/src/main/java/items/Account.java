@@ -8,7 +8,7 @@ public class Account implements Serializable {
 	 */
 	private static final long serialVersionUID = 1619123874811695284L;
 	private String username;
-	private transient String password;
+	private String password;
 	private double balance;
 	private boolean isApproved;
 	private String firstname;
