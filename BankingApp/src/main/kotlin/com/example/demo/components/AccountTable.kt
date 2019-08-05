@@ -20,7 +20,7 @@ class AccountTable : Fragment("My View")
     override val root = vbox {
         paddingTop = 25.0
         spacing = 20.0
-        tableview(controller.customerAccounts) {
+        tableview(controller.allAccounts) {
             maxHeight = 200.0
             minWidth = 400.0
             onUserSelect {customerAccountJoin ->

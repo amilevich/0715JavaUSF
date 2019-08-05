@@ -25,11 +25,17 @@ public class DataIO
         CheckingAccounts checkingAccounts = CheckingAccounts.getInstance();
         this.writeObject(baseFilePath + "checkingAccounts.txt", checkingAccounts.getAccountMap());
 
+        JoinAccounts joinAccounts = JoinAccounts.getInstance();
+        this.writeObject(baseFilePath + "jointAccounts.txt", joinAccounts.getJointAccountMap());
+
         Customers customers = Customers.getInstance();
         this.writeObject(baseFilePath + "customers.txt", customers.getCustomerMap());
 
         PendingAccounts pendingAccounts = PendingAccounts.getInstance();
         this.writeObject(baseFilePath + "pendingAccounts.txt", pendingAccounts.getApplicationMap());
+
+        PendingJointAccounts pendingJointAccounts = PendingJointAccounts.getInstance();
+        this.writeObject(baseFilePath + "pendingJointAccounts.txt", pendingJointAccounts.getJointAppMap());
 
         UserTable userTable = UserTable.getInstance();
         this.writeObject(baseFilePath + "users.txt", userTable.getUserMap());
@@ -46,11 +52,17 @@ public class DataIO
         CheckingAccounts checkingAccounts = CheckingAccounts.getInstance();
         checkingAccounts.setAccountMap((HashMap<Account, Customer>) this.readObject(baseFilePath + "checkingAccounts.txt"));
 
+        JoinAccounts joinAccounts = JoinAccounts.getInstance();
+        joinAccounts.setJointAccountMap((HashMap<Account, ArrayList<Integer>>) this.readObject(baseFilePath + "jointAccounts.txt"));
+
         Customers customers = Customers.getInstance();
         customers.setCustomerMap((HashMap<Integer, Customer>) this.readObject(baseFilePath + "customers.txt"));
 
         PendingAccounts pendingAccounts = PendingAccounts.getInstance();
         pendingAccounts.setApplicationMap((HashMap<AccountApplication, Customer>) this.readObject(baseFilePath + "pendingAccounts.txt"));
+
+        PendingJointAccounts pendingJointAccounts = PendingJointAccounts.getInstance();
+        pendingJointAccounts.setJointAppMap((HashMap<AccountApplication, ArrayList<Integer>>) this.readObject(baseFilePath + "pendingJointAccounts.txt"));
 
         UserTable userTable = UserTable.getInstance();
         userTable.setUserMap((HashMap<Integer, UserData>) this.readObject(baseFilePath + "users.txt"));

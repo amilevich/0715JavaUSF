@@ -23,8 +23,8 @@ public class ApplicationCreationController
         PendingJointAccounts pendingJointAccounts = PendingJointAccounts.getInstance();
         Integer loggedInCustomerId = CurrentLoggedInCustomer.getInstance().getLoggedInCustomer().getCustomerID();
         ArrayList<Integer> ids = new ArrayList<>();
-        ids.add(customerId);
         ids.add(loggedInCustomerId);
+        ids.add(customerId);
         pendingJointAccounts.addJointApplication(ids);
     }
 

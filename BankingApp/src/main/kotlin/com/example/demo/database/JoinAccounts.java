@@ -57,7 +57,41 @@ public class JoinAccounts
 
     public ArrayList<Integer> getCustomersByAccount(Account account)
     {
-        return jointAccountMap.get(account);
+        ArrayList<Integer> customers = null;
+
+        for (Account acc : jointAccountMap.keySet())
+        {
+            if (acc.getAccountNumber() == account.getAccountNumber())
+            {
+                customers = jointAccountMap.get(acc);
+            }
+        }
+
+        return customers;
+    }
+
+    public void updateAccountBalance(Account account)
+    {
+        for (Account acc : jointAccountMap.keySet())
+        {
+            if (account.getAccountNumber() == acc.getAccountNumber())
+            {
+                acc.setBalance(account.getBalance());
+            }
+        }
+    }
+
+    public ArrayList<Account> getAccountsByCustomerId(int id)
+    {
+        ArrayList<Account> accountList = new ArrayList<>();
+        for (Account account : jointAccountMap.keySet())
+        {
+            if (jointAccountMap.get(account).contains(id))
+            {
+                accountList.add(account);
+            }
+        }
+        return accountList;
     }
 
 }

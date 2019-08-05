@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1beba19-492e-4df0-8bce-e71a862c743f" name="Default" comment="Fixed several bugs caused by implementing serialization. Hopefully i got all of them.">
+    <list default="true" id="d1beba19-492e-4df0-8bce-e71a862c743f" name="Default" comment="Added functionality for applying for and approving joint accounts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/applications.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/applications.txt" afterDir="false" />
@@ -10,30 +10,20 @@
       <change beforePath="$PROJECT_DIR$/Data/pendingAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/pendingAccounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/users.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/EmployeeActions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/EmployeeActions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerApplicationJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerApplicationJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerAccountJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerAccountJoin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/JointAppManagerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/JointAppManagerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1$1$$special$$inlined$find$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/AccountTable$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/AccountTable$root$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApplicationCreationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApplicationCreationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/CheckingAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/CheckingAccounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/CustomerHomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/CustomerHomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/JoinAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/JoinAccounts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingAccounts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingJointAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingJointAccounts.class" afterDir="false" />
     </list>
     <ignored path="tornadofx-empty-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,98 +48,81 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/AccountView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+            <state relative-caret-position="544">
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="37" column="105" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
               <folding>
-                <element signature="e#1056#1057#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1525#1526#0" expanded="true" />
-                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+            <state relative-caret-position="362">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="170">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/Scopes/AccountScope.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/AccountJoinViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="360">
+              <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1012#1013#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-              <folding>
-                <element signature="e#842#843#0" expanded="true" />
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="170">
+              <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
               <folding>
                 <element signature="e#589#590#0" expanded="true" />
                 <element signature="e#649#650#0" expanded="true" />
@@ -175,17 +148,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2673#2674#0" expanded="true" />
-                <element signature="e#2729#2730#0" expanded="true" />
-                <element signature="e#2780#2781#0" expanded="true" />
-                <element signature="e#2815#2816#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -217,14 +183,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerTable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/EmployeeHome.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/AppJoinViewModel.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/Approved.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/Denied.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/NothingSelected.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/PersonalInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/Scopes/CustomerScope.kt" />
@@ -235,9 +198,7 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/EditInfo.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/AccountViewController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/DeleteConfirmation.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/AccountView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/AccountApplication.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/Accounts.java" />
@@ -248,26 +209,31 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Account.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/UserData.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerRegistration.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/NoSuchCustomer.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerApplicationJoin.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/EmployeeActions.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingAccounts.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerAccountJoin.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" />
       </list>
     </option>
   </component>
@@ -359,7 +325,43 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankingApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BankingApp" type="b2602c69:ProjectViewProjectNode" />
@@ -647,7 +649,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564967249706</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added functionality for applying for and approving joint accounts">
+      <created>1564976416359</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564976416359</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -657,7 +666,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.3090129" />
+      <window_info id="Project" order="0" visible="true" weight="0.3090129" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="UI Designer" order="3" />
@@ -668,8 +677,8 @@
       <window_info anchor="bottom" id="Statistic" order="0" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32650602" />
-      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.39759037" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32650602" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39759037" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -717,37 +726,26 @@
     <MESSAGE value="Added the ability for customers and admins to delete accounts." />
     <MESSAGE value="Implemented serialization. Dealt with a problem where i could not serialize JavaFX properties." />
     <MESSAGE value="Fixed several bugs caused by implementing serialization. Hopefully i got all of them." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed several bugs caused by implementing serialization. Hopefully i got all of them." />
+    <MESSAGE value="Added functionality for applying for and approving joint accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality for applying for and approving joint accounts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerInfo.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/PersonalInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/CustomerViewModel.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -852,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="e#33#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/CustomerHome.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -869,13 +857,6 @@
           <folding>
             <element signature="e#31#196#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -976,16 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -997,56 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/AccountView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-          <folding>
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding>
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,49 +1061,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
-          <folding>
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1525#1526#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2673#2674#0" expanded="true" />
-            <element signature="e#2729#2730#0" expanded="true" />
-            <element signature="e#2780#2781#0" expanded="true" />
-            <element signature="e#2815#2816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="167">
+          <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="195">
           <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1198,17 +1086,126 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="84" column="4" selection-start-line="84" selection-start-column="4" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/data/CustomerAccountJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="59" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="211">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/AccountView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/Scopes/AccountScope.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/viewmodel/AccountJoinViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/modals/ConfirmDelete.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="19" column="77" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
           <folding>
             <element signature="e#589#590#0" expanded="true" />
             <element signature="e#649#650#0" expanded="true" />
@@ -1222,31 +1219,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/ApplicationCreation.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="47" column="77" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/ApproveOrDeny.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="150">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingJointAccounts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/utility/DataIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="105" selection-start-line="37" selection-start-column="105" selection-end-line="37" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="42" selection-start-line="42" selection-end-line="43" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

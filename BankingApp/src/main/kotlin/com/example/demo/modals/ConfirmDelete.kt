@@ -29,14 +29,36 @@ class ConfirmDelete : View("My View")
                     close()
                     if (CurrentLoggedInEmployee.getInstance().employee != null)
                     {
-                        val customerScope = controller.getCustomerScope(accountScope.model.accountNumber.value)
-                        controller.delete(accountScope.model.accountNumber.value)
-                        find(PersonalInfo::class, customerScope).openWindow()
-                        find(DeleteConfirmation::class).openModal()
+                        if (accountScope.model.type.value.equals("Checking"))
+                        {
+                            val customerScope = controller.getCustomerScope(accountScope.model.accountNumber.value)
+                            controller.delete(accountScope.model.accountNumber.value)
+                            find(PersonalInfo::class, customerScope).openWindow()
+                            find(DeleteConfirmation::class).openModal()
+                        }
+                        else
+                        {
+                            val customerScope = controller.getJointCustomerScope(accountScope.model.accountNumber.value)
+                            controller.deleteJointAccount(accountScope.model.accountNumber.value)
+                            find(PersonalInfo::class, customerScope).openWindow()
+                            find(DeleteConfirmation::class).openModal()
+                        }
+
                     }
                     else
                     {
-                        find(CustomerHome::class).openWindow()
+                        if (accountScope.model.type.value.equals("Checking"))
+                        {
+                            controller.delete(accountScope.model.accountNumber.value)
+                            find(CustomerHome::class).openWindow()
+                            find(DeleteConfirmation::class).openModal()
+                        }
+                        else
+                        {
+                            controller.deleteJointAccount(accountScope.model.accountNumber.value)
+                            find(CustomerHome::class).openWindow()
+                            find(DeleteConfirmation::class).openModal()
+                        }
                     }
                 }
             }

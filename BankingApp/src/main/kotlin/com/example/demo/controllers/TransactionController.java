@@ -2,6 +2,8 @@ package com.example.demo.controllers;
 
 import com.example.demo.DAO.AccountDAO;
 import com.example.demo.DAO.AppManagerDAO;
+import com.example.demo.DAO.CustomerDAO;
+import com.example.demo.DAO.JointAppManagerDAO;
 import com.example.demo.Scopes.CustomerScope;
 import com.example.demo.model.Account;
 import com.example.demo.model.Customer;
@@ -13,6 +15,8 @@ public class TransactionController
     AccountDAO accountDAO = new AccountDAO();
 
     AppManagerDAO appManagerDAO = new AppManagerDAO();
+
+    JointAppManagerDAO jointAppManagerDAO = new JointAppManagerDAO();
 
     public void withdraw(int accountNumber, double amount)
     {
@@ -50,6 +54,12 @@ public class TransactionController
         accountDAO.delete(id);
     }
 
+    public void deleteJointAccount(int id)
+    {
+        jointAppManagerDAO.delete(id);
+        accountDAO.delete(id);
+    }
+
     public ArrayList<Integer> getAllAccountNumbers()
     {
         return new ArrayList<Integer>(accountDAO.getAllAccountNumbers());
@@ -64,6 +74,18 @@ public class TransactionController
     {
         Account account = accountDAO.selectOne(accountNumber);
         Customer customer = appManagerDAO.getCustomerByAccount(account);
+        CustomerScope customerScope = new CustomerScope();
+        customerScope.getModel().setItem(customer);
+
+        return customerScope;
+    }
+
+    public CustomerScope getJointCustomerScope(int accountNumber)
+    {
+        CustomerDAO customerDAO = new CustomerDAO();
+        Account account = accountDAO.selectOne(accountNumber);
+        ArrayList<Integer> customers = jointAppManagerDAO.getCustomersByAccount(account);
+        Customer customer = customerDAO.selectOne(customers.get(0));
         CustomerScope customerScope = new CustomerScope();
         customerScope.getModel().setItem(customer);
 

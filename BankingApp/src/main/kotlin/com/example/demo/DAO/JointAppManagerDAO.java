@@ -6,7 +6,7 @@ import com.example.demo.model.Customer;
 
 import java.util.ArrayList;
 
-public class JointAppManagerDAO implements Insert<ArrayList<Integer>>, Delete<Account>
+public class JointAppManagerDAO implements Insert<ArrayList<Integer>>, Delete<Account>, Update<Account>
 {
     JoinAccounts joinAccounts = JoinAccounts.getInstance();
 
@@ -23,4 +23,21 @@ public class JointAppManagerDAO implements Insert<ArrayList<Integer>>, Delete<Ac
     {
         joinAccounts.addJointAccount(obj);
     }
+
+    @Override
+    public void update(Account obj)
+    {
+        joinAccounts.updateAccountBalance(obj);
+    }
+
+    public ArrayList<Account> getAllCustomerJointAccounts(int id)
+    {
+        return joinAccounts.getAccountsByCustomerId(id);
+    }
+
+    public ArrayList<Integer> getCustomersByAccount(Account account)
+    {
+        return joinAccounts.getCustomersByAccount(account);
+    }
+
 }
