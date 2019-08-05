@@ -17,13 +17,6 @@ import seed.PrimaryModels;
 public class ApplicationSerializer {
 	private static String filename = "src/main/application.txt";
 
-	public static void main(String[] args) {
-		PrimaryModels.seed();
-		serialize(Application.getAll());
-		// deserialize();
-		Application.setAll(deserialize());
-	}
-
 	public static void serialize(TreeMap<Integer, Application> applications) {
 		try {
 			FileOutputStream fileOutputStream = new FileOutputStream(filename);
@@ -57,13 +50,6 @@ public class ApplicationSerializer {
 			// TODO Auto-generated catch block
 			cnf.printStackTrace();
 		}
-//		Set set = applications.entrySet();
-//		Iterator iterator = set.iterator();
-//		while (iterator.hasNext()) {
-//			Map.Entry mentry = (Map.Entry) iterator.next();
-//			System.out.print("key: " + mentry.getKey() + " & Value: ");
-//			System.out.println(mentry.getValue());
-//		}
 		return applications;
 	}
 }
