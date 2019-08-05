@@ -56,7 +56,17 @@ public class CheckingAccounts
 
     public Customer getCustomerByAccount(Account account)
     {
-        return accountMap.get(account);
+        Customer customer = null;
+
+        for(Account acc : accountMap.keySet())
+        {
+            if(acc.getAccountNumber() == account.getAccountNumber())
+            {
+                customer = accountMap.get(acc);
+            }
+        }
+
+        return customer;
     }
 
     public ArrayList<Account> getAccountsByCustomer(Customer customer)

@@ -58,7 +58,16 @@ public class PendingAccounts
 
     public Customer getCustomerByApplication(AccountApplication application)
     {
-        return applicationMap.get(application);
+        Customer customer = null;
+        for (AccountApplication app : applicationMap.keySet())
+        {
+            if (app.getApplicationId() == application.getApplicationId())
+            {
+                customer = applicationMap.get(app);
+            }
+        }
+
+        return customer;
     }
 
     public void approveCustomer(int id)
