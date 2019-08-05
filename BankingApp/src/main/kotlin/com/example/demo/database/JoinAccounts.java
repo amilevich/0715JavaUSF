@@ -34,6 +34,14 @@ public class JoinAccounts
         return instance;
     }
 
+    public HashMap<Account, ArrayList<Customer>> getJointAccountMap() {
+        return jointAccountMap;
+    }
+
+    public void setJointAccountMap(HashMap<Account, ArrayList<Customer>> jointAccountMap) {
+        this.jointAccountMap = jointAccountMap;
+    }
+
     public void addJointAccount(ArrayList<Customer> customers)
     {
         Account account = new Account(generator.generateId());

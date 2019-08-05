@@ -25,6 +25,14 @@ public class Applications
         return instance;
     }
 
+    public HashMap<Integer, AccountApplication> getAppMap() {
+        return appMap;
+    }
+
+    public void setAppMap(HashMap<Integer, AccountApplication> appMap) {
+        this.appMap = appMap;
+    }
+
     public void addApplication(AccountApplication app)
     {
         this.appMap.put(app.getApplicationId(), app);

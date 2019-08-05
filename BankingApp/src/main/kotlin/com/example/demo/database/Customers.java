@@ -26,7 +26,15 @@ public class Customers
 		}
 		return instance;
 	}
-	
+
+	public HashMap<Integer, Customer> getCustomerMap() {
+		return customerMap;
+	}
+
+	public void setCustomerMap(HashMap<Integer, Customer> customerMap) {
+		this.customerMap = customerMap;
+	}
+
 	public void addCustomer(Customer customer)
 	{
 		this.customerMap.put(customer.getCustomerID(), customer);

@@ -4,9 +4,9 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class User
 {
-	private SimpleStringProperty username;
+	protected transient SimpleStringProperty username;
 	
-	private SimpleStringProperty password;
+	protected transient SimpleStringProperty password;
 	
 	public User(String username, String password)
 	{

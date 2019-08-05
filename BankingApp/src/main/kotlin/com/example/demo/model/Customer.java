@@ -2,23 +2,37 @@ package com.example.demo.model;
 
 import javafx.beans.property.SimpleStringProperty;
 
-public class Customer extends User
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Customer extends User implements Serializable
 {
-	private SimpleStringProperty firstname;
+	private static final long serialVersionUID = 3L;
+
+	private transient SimpleStringProperty firstname = new SimpleStringProperty("");
 	
-	private SimpleStringProperty lastname;
+	private transient SimpleStringProperty lastname = new SimpleStringProperty("");
 	
-	private SimpleStringProperty address;
+	private transient SimpleStringProperty address = new SimpleStringProperty("");
 	
 	private int customerID;
 	
 	public Customer()
 	{
 		super();
-		this.address = new SimpleStringProperty("");
-		this.firstname = new SimpleStringProperty("");
-		this.lastname = new SimpleStringProperty("");
 		this.customerID = 0;
+	}
+
+	@Override
+	public SimpleStringProperty getUsername() {
+		return this.username;
+	}
+
+	@Override
+	public void setUsername(String username) {
+		this.username.set(username);
 	}
 
 	public SimpleStringProperty getFirstname()
@@ -59,5 +73,24 @@ public class Customer extends User
 	public void setCustomerID(int customerID)
 	{
 		this.customerID = customerID;
+	}
+
+	private void writeObject(ObjectOutputStream stream) throws IOException
+	{
+		stream.defaultWriteObject();
+		stream.writeUTF(getFirstname().getValue());
+		stream.writeUTF(getLastname().getValue());
+		stream.writeUTF(getAddress().getValue());
+		stream.writeUTF(getUsername().getValue());
+	}
+
+	private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException
+	{
+		stream.defaultReadObject();
+		this.firstname = new SimpleStringProperty(stream.readUTF());
+		this.lastname = new SimpleStringProperty(stream.readUTF());
+		this.address = new SimpleStringProperty(stream.readUTF());
+		this.username = new SimpleStringProperty(stream.readUTF());
+		// set values in the same order as writeObject()
 	}
 }

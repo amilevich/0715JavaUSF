@@ -1,7 +1,13 @@
 package com.example.demo.model;
 
-public class Account
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class Account implements Serializable
 {
+	private static final long serialVersionUID = 1L;
+
 	private int accountNumber;
 	
 	private double balance;
@@ -30,4 +36,6 @@ public class Account
 	{
 		this.balance = newBalance;
 	}
+
+
 }

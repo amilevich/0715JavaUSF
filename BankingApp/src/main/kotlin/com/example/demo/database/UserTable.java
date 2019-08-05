@@ -24,7 +24,15 @@ public class UserTable
 		}
 		return instance;
 	}
-	
+
+	public HashMap<Integer, UserData> getUserMap() {
+		return userMap;
+	}
+
+	public void setUserMap(HashMap<Integer, UserData> userMap) {
+		this.userMap = userMap;
+	}
+
 	public String getPassword(String username)
 	{
 		String result = "";

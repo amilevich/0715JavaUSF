@@ -33,6 +33,14 @@ public class CheckingAccounts
         return instance;
     }
 
+    public HashMap<Account, Customer> getAccountMap() {
+        return accountMap;
+    }
+
+    public void setAccountMap(HashMap<Account, Customer> accountMap) {
+        this.accountMap = accountMap;
+    }
+
     public void addCheckingAccount(Customer customer)
     {
         Account newAccount = new Account(generator.generateId());
@@ -56,7 +64,7 @@ public class CheckingAccounts
         ArrayList<Account> accounts = new ArrayList<>();
         for(Account acc : accountMap.keySet())
         {
-            if(accountMap.get(acc).equals(customer))
+            if(accountMap.get(acc).getUsername().getValue().equals(customer.getUsername().getValue()))
             {
                 accounts.add(acc);
             }

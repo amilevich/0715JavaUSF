@@ -56,18 +56,18 @@ class AccountView : Fragment("Account View")
                     find(ConfirmDelete::class).openWindow()
                 }
             }
-            button("Done") {
-                action {
-                    close()
-                    if (CurrentLoggedInEmployee.getInstance().employee != null)
-                    {
-                        val customerScope = controller.getCustomerScope(accountScope.model.accountNumber.value)
-                        find(PersonalInfo::class, customerScope).openWindow()
-                    }
-                    else
-                    {
-                        find(CustomerHome::class).openWindow()
-                    }
+        }
+        button("Done") {
+            action {
+                close()
+                if (CurrentLoggedInEmployee.getInstance().employee != null)
+                {
+                    val customerScope = controller.getCustomerScope(accountScope.model.accountNumber.value)
+                    find(PersonalInfo::class, customerScope).openWindow()
+                }
+                else
+                {
+                    find(CustomerHome::class).openWindow()
                 }
             }
         }

@@ -1,9 +1,11 @@
 package com.example.demo.model;
 
-import com.example.demo.utility.IdGenerator;
+import java.io.Serializable;
 
-public class AccountApplication
+public class AccountApplication implements Serializable
 {
+    private static final long serialVersionUID = 2L;
+
     private boolean approved;
 
     private int applicationId;

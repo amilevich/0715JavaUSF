@@ -35,6 +35,14 @@ public class PendingAccounts
         return instance;
     }
 
+    public HashMap<AccountApplication, Customer> getApplicationMap() {
+        return applicationMap;
+    }
+
+    public void setApplicationMap(HashMap<AccountApplication, Customer> applicationMap) {
+        this.applicationMap = applicationMap;
+    }
+
     public void addPendingAccount(Customer customer)
     {
         ApplicationDAO applicationDAO = new ApplicationDAO();

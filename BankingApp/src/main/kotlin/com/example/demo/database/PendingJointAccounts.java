@@ -36,6 +36,14 @@ public class PendingJointAccounts
         return instance;
     }
 
+    public HashMap<AccountApplication, ArrayList<Customer>> getJointAppMap() {
+        return jointAppMap;
+    }
+
+    public void setJointAppMap(HashMap<AccountApplication, ArrayList<Customer>> jointAppMap) {
+        this.jointAppMap = jointAppMap;
+    }
+
     public void addJointApplication(ArrayList<Customer> customers)
     {
         AccountApplication application = new AccountApplication(generator.generateId());

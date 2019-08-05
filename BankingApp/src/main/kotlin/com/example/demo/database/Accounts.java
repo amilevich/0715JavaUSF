@@ -24,7 +24,15 @@ public class Accounts
 		}
 		return instance;
 	}
-	
+
+	public HashMap<Integer, Account> getAccountMap() {
+		return accountMap;
+	}
+
+	public void setAccountMap(HashMap<Integer, Account> accountMap) {
+		this.accountMap = accountMap;
+	}
+
 	public void addAccount(Account account)
 	{
 		this.accountMap.put(account.getAccountNumber(), account);
