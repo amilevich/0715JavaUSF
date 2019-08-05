@@ -1,0 +1,12 @@
+2019-08-04 21:25:12 INFO  Customer:26 - Registered new customer Gabriel Ferrer
+2019-08-04 21:25:12 INFO  Customer:26 - Registered new customer Genevieve Ferrer
+2019-08-04 21:25:12 INFO  Application:30 - Application number 1 was created for INDIVIDUAL account
+2019-08-04 21:25:12 INFO  Application:30 - Application number 2 was created for INDIVIDUAL account
+2019-08-04 21:25:12 INFO  Application:30 - Application number 3 was created for JOINT account
+2019-08-04 21:28:22 INFO  Flow:109 - Regular Employee username juana2 successfully logged in
+2019-08-04 21:31:15 INFO  Application:30 - Application number 4 was created for INDIVIDUAL account
+2019-08-04 21:32:36 INFO  Flow:127 - Admin Employee username geneferr successfully logged in
+2019-08-04 21:33:07 INFO  BankAccount:38 - Bank Account number 4 was created for INDIVIDUAL account
+2019-08-04 21:33:07 INFO  Customer:26 - Registered new customer Tiffany Trump
+2019-08-04 21:33:07 INFO  Application:109 - Application number 4 was approved
+2019-08-04 21:33:56 INFO  Flow:109 - Regular Employee username juana2 successfully logged in
