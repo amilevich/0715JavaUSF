@@ -23,7 +23,11 @@ public class Account implements Serializable {
 		return "Account [username=" + username + ", balance=" + balance + ", isApproved="
 				+ isApproved + ", firstname=" + firstname + ", lastname=" + lastname + ", jointFirst=" + jointFirst+ ", jointLast=" + jointLast + "]";
 	}
-
+	
+	public String toPrettyString() {
+		return "Account [username=" + username + ", balance=" + balance + ", isApproved="
+				+ isApproved + ", firstname=" + firstname + ", lastname=" + lastname + ", jointFirst=" + jointFirst+ ", jointLast=" + jointLast + "]";
+	}
 	public Account(String username, String password, double balance, String firstname,
 			String lastname, String jointFirst, String jointLast) {
 		super();

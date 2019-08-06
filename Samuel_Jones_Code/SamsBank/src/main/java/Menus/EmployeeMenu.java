@@ -9,11 +9,10 @@ import items.PendingAccounts;
 
 public class EmployeeMenu {
 	static Scanner sc = new Scanner(System.in);
-	static String[] optionsArray = { "1. View an approved account", "2. Approve or deny a pending account.",
-			"3. Return to previous menu (logout)." };
+	static String[] optionsArray = {"1. Find an approved account.", "2. Find a pending account","3. View all approved.", "4. View all pending.", "5. Return to prior menu (logout)."};
 
 	public static void actionMenu() {
-		System.out.println("What would you like to do?");
+		System.out.println("Employee, what would you like to do?");
 
 		for (int i = 0; i < optionsArray.length; i++) {
 			System.out.println(optionsArray[i]);
@@ -58,12 +57,18 @@ public class EmployeeMenu {
 				flag=!flag;
 				break;
 			case "3":
-				MainMenu.mainMenu();
-				flag = !flag;
+				ApprovedAccounts.displayAll();
+				actionMenu();
+				flag=!flag;
 				break;
-			default:
-				System.out.println("Enter 1, 2, or 3.");
-				flag = !flag;
+			case "4":
+				PendingAccounts.displayAll();
+				actionMenu();
+				flag=!flag;
+				break;
+			case "5":
+				MainMenu.mainMenu();
+				flag=!flag;
 				break;
 			}
 		}

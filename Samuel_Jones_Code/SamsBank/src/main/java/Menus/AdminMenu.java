@@ -11,12 +11,12 @@ import utilities.Handler;
 
 public class AdminMenu {
 	static Scanner sc = new Scanner(System.in);
-	private static String[] optionsArray1 = {"1. Find an approved account and perform an action on it", "2. Find a pending account","3. Return to prior menu (logout)."};
+	private static String[] optionsArray1 = {"1. Find an approved account.", "2. Find a pending account","3. View all approved.", "4. View all pending.", "5. Return to prior menu (logout)."};
 	private static String[] optionsArray2 = {"0. View account","1. Deposit", "2. Withdraw", "3. Transfer", "4. Cancel an Account ", "5. Return to admin menu."};
 	private AdminMenu() {};
 	
 	public static void mainMenu() {
-		System.out.println("Welcome, what would you like to do?");
+		System.out.println("Admin, what would you like to do?");
 		
 		for(int i =0; i<optionsArray1.length;i++) {
 			System.out.println(optionsArray1[i]);
@@ -65,6 +65,16 @@ public class AdminMenu {
 				flag=!flag;
 				break;
 			case "3":
+				ApprovedAccounts.displayAll();
+				mainMenu();
+				flag=!flag;
+				break;
+			case "4":
+				PendingAccounts.displayAll();
+				mainMenu();
+				flag=!flag;
+				break;
+			case "5":
 				MainMenu.mainMenu();
 				flag=!flag;
 				break;

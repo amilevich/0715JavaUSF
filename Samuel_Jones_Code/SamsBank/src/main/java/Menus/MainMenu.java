@@ -10,13 +10,14 @@ import utilities.Dummies;
 
 public class MainMenu {
 	static Scanner sc;
-	static String[] optionsArray = { "1. Customer", "2. Employee", "3. Admin", "4. Return to login menu." };
+	static String[] optionsArray = { "1. I am a customer", "2. I am an employee", "3. I am an admin", "4. Return to login menu." };
 
 	public static void firstLoginMenu() {
 //		Dummies.addDummies();
 		sc = new Scanner(System.in);
 		boolean flag = true;
 		System.out.println("Welcome to Stacks of Cache Bank.");
+		System.out.println("Please sign up or login.");
 		System.out.println("1. Sign up.\n2. Sign in.");
 		while (flag) {
 
@@ -53,6 +54,7 @@ public class MainMenu {
 	}
 
 	public static void mainMenu() {
+		System.out.println("Main Menu");
 		for (String s : optionsArray) {
 			System.out.println(s);
 		}

@@ -35,8 +35,6 @@ public class ApprovedAccounts implements Serializable {
 
 	public static void deserialize() throws FileNotFoundException {
 		ArrayList<Account> accounts = new ArrayList<Account>();
-		System.out.println("Deserialized approved accounts.");
-//		accounts.add((Account) Persistence.readData("./approvedaccounts.txt")); if there is only one account in the txt file
 		accounts.addAll(Persistence.readData("./approvedaccounts.txt"));
 		addAll(accounts);
 	}
@@ -49,16 +47,19 @@ public class ApprovedAccounts implements Serializable {
 	// methods for approved accounts hashmap
 	public static void addOne(String username, Account account) {
 		approvedAccounts.put(username, account); // put it into the hashmap
-		// Persistence.writeOne(account, "approvedaccounts"); // write the new account
-		// to the text file
 		serializeAll();
 	}
-
+// method to display all approved accounts
+	public static void displayAll() {
+		ArrayList<Account> all = fetchAll();
+		for(Account a: all) {
+			System.out.println(a.toString());
+		}
+	}
 	public static ArrayList<Account> fetchAll() {
 		ArrayList<Account> list = new ArrayList<Account>();
 		Set<String> keys = approvedAccounts.keySet();
 		for (String key : keys) {
-			// System.out.println(fetchOne(key).toString());
 			Account a = approvedAccounts.get(key);
 			list.add(a);
 		}
@@ -108,6 +109,7 @@ public class ApprovedAccounts implements Serializable {
 		String pw = sc.nextLine();
 		a = fetchOne(u);
 		if (a == null) {
+			System.out.println("Account does not exist.");
 			MainMenu.mainMenu();
 		} else if (pw.equals(a.getPassword())) {
 			CustomerMenu.actionMenu(a);

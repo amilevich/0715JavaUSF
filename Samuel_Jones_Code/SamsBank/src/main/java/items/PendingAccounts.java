@@ -31,7 +31,6 @@ public class PendingAccounts implements Serializable {
 	public static void deserialize() throws FileNotFoundException {
 		ArrayList<Account> accounts = new ArrayList<Account>();
 		accounts.addAll(Persistence.readData("./pendingaccounts.txt"));
-		System.out.println("Deserialed pending accounts.");
 		addAll(accounts);
 	}
 
@@ -48,7 +47,13 @@ public class PendingAccounts implements Serializable {
 			System.out.println("Username already in use.");
 		}
 	}
-
+	// method to display all approved accounts
+		public static void displayAll() {
+			ArrayList<Account> all = fetchAll();
+			for(Account a: all) {
+				System.out.println(a.toString());
+			}
+		}
 	public static ArrayList<Account> fetchAll() {
 		ArrayList<Account> pendingList = new ArrayList<Account>();
 		Set<String> keys = pendingAccounts.keySet();
