@@ -1,10 +1,8 @@
 package com.example.demo.components
 
-import com.example.demo.controllers.CustomerHomeController
 import com.example.demo.controllers.LogoutController
 import com.example.demo.view.MainView
 import javafx.geometry.Pos
-import javafx.scene.layout.VBox
 import tornadofx.*
 
 class CustomerActions : View("My View")
