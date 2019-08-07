@@ -24,10 +24,38 @@ public class Account implements Serializable {
 				+ isApproved + ", firstname=" + firstname + ", lastname=" + lastname + ", jointFirst=" + jointFirst+ ", jointLast=" + jointLast + "]";
 	}
 	
-	public String toPrettyString() {
-		return "Account [username=" + username + ", balance=" + balance + ", isApproved="
-				+ isApproved + ", firstname=" + firstname + ", lastname=" + lastname + ", jointFirst=" + jointFirst+ ", jointLast=" + jointLast + "]";
+	public String getFirstname() {
+		return firstname;
 	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getJointFirst() {
+		return jointFirst;
+	}
+
+	public void setJointFirst(String jointFirst) {
+		this.jointFirst = jointFirst;
+	}
+
+	public String getJointLast() {
+		return jointLast;
+	}
+
+	public void setJointLast(String jointLast) {
+		this.jointLast = jointLast;
+	}
+
 	public Account(String username, String password, double balance, String firstname,
 			String lastname, String jointFirst, String jointLast) {
 		super();

@@ -23,15 +23,6 @@ public class MainMenu {
 
 			String newUser = sc.nextLine();
 			switch (newUser) {
-			case "0":
-				try {
-					ApprovedAccounts.deserialize();
-				} catch(FileNotFoundException f) {
-					f.printStackTrace();
-				}
-				firstLoginMenu();
-				flag=!flag;
-				break;
 			case "1":
 				createNewUser();
 				flag = !flag;
@@ -40,11 +31,6 @@ public class MainMenu {
 				mainMenu();
 				flag = !flag;
 				break;
-//			case "3":
-//				Dummies.addDummies();
-//				firstLoginMenu();
-//				flag = !flag;
-//				break;
 			default:
 				firstLoginMenu();
 				flag = !flag;
@@ -114,7 +100,6 @@ public class MainMenu {
 			System.out.println("Enter a second last name");
 			String jointLast = sc.nextLine();
 			newAccount = new Account(username, pw, balance, firstname, lastname, jointFirst, jointLast);
-//			PendingAccounts.addOne(jointUser, newAccount); // adds an extra duplicate account as value
 			break;
 		case "2":
 			newAccount = new Account(username, pw, balance, firstname, lastname);

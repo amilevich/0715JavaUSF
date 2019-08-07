@@ -61,6 +61,9 @@ public class PendingAccounts implements Serializable {
 			Account a = pendingAccounts.get(key);
 			pendingList.add(a);
 		}
+		if (pendingAccounts.isEmpty()) {
+			System.out.println("No pending accounts.");
+		}
 
 		return pendingList;
 	}

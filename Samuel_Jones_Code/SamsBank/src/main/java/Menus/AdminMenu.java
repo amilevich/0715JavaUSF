@@ -99,4 +99,48 @@ public class AdminMenu {
 			;
 		}
 	}
+	
+//	// New code for altering user information (unimplemented code)*********************************************
+//	private static Account editMenu(Account a) {
+//		sc = new Scanner(System.in);
+//		System.out.println("1. Edit?");
+//		System.out.println("2. Return");
+//		String choice = sc.nextLine();
+//		
+//		switch (choice) {
+//		case "1":
+//			String changeMe = editWhich();
+//			System.out.println("Enter new value.");
+//			String changeTo = sc.nextLine();
+//			ApprovedAccounts.edit(a, changeMe, changeTo);
+//			
+//			break;
+//
+//		default:
+//			break;
+//		}
+//		return a;
+//	}
+//	
+//	private static String editWhich() {
+//		
+//		System.out.println("1. Edit first name.");
+//		System.out.println("2. Edit last name.");
+//		System.out.println("3. Edit joint user's first name.");
+//		System.out.println("4. Edit joint user's last name.");
+//		sc = new Scanner(System.in);
+//		String choice = sc.nextLine();
+//		switch(choice) {
+//		case "1":
+//			return "firstname";
+//		case "2":
+//			return "lastname";
+//		case "3":
+//			return "jointFirst";
+//		case "4":
+//			return "jointLast";
+//		default:
+//			return "";
+//		}
+//	}
 }

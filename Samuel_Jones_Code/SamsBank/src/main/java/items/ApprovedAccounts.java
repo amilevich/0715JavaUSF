@@ -23,13 +23,11 @@ public class ApprovedAccounts implements Serializable {
 	private static Scanner sc = new Scanner(System.in);
 	private static final Admin admin = new Admin();
 	private static final Employee emp = new Employee();
-	// private static Logger log = Logger.getLogger(ApprovedAccounts.class);
 
+	
 	public static void addAll(ArrayList<Account> data) {
-//		System.out.println(data.toString());
 		for (Account a : data) {
 			approvedAccounts.put(a.getUsername(), a);
-//			System.out.println(a.getUsername() + " added");
 		}
 	}
 
@@ -64,7 +62,7 @@ public class ApprovedAccounts implements Serializable {
 			list.add(a);
 		}
 		if (approvedAccounts.isEmpty()) {
-			System.out.println("No pending accounts.");
+			System.out.println("No approved accounts.");
 		}
 
 		return list;
@@ -83,8 +81,7 @@ public class ApprovedAccounts implements Serializable {
 
 	public static void updateOne(Account a) {
 		approvedAccounts.replace(a.getUsername(), a);
-		serializeAll(); // calls fetchAll, which creates an arraylist of current accounts, and then
-						// calls writeList and writes them to a file
+		serializeAll(); 
 	}
 
 	public static void removeOne(String username) {
@@ -150,5 +147,24 @@ public class ApprovedAccounts implements Serializable {
 			MainMenu.firstLoginMenu();
 		}
 	}
-
+	// New code for altering user information (unimplemented) *********************************************
+//		public static Account edit(Account a, String changeMe, String changeTo) {
+//			if(changeMe.equals("firstname")) {
+//				a.setFirstname(changeTo);
+//			}
+//			else if(changeMe.equals("lastname")) {
+//				a.setLastname(changeTo);
+//			}
+//			else if(changeMe.equals("jointFirst")) {
+//				a.setJointFirst(changeTo);
+//			}
+//			else if(changeMe.equals("jointLast")) {
+//				a.setJointLast(changeTo);
+//			}
+//			else {
+//				System.out.println("Please pick from the menu.");
+//			}
+//			updateOne(a);
+//			return a;
+//		}
 }
