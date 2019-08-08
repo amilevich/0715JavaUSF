@@ -1,0 +1,352 @@
+conn chinook/p4ssw0rd
+-- 2.0 SQL QUERIES
+--SELECT * FROM EMPLOYEE
+    
+--SELECT * FROM EMPLOYEE  WHERE LASTNAME = 'King';
+
+--SELECT * FROM EMPLOYEE WHERE FIRSTNAME = 'Andrew' and REPORTSTO IS NULL;
+
+--SELECT ^ FROM ALBUM;
+
+--SELECT * FROM ALBUM ORDER BY TITLE DESC;
+
+--SELECT * FROM CUSTOMER;
+
+--SELECT FIRSTNAME FROM CUSTOMER ORDER BY CITY ASC;
+
+--SELECT * FROM GENRE;
+
+--INSERT INTO GENRE VALUES(26,'SALSA');
+--INSERT INTO GENRE VALUES(27,'ROMANTIC');
+--COMMIT;
+
+--SELECT * FROM GENRE;
+
+--SELECT * FROM EMPLOYEE;
+
+--INSERT INTO EMPLOYEE VALUES (9,'ESPINOZA','FAUSTO','DEVELOPER',NULL,'31-AUG-06','31-AUG-06','8125 ROSBERG LN','CHARLOTTE','NC','USA','TSF', 234,'980 322 6191','FRERESPINOZA@GMAIL.COM');
+--INSERT INTO EMPLOYEE VALUES (10,'MALDONADO','NARDI','RADIOLOGIST',NULL,'31-AUG-06','31-AUG-06','8125 ROSBERG LN','CHARLOTTE','NC','USA','TSF', 234,'980 322 6191','FRERESPINOZA@GMAIL.COM');
+--SELECT * FROM EMPLOYEE;
+
+
+--SELECT * FROM CUSTOMER;
+
+
+--INSERT INTO CUSTOMER VALUES(60,'CARLOS','ESPINOZA',' ','9001 NEWFIELD','CHARLOTTE','NC','USA',333,09,'0987654321','JJJJ9898','FRTTG@GMAIL.COM');
+
+
+--UPDATE CUSTOMER SET FIRTSNAME = 'Mitchell', LASTNAME = 'Aaron' WHERE FIRTSNAME = 'Robert' AND LASTNAME - 'Walter';
+
+
+--update artist
+
+--set name = 'CCR'
+
+--where name = 'Creedence Clearwater Revival'
+
+
+
+
+
+--SELECT * FROM invoice where billingaddress like 'T%';
+
+-- SELECT* from invoice WHERE total BETWEEN 15 and 50;
+
+
+--SELECT * FROM employee WHERE hiredate BETWEEN '01-JUN-03' AND '01-MAR-04';
+
+
+--DELETE FROM CUSTOMER WHERE FIRSTNAME = 'Walter ' AND LASTNAME = 'Robert';
+
+--SELECT * FROM CUSTOMER;
+   
+--INSERT INTO CUSTOMER VALUES(60,'CARLOS','ESPINOZA',' ','9001 NEWFIELD','CHARLOTTE','NC','USA','33243','0987654321','JJJJ9898','FRTTG@GMAIL.COM', 5);
+--INSERT INTO CUSTOMER VALUES(61,'FAUSTO','ESPINOZA',' ','9001 NEWFIELD','CHARLOTTE','NC','USA','33243','0987654321','JJJJ9898','FRTTG@GMAIL.COM', 5);
+ -- SELECT * FROM CUSTOMER;
+ 
+-- 3.0
+--3.1
+--SELECT current_date FROM dual;
+--SELECT LENGTH('CANDIDE') "Length in characters"
+--  FROM DUAL;
+
+--3.2
+
+--SELECT * FROM invoice;
+
+--SELECT AVG(TOTAL) FROM invoice;
+
+--SELECT MAX(TOTAL) FROM INVOICE;
+--3.3
+
+--SELECT * FROM INVOICELINE;
+
+--SELECT AVG(UNITPRICE) FROM INVOICELINE
+
+--3.4;
+
+--SELECT * FROM EMPLOYEE;
+
+--SELECT * FROM EMPLOYEE WHERE EXTRACT(YEAR FROM TO_DATE(BIRTHDATE, 'DD-MON-RR')) = 1968;
+
+--4.0
+
+--SELECT *
+--  FROM EMPLOYEE;
+
+--DROP PROCEDURE IF EXISTS ListEmployee;
+
+--CREATE PROCEDURE ListEmployees()
+--SELECT FIRSTNAME, LASTNAME FROM EMPLOYEE;
+
+--CREATE OR REPLACE PROCEDURE UPDATE_EMPLOYEE 
+--(
+--  THE_EMPLOYEEID IN NUMBER,
+--  NEW_LASTNAME IN VARCHAR2,
+--  NEW_FIRSTNAME IN VARCHAR2,
+--  NEW_TITLE IN VARCHAR2,
+--  NEW_REPORTSTO IN NUMBER,
+--  NEW_BIRTHDATE IN DATE,
+--  NEW_HIREDATE IN DATE,
+--  NEW_ADDRESS IN VARCHAR2,
+--  NEW_CITY IN VARCHAR2,
+--  NEW_STATE IN VARCHAR2,
+--  NEW_COUNTRY VARCHAR2,
+--  NEW_POSTALCODE VARCHAR2,
+--  NEW_PHONE VARCHAR2,
+--  NEW_FAX VARCHAR2,
+--  NEW_EMAIL VARCHAR2
+--)
+--AS 
+--BEGIN
+ -- UPDATE EMPLOYEE
+ -- SET LASTNAME = 
+  --      CASE NEW_LASTNAME 
+ --       WHEN NULL THEN 
+  --        LASTNAME
+  --      ELSE NEW_LASTNAME
+  --      END,
+  --   FIRSTNAME =
+   --     CASE NEW_FIRSTNAME 
+   --     WHEN NULL THEN 
+   --       FIRSTNAME
+   --     ELSE NEW_FIRSTNAME
+   --     END,
+  --    TITLE = NEW_TITLE,
+  --    REPORTSTO = NEW_REPORTSTO,
+  --    BIRTHDATE = NEW_BIRTHDATE,
+  --    HIREDATE = NEW_HIREDATE,
+  --    ADDRESS = NEW_ADDRESS,
+  --    CITY = NEW_CITY,
+  --    STATE = NEW_STATE,
+  --    COUNTRY = NEW_COUNTRY,
+  --    POSTALCODE = NEW_POSTALCODE,
+  --    PHONE = NEW_PHONE,
+  --    FAX = NEW_FAX,
+  --    EMAIL = NEW_EMAIL
+  --  WHERE EMPLOYEEID = THE_EMPLOYEEID;
+--END UPDATE_EM
+
+
+--create or replace procedure calc_proc(
+
+--  num1 in number,
+
+--  num2 in number,
+
+--  op in varchar2,
+
+--  calc_result out number
+
+--)
+
+--as begin
+
+--  if op = 'add'
+
+--  then 
+
+--    calc_result := num1 + num2;
+
+--    elsif op = 'sub' then
+
+--      calc_result := num1 -num2;
+
+--    elsif op = 'div' then 
+
+--      calc_result := num1/num2;
+
+--    elsif op = 'mul' then 
+
+--      calc_result := num1*num2;      
+
+--    else
+
+--      raise INVALID_NUMBER;
+
+--    end if;
+
+--EXCEPTION
+
+--      WHEN INVALID_NUMBER THEN
+
+--        dbms_output.put_line('op must be add, sub,mul or div');
+
+--
+
+--end;
+
+-- 5.0 Transactions
+
+-- In this section you will be working with transactions. Transactions are usually nested within a stored procedure.
+
+-- Task – Create a transaction that given a invoiceId will delete that invoice (There may be constraints that rely on this, find out how to resolve them).
+
+create or replace function deleteInvoice(invoice_id_input int)
+
+returns void as $$
+
+begin
+
+	delete from invoice where invoiceid = invoice_id_input;
+
+end;
+
+$$ language plpgsql;
+
+
+
+alter table invoiceline
+
+drop constraint fk_invoicelineinvoiceid;
+
+
+
+alter table invoiceline
+
+add constraint fk_invoicelineinvoiceid
+
+foreign key (invoiceid) references invoice (invoiceid) on delete cascade on update cascade;
+
+
+
+select deleteInvoice(407);
+
+
+
+-- Task – Create a transaction nested within a stored procedure that inserts a new record in the Customer table
+
+create or replace function insertCustomer(customeridinput int, firstnameinput varchar, lastnameinput varchar, companyinput varchar, addressinput varchar, cityinput varchar, stateinput varchar, countryinput varchar, postalcodeinput varchar, phoneinput varchar, faxinput varchar, emailinput varchar, supportrepidinput int)
+
+returns void as $$
+
+begin
+
+    insert into customer (customerid, firstname, lastname, company, address, city, state, country, postalcode, phone, fax, email, supportrepid) 
+
+        values (customeridinput, firstnameinput, lastnameinput, companyinput, addressinput, cityinput, stateinput, countryinput, postalcodeinput, phoneinput, faxinput, emailinput, supportrepidinput);
+
+end;
+
+$$ language plpgsql;
+
+
+
+select insertCustomer(63, 'Yost'::varchar, 'Steph'::varchar, 'Nappins'::varchar, '384 5th Ave'::varchar, 'Tampa'::varchar, 'FL'::varchar, 'USA'::varchar, '61234'::varchar, '+1 382-29238'::varchar, '+1 382-9182'::varchar, 'steph@gmail.com'::varchar, 3);
+
+
+
+-- 6.0 Triggers
+
+-- In this section you will create various kinds of triggers that work when certain DML statements are executed on a table.
+
+
+
+-- 6.1 AFTER/FOR
+
+-- Task - Create an after insert trigger on the employee table fired after a new record is inserted into the table.
+
+create trigger employee_insert
+
+    after insert on employee
+
+    for each row
+
+    execute procedure example_function();
+
+
+
+-- Task – Create an after update trigger on the album table that fires after a row is inserted in the table
+
+create trigger customer_update
+
+    after update on customer
+
+    for each row
+
+    execute procedure example_function();
+
+
+
+-- Task – Create an after delete trigger on the customer table that fires after a row is deleted from the table.
+
+create trigger customer_delete
+
+    after delete on customer
+
+    for each row
+
+    execute procedure example_function();
+
+
+
+-- 7.0 JOINS
+
+-- In this section you will be working with combing various tables through the use of joins. You will work with outer, inner, right, left, cross, and self joins.
+
+
+
+-- 7.1 INNER
+
+-- Task – Create an inner join that joins customers and orders and specifies the name of the customer and the invoiceId.
+
+select firstname, lastname, invoiceid from customer inner join invoice on customer.customerid = invoice.customerid;
+
+
+
+-- 7.2 OUTER
+
+-- Task – Create an outer join that joins the customer and invoice table, specifying the CustomerId, firstname, lastname, invoiceId, and total.
+
+select customer.customerid, firstname, lastname, invoiceid, total from customer full outer join invoice on customer.customerid = invoice.customerid;
+
+
+
+-- 7.3 RIGHT
+
+-- Task – Create a right join that joins album and artist specifying artist name and title.
+
+select name, title from album right join artist on album.artistid = artist.artistid;
+
+
+
+-- 7.4 CROSS
+
+-- Task – Create a cross join that joins album and artist and sorts by artist name in ascending order.
+
+select name as artist, title as album from artist 
+
+cross join album where artist.artistid = album.artistid 
+
+order by artist.name asc;
+
+
+
+-- 7.5 SELF
+
+-- Task – Perform a self-join on the employee table, joining on the reportsto column.
+
+select A.firstname as firstname, A.lastname as lastname, A.title, B.lastname as reportsto from employee A, employee B where A.reportsto = B.employeeid;
+
+
+
