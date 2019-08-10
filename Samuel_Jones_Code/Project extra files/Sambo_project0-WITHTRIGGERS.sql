@@ -58,7 +58,7 @@ INSERT INTO users VALUES ('test','test');
 SELECT * FROM users;
 SELECT * FROM accounts;
 SELECT * FROM lookuptable;
-INSERT INTO lookuptable VALUES ('sam',null);
+--INSERT INTO lookuptable VALUES ('sam',null);
 
 --select * from accounts;
 --INSERT INTO accounts (aid, balance,isApproved) VALUES (null, 100, F);
