@@ -37,7 +37,7 @@ public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<C
 	@Override
 	public void insert(Customer obj)
 	{
-		customerData.addCustomer(obj);
+
 	}
 
 	public Customer getCustomerByUsername(String username)
