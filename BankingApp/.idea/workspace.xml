@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/RegistrationController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +42,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="revaturedb" type="feb32156:DbDataSourceImpl" />
         <item name="THEDUDE: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revaturedb" type="feb32156:DbDataSourceImpl" />
+        <item name="THEDUDE: schema" type="3abd1b6a:OraImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="USER_JUNCTION: table" type="942f455b:OraImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -117,11 +127,6 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@779d3f93" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@779d3f93" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4ada43bc" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
           </expand>
           <select />
         </treeState>
@@ -141,7 +146,7 @@
       <workItem from="1565103554421" duration="44000" />
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
-      <workItem from="1565282848420" duration="4244000" />
+      <workItem from="1565282848420" duration="8529000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -150,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565457909333</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changed registration to use the database instead of the serialized files.">
+      <created>1565458552251</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565458552251</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added a singleton class to manage my connection to the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a singleton class to manage my connection to the database." />
+    <MESSAGE value="Changed registration to use the database instead of the serialized files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed registration to use the database instead of the serialized files." />
   </component>
   <component name="masterDetails">
     <states>

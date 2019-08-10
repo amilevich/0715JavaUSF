@@ -1,15 +1,14 @@
 package com.example.demo.DAO;
 
+import com.example.demo.data.UserData;
 import com.example.demo.database.Customers;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
 
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
-public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<Customer>,
+public class CustomerDAO implements Insert<Customer>, Select<Customer>,
         Update<Customer>
 {
 	Customers customerData = Customers.getInstance();
@@ -19,25 +18,75 @@ public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<C
 	@Override
 	public void update(Customer obj)
 	{
+		Connection connection = connectionManager.getConnection();
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE CUSTOMERS set FIRSTNAME = ?, " +
+					"LASTNAME = ?, ADDRESS = ?");
+			preparedStatement.setString(1, obj.getFirstname().getValue());
+			preparedStatement.setString(2, obj.getLastname().getValue());
+			preparedStatement.setString(3, obj.getAddress().getValue());
+
+			preparedStatement.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
 		customerData.updateCustomer(obj);
 	}
 
 	@Override
 	public Customer selectOne(int id)
 	{
-		return customerData.getCustomer(id);
+		Connection connection = connectionManager.getConnection();
+		UserDAO userDAO = new UserDAO();
+		Customer customer = new Customer();
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from CUSTOMERS where CUSTOMER_ID = ?");
+			preparedStatement.setInt(1, id);
+
+			ResultSet resultSet = preparedStatement.executeQuery();
+
+			while (resultSet.next())
+			{
+				customer.setCustomerID(resultSet.getInt(1));
+				customer.setFirstname(resultSet.getString(2));
+				customer.setLastname(resultSet.getString(3));
+				customer.setAddress(resultSet.getString(4));
+
+
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return customer;
 	}
 
 	@Override
 	public ArrayList<Customer> selectAll()
 	{
-		return customerData.getAllCustomers();
-	}
+		Connection connection = connectionManager.getConnection();
+		ArrayList<Customer> customers = new ArrayList<>();
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from CUSTOMERS");
 
-	@Override
-	public void delete(int id)
-	{
-		customerData.deleteCustomer(id);
+			ResultSet resultSet = preparedStatement.executeQuery();
+
+			while (resultSet.next())
+			{
+				Customer customer = new Customer();
+				customer.setCustomerID(resultSet.getInt(1));
+				customer.setFirstname(resultSet.getString(2));
+				customer.setLastname(resultSet.getString(3));
+				customer.setAddress(resultSet.getString(4));
+
+				customers.add(customer);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return customers;
 	}
 
 	@Override
@@ -60,6 +109,22 @@ public class CustomerDAO implements Insert<Customer>, Delete<Customer>, Select<C
 
 	public Customer getCustomerByUsername(String username)
 	{
-		return customerData.getCustomerByUsername(username);
+		int id = 0;
+
+		Connection connection = connectionManager.getConnection();
+		try {
+			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from USER_JUNCTION where USERNAME = ?");
+			preparedStatement.setString(1, username);
+
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while(resultSet.next())
+			{
+				id = resultSet.getInt(2);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return this.selectOne(id);
 	}
 }
