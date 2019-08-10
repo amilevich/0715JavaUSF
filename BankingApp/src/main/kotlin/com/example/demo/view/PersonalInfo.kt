@@ -19,7 +19,7 @@ class PersonalInfo : Fragment("Customer Info")
 
     private val isAdmin = SimpleBooleanProperty(controller.checkType(loggedInEmployee.employee.username.value))
 
-    val personalInfo = vbox {
+    private val personalInfo = vbox {
         spacing = 10.0
         label("ID Number: ${customerScope.model.cid.value}")
         label("Username: ${customerScope.model.username.value}")
@@ -27,7 +27,7 @@ class PersonalInfo : Fragment("Customer Info")
         label("Address: ${customerScope.model.address.value}")
     }
 
-    val actions = hbox {
+    private val actions = hbox {
         spacing = 20.0
         paddingTop = 10.0
         button("Back") {

@@ -2,69 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tornadofx-maven-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_json_javax_json_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__no_tornado_tornadofx_1_7_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_json_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_reflect_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_test_common_1_2_60.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/accounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/accounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/applications.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/applications.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/checkingAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/checkingAccounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/pendingAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/pendingAccounts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/pendingJointAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/pendingJointAccounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerActions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BankingApp.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Scopes/AccountScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Scopes/AccountScope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/Scopes/CustomerScope.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/Scopes/CustomerScope.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/app/MyApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/app/MyApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/app/Styles$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/app/Styles$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/app/Styles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/app/Styles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/AccountTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/AccountTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationConfirmation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/ApplicationCreation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions$root$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/CustomerTable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/RegisterComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/RegisterComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Deposit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Deposit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/modals/NoSuchAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/modals/NoSuchAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/modals/RegistrationConfirmation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/modals/RegistrationConfirmation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Transfer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Transfer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Withdraw.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/modals/Withdraw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/AccountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/AccountView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerRegistration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/CustomerRegistration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/EmployeeHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/EmployeeHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/PersonalInfo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/view/PersonalInfo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/PersonalInfo$root$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/PersonalInfo$root$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/view/PersonalInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/view/PersonalInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/AccountJoinViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/AccountJoinViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/AmountViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/AmountViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/CustomerViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/CustomerViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/FullCustomerViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/FullCustomerViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/TransferViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/TransferViewModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/UserViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/viewmodel/UserViewModel.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +20,30 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revaturedb" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="revaturedb" type="feb32156:DbDataSourceImpl" />
+        <item name="THEDUDE: schema" type="3abd1b6a:OraImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
@@ -91,6 +61,7 @@
   <component name="ProjectId" id="1P3X2jJuV19rSnlrxaxdBgxJxKc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="oracle" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -129,6 +100,26 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@779d3f93" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@779d3f93" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4ada43bc" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -141,7 +132,8 @@
       <updated>1565022334078</updated>
       <workItem from="1565103554421" duration="44000" />
       <workItem from="1565103611202" duration="229000" />
-      <workItem from="1565103854791" duration="555000" />
+      <workItem from="1565103854791" duration="1457000" />
+      <workItem from="1565282848420" duration="2536000" />
     </task>
     <servers />
   </component>
