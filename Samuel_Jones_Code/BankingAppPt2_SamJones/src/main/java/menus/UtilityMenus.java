@@ -21,11 +21,19 @@ public class UtilityMenus {
 	public void depositMenu(Account a) {
 		sc = new Scanner(System.in);
 		System.out.println("How much would you like to deposit? ");
+		
 		double depositAmt = sc.nextDouble();
-		Transaction t = new Transaction();
-		t.deposit(a.getAID(), depositAmt);
-		Account updated = t.findAccountByAID(a.getAID());
-		adminMenu.actionMenu(updated);
+		if(depositAmt<0) {
+			System.out.println("Negative deposit prohibited.");
+			adminMenu.actionMenu(a);
+		}
+		else {
+			Transaction t = new Transaction();
+			t.deposit(a.getAID(), depositAmt);
+			Account updated = t.findAccountByAID(a.getAID());
+			adminMenu.actionMenu(updated);
+			
+		}
 	}
 
 	public void withdrawMenu(Account a) {
@@ -34,9 +42,15 @@ public class UtilityMenus {
 		sc = new Scanner(System.in);
 		System.out.println("How much to withdraw?");
 		Double withdrawalAmt = sc.nextDouble();
-		t.withdraw(a.getAID(), withdrawalAmt);
-		Account updated = t.findAccountByAID(a.getAID());
-		adminMenu.actionMenu(updated);
+		if(withdrawalAmt<0) {
+			System.out.println("Negative withdrawals prohibited.");
+			adminMenu.actionMenu(a);
+		}
+		else {
+			t.withdraw(a.getAID(), withdrawalAmt);
+			Account updated = t.findAccountByAID(a.getAID());
+			adminMenu.actionMenu(updated);
+		}
 	}
 
 	public void transferMenu(Account a) {
@@ -51,13 +65,20 @@ public class UtilityMenus {
 		Account transferTo = t.findAccountByAID(aid);
 
 		if (transferTo != null) {
-			t.transferAmount(a.getAID(), transferTo.getAID(), transferAmt);
+			if(transferAmt<0) {
+				System.out.println("Negative transfers prohibited.");
+				adminMenu.actionMenu(a);
+			}
+			else {
+				t.transferAmount(a.getAID(), transferTo.getAID(), transferAmt);
+				Account updated = t.findAccountByAID(a.getAID());
+				adminMenu.actionMenu(updated);
+			}
 		} else {
 			System.out.println("Cannot transfer to that user; user not found.");
 			// CustomerMenu.actionMenu(a);
+			adminMenu.actionMenu(a);
 		}
-		Account updated = t.findAccountByAID(a.getAID());
-		adminMenu.actionMenu(updated);
 	}
 
 	public void cancelMenu(Account a) {
@@ -114,27 +135,24 @@ public class UtilityMenus {
 
 				Transaction t = new Transaction();
 				User user = t.findUser(un);
+				if (user==null) {
+					System.out.println("No user exists.");
+					adminMenu.mainMenu();
+				}
 				String aid = t.findAIDByUsername(user.getUsername());
 				Account a = t.findAccountByAID(aid);
 				if (a == null) {
 					System.out.println("No account exists.");
 					adminMenu.mainMenu();
 				}
-				System.out
-						.println("Username: " + user.getUsername() + ", AID: " + aid + ", balance: " + a.getBalance());
+//				System.out
+//						.println("Username: " + user.getUsername() + ", AID: " + aid + ", balance: " + a.getBalance());
 
 				if (!Transaction.checkApproved(a)) {
 					System.out.println("Account is pending.");
 					approveOrDenyMenu(a);
 				}
 
-				// if(userType.equals("admin")) {
-				// adminMenu.actionMenu(a);
-				// }
-				// else if(userType.equals("employee")) {
-				// adminMenu.mainMenu(); // the employee can't go to the actionMenu in
-				// adminMenu...
-				// }
 				adminMenu.actionMenu(a);
 				flag = !flag;
 				break;
@@ -179,7 +197,7 @@ public class UtilityMenus {
 			adminMenu.mainMenu();
 			break;
 		case "3":
-			mainMenu.mainMenu();
+			adminMenu.mainMenu();
 			;
 		}
 	}

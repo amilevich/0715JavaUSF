@@ -37,7 +37,7 @@ public class CustomerMenu {
 			mainMenu.mainMenu();
 		}
 		else if(a==null) {
-			System.out.println("You have no account.");
+			System.out.println("You have no account. Sign up again from the main menu.");
 			mainMenu.mainMenu();
 		}
 		actionMenu(a);
@@ -90,6 +90,7 @@ public class CustomerMenu {
 				flag = !flag;
 				break;
 			case "5":
+				mainMenu.mainMenu();
 				flag = !flag;
 				break;
 			default:
@@ -104,6 +105,10 @@ public class CustomerMenu {
 		sc = new Scanner(System.in);
 		System.out.println("How much would you like to deposit? ");
 		double depositAmt = sc.nextDouble();
+		if(depositAmt<0) {
+			System.out.println("Negative deposit prohibited.");
+			actionMenu(a);
+		}
 		Transaction t = new Transaction();
 		t.deposit(a.getAID(), depositAmt);
 		Account updated = t.findAccountByAID(a.getAID());

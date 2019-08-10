@@ -107,8 +107,8 @@ public class MainMenu {
 			System.out.println("Password for joint holder.");
 			String passw = sc.nextLine();
 			User secondUser = new User(un, passw);
-			Transaction jointU = new Transaction(); // add user to user table
-			jointU.createUser(secondUser);
+			Transaction jointT = new Transaction(); // add user to user table
+			jointT.createUser(secondUser);
 			
 			// logic for non-joints.
 			newAccount = new Account(null,balance, 0);

@@ -39,9 +39,11 @@ public class AdminMenu {
 	
 	//both customers and admins use this menu
 	public void actionMenu(Account a) {
+		
 		for(int i =0; i<optionsArray2.length;i++) {
 			System.out.println(optionsArray2[i]);
 		}
+		
 		sc = new Scanner(System.in);
 		String choice = sc.nextLine();
 		Handler handle = new Handler();
@@ -63,11 +65,14 @@ public class AdminMenu {
 		}
 		String foundUn = user.getUsername();
 		String foundPw = user.getPassword();
-		if(!pw.equals(foundPw)) {
+		if(!foundUn.equals("admin")) { // if username is not "emp", it is not the employee.
+			System.out.println(foundUn + " is not an admin.");
+			mainMenu.mainMenu();
+		}
+		else if(!pw.equals(foundPw)) { // if username is "emp," but the password is wrong, then no go.
 			System.out.println("Incorrect password.");
 			mainMenu.mainMenu();
 		}
-//		actionMenu(a);
 		mainMenu();
 	}
 		

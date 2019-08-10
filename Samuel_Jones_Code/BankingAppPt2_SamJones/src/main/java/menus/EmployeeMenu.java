@@ -42,7 +42,11 @@ public class EmployeeMenu {
 //		Account a = t.findAccountByAID(aid);
 		String foundUn = user.getUsername();
 		String foundPw = user.getPassword();
-		if(!pw.equals(foundPw)) {
+		if(!foundUn.equals("emp")) { // if username is not "emp", it is not the employee.
+			System.out.println(foundUn + " is not an employee.");
+			mainMenu.mainMenu();
+		}
+		else if(!pw.equals(foundPw)) { // if username is "emp," but the password is wrong, then no go.
 			System.out.println("Incorrect password.");
 			mainMenu.mainMenu();
 		}
@@ -61,6 +65,10 @@ public class EmployeeMenu {
 
 				Transaction t = new Transaction();
 				User user = t.findUser(un);
+				if (user==null) {
+					System.out.println("No user exists.");
+					adminMenu.mainMenu();
+				}
 				String aid = t.findAIDByUsername(user.getUsername());
 				Account a = t.findAccountByAID(aid);
 				if(a==null) {
@@ -71,8 +79,7 @@ public class EmployeeMenu {
 				
 				if (!Transaction.checkApproved(a)) {
 					System.out.println("Account is pending.");
-					UtilityMenus utilMenu = new UtilityMenus();
-					utilMenu.approveOrDenyMenu(a);
+					approveOrDenyMenu(a);
 				}
 				
 				mainMenu();
@@ -101,5 +108,26 @@ public class EmployeeMenu {
 			}
 		}
 	}
-
+	public void approveOrDenyMenu(Account a) {
+		System.out.println("1. Approve\n2. Deny (Delete)\n3. Return to previous menu");
+		sc = new Scanner(System.in);
+		String choice = sc.nextLine();
+		Transaction t = null;
+		switch (choice) {
+		case "1":
+			t = new Transaction();
+			t.approveAccount(a);
+			mainMenu();
+			break;
+		case "2":
+			t = new Transaction();
+			t.deleteAccountByAID(a.getAID());
+			;
+			mainMenu();
+			break;
+		case "3":
+			mainMenu();
+			;
+		}
+	}
 }
