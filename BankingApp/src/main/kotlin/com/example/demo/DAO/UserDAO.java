@@ -17,8 +17,6 @@ import java.util.ArrayList;
 
 public class UserDAO implements Select<UserData>
 {
-	private UserTable table = UserTable.getInstance();
-
 	ConnectionManager connectionManager = ConnectionManager.getInstance();
 
 	public UserData selectByUsername(String username)

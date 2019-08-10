@@ -11,8 +11,6 @@ import java.util.ArrayList;
 public class CustomerDAO implements Insert<Customer>, Select<Customer>,
         Update<Customer>
 {
-	Customers customerData = Customers.getInstance();
-
 	ConnectionManager connectionManager = ConnectionManager.getInstance();
 
 	@Override
@@ -30,8 +28,6 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
-		customerData.updateCustomer(obj);
 	}
 
 	@Override

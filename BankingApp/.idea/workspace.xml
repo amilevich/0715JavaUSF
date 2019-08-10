@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AccountDAO.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +45,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="revaturedb" type="feb32156:DbDataSourceImpl" />
         <item name="THEDUDE: schema" type="3abd1b6a:OraImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="USER_JUNCTION: table" type="942f455b:OraImplModel$Table" />
+        <item name="routines" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -146,7 +142,7 @@
       <workItem from="1565103554421" duration="44000" />
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
-      <workItem from="1565282848420" duration="8529000" />
+      <workItem from="1565282848420" duration="11221000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -162,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565458552251</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed the refactor of both UserDAO and CustomerDAO. They now use jdbc to connect to the database instead of using the serialized maps.">
+      <created>1565463059620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1565463059620</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added a singleton class to manage my connection to the database." />
     <MESSAGE value="Changed registration to use the database instead of the serialized files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed registration to use the database instead of the serialized files." />
+    <MESSAGE value="Completed the refactor of both UserDAO and CustomerDAO. They now use jdbc to connect to the database instead of using the serialized maps." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed the refactor of both UserDAO and CustomerDAO. They now use jdbc to connect to the database instead of using the serialized maps." />
   </component>
   <component name="masterDetails">
     <states>
