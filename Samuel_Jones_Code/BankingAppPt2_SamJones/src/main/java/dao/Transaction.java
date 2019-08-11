@@ -145,7 +145,7 @@ public class Transaction {
 
 	public void createAccount(Account a) {
 		adi.insertAccount(a);
-		log.info("Account " + a.getAID() + " created.");
+		log.info("Account created.");
 	}
 	public Account findAccountByAID(String aid) {
 		return adi.findAccountByAID(aid);
