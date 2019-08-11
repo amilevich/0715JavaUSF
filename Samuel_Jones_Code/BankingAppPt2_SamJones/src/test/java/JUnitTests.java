@@ -47,11 +47,5 @@ public class JUnitTests {
 		assertEquals("Account found?", aid, t.findAIDByUsername(u.getUsername()));
 
 	}
-	// public void deleteTests() {
-	// Transaction t = new Transaction();
-	// String aid1 = t.findAIDByUsername("JUnitUser");
-	// String aid2 = t.findAIDByUsername("JUnitUser2");
-	// String
-	// t.deleteAccountByAID(aid);
-	// }
+
 }
