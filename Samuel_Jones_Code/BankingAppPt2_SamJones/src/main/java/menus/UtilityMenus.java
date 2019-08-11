@@ -91,7 +91,7 @@ public class UtilityMenus {
 		case "1":
 			t.deleteAccountByAID(a.getAID());
 			// System.out.println("You no longer have an account, returning to main menu.");
-			mainMenu.mainMenu();
+			adminMenu.mainMenu();
 			break;
 		case "2":
 			adminMenu.actionMenu(a);

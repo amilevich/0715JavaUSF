@@ -33,3 +33,8 @@
 2019-08-11 10:12:32 INFO  Transaction:148 - Account created.
 2019-08-11 10:14:11 INFO  Transaction:193 - Account 1 approved.
 2019-08-11 10:14:25 INFO  Transaction:187 - Account 1 destroyed.
+2019-08-11 10:17:32 INFO  Transaction:67 - User Carol created.
+2019-08-11 10:17:33 INFO  Transaction:67 - User Dan created.
+2019-08-11 10:17:33 INFO  Transaction:148 - Account created.
+2019-08-11 10:17:58 INFO  Transaction:193 - Account 2 approved.
+2019-08-11 10:18:11 INFO  Transaction:187 - Account 2 destroyed.

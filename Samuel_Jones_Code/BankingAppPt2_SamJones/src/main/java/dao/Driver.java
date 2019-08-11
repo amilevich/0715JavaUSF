@@ -1,7 +1,5 @@
 package dao;
 
-import beans.Account;
-import beans.User;
 import menus.MainMenu;
 
 public class Driver {
