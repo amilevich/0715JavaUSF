@@ -5,17 +5,13 @@ import com.example.demo.database.PendingJointAccounts;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
+import oracle.jdbc.proxy.annotation.Pre;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class PendingJointApplicationDAO implements Select<CustomerApplicationJoin>
 {
-    PendingJointAccounts pendingJointAccounts = PendingJointAccounts.getInstance();
-
     ApplicationDAO applicationDAO = new ApplicationDAO();
 
     ConnectionManager connectionManager = ConnectionManager.getInstance();
@@ -69,12 +65,29 @@ public class PendingJointApplicationDAO implements Select<CustomerApplicationJoi
 
     public void approveJointAccount(int id)
     {
-        pendingJointAccounts.approveCustomer(id);
+        Connection connection = connectionManager.getConnection();
+        try {
+            CallableStatement callableStatement = connection.prepareCall("{call APPROVE_JOINT_APP(?)}");
+            callableStatement.setInt(1, id);
+
+            callableStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     public void denyJoinAccount(int id)
     {
-        pendingJointAccounts.denyCustomer(id);
+        Connection connection = connectionManager.getConnection();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement("DELETE from JOINT_APPLICATION where " +
+                    "APP_ID = ?");
+            preparedStatement.setInt(1, id);
+
+            preparedStatement.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     private ArrayList<Integer> getCustomerByAppId(int id)

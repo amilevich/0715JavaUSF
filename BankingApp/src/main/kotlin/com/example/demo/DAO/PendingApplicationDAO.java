@@ -11,8 +11,6 @@ import java.util.ArrayList;
 
 public class PendingApplicationDAO implements Select<CustomerApplicationJoin>
 {
-    PendingAccounts pendingAccounts = PendingAccounts.getInstance();
-
     ApplicationDAO applicationDAO = new ApplicationDAO();
 
     ConnectionManager connectionManager = ConnectionManager.getInstance();
