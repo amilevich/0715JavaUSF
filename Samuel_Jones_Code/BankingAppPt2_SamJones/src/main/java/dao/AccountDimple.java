@@ -17,9 +17,10 @@ public class AccountDimple implements AccountDAO {
 	public void insertAccount(Account a) {
 		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url, username,password)){
-			PreparedStatement ps = conn.prepareStatement("INSERT INTO accounts VALUES (null,?,?)");
+			PreparedStatement ps = conn.prepareStatement("INSERT INTO accounts VALUES (null,?,?,?)");
 			ps.setDouble(1, a.getBalance());
 			ps.setInt(2, a.getIsApproved());
+			ps.setString(3, a.getTempToken());
 			ps.executeUpdate();
 		} catch(SQLException e) {
 			e.printStackTrace();
@@ -37,7 +38,8 @@ public class AccountDimple implements AccountDAO {
 			ps.executeQuery();
 			ResultSet rs = ps.getResultSet();
 			while(rs.next()) {
-				a = new Account(rs.getString("aid"),rs.getDouble("balance"),rs.getInt("isApproved"));
+				//temp token field is null, because it's obsolete to know after signing up
+				a = new Account(rs.getString("aid"),rs.getDouble("balance"),rs.getInt("isApproved"),null);
 			}
 			
 		} catch(SQLException e) {

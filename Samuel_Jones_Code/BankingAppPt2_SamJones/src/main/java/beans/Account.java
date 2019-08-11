@@ -5,6 +5,16 @@ public class Account {
 	private Double balance;
 	private 	Integer isApproved;
 	private Integer userType;
+	private String tempToken;
+	
+	
+	public Account(String aID, Double balance, Integer isApproved, String tempToken) {
+		super();
+		AID = aID;
+		this.balance = balance;
+		this.isApproved = isApproved;
+		this.tempToken = tempToken;
+	}
 	public Integer getUserType() {
 		return userType;
 	}
@@ -31,17 +41,23 @@ public class Account {
 		this.balance = balance;
 	}
 	
-	public Account(String aID, Double balance, Integer isApproved) {
-		super();
-		AID = aID;
-		this.balance = balance;
-		this.isApproved = isApproved;
-	}
+//	public Account(String aID, Double balance, Integer isApproved) {
+//		super();
+//		AID = aID;
+//		this.balance = balance;
+//		this.isApproved = isApproved;
+//	}
 	public Account(Double balance, Integer isApproved) {
 		super();
 		this.AID = null;
 		this.balance = balance;
 		this.isApproved = isApproved;
+	}
+	public String getTempToken() {
+		return tempToken;
+	}
+	public void setTempToken(String tempToken) {
+		this.tempToken = tempToken;
 	}
 	
 	

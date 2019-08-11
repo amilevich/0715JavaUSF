@@ -6,12 +6,6 @@ import menus.MainMenu;
 
 public class Driver {
 	public static void main(String[] args) {
-//		Account a = new Account(1000.0,0);
-//		Transaction t = new Transaction();
-//		User u = new User("Pam","pw");
-////		t.createUser(u);
-//		t.createAccount(a); // create account for pam
-//		t.insertIntoJunction(u.getUsername()); // insert pam's username and AID into the junction table
 		MainMenu mainMenu = new MainMenu();
 		mainMenu.firstLoginMenu();
 //		
