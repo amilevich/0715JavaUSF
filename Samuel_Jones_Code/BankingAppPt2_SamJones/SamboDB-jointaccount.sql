@@ -1,6 +1,6 @@
-DROP TABLE accounts; -- DDL data definition language ALTER CREATE TRUNCATE DROP
-DROP TABLE users;
-DROP TABLE lookuptable;
+--DROP TABLE accounts; -- DDL data definition language ALTER CREATE TRUNCATE DROP
+--DROP TABLE users;
+--DROP TABLE junctiontable;
 -- run these three below to reset the sequences to 1, and empty the tables
 DROP SEQUENCE aid_sequence; 
 truncate table junctiontable;
