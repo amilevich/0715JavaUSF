@@ -45,7 +45,7 @@ public class CheckingAccounts
     {
         Account newAccount = new Account(generator.generateId());
         accountMap.put(newAccount,customer);
-        dao.insert(newAccount);
+        //dao.insert(newAccount);
     }
 
     public void cancelAccount(Account account)

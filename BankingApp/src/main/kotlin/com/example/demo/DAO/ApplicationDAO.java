@@ -13,8 +13,6 @@ import java.util.ArrayList;
 
 public class ApplicationDAO implements Delete<AccountApplication>, Insert<AccountApplication>, Select<AccountApplication>
 {
-    Applications appTable = Applications.getInstance();
-
     ConnectionManager connectionManager = ConnectionManager.getInstance();
 
     @Override

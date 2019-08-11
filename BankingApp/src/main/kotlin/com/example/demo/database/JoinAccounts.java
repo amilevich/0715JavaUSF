@@ -46,7 +46,7 @@ public class JoinAccounts
     {
         Account account = new Account(generator.generateId());
         jointAccountMap.put(account, customers);
-        dao.insert(account);
+        //dao.insert(account);
     }
 
     public void cancelJointAccount(Account account)

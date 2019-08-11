@@ -35,7 +35,7 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 	{
 		Connection connection = connectionManager.getConnection();
 		UserDAO userDAO = new UserDAO();
-		Customer customer = new Customer();
+		Customer customer = null;
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from CUSTOMERS where CUSTOMER_ID = ?");
 			preparedStatement.setInt(1, id);
@@ -44,6 +44,7 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 
 			while (resultSet.next())
 			{
+				customer = new Customer();
 				customer.setCustomerID(resultSet.getInt(1));
 				customer.setFirstname(resultSet.getString(2));
 				customer.setLastname(resultSet.getString(3));
