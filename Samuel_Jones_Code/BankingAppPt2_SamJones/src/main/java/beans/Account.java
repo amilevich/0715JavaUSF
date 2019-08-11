@@ -41,12 +41,6 @@ public class Account {
 		this.balance = balance;
 	}
 	
-//	public Account(String aID, Double balance, Integer isApproved) {
-//		super();
-//		AID = aID;
-//		this.balance = balance;
-//		this.isApproved = isApproved;
-//	}
 	public Account(Double balance, Integer isApproved) {
 		super();
 		this.AID = null;

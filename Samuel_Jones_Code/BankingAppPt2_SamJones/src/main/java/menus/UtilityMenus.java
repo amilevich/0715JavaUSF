@@ -149,7 +149,6 @@ public class UtilityMenus {
 //						.println("Username: " + user.getUsername() + ", AID: " + aid + ", balance: " + a.getBalance());
 
 				if (!Transaction.checkApproved(a)) {
-					System.out.println("Account is pending.");
 					approveOrDenyMenu(a);
 				}
 

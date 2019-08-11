@@ -52,21 +52,7 @@ public class Transaction {
 	}
 	
 	public User login(String un, String pw) {
-//		Account a = null;
-//		User user = null;
 		User user = findUser(un);
-//		if (user == null) {
-//			System.out.println("User does not exist.");
-//			mainMenu.mainMenu();
-//		} else if (pw.equals(user.getPassword())) {
-//			Transaction t = new Transaction();
-//			a = t.findAccountByUsername(un);
-//			custMenu.actionMenu(a);
-//		} else {
-//			System.out.println("Incorrect password. Entered " + pw + "On file: " + user.getPassword());
-//			System.out.println(a.toString());
-//			mainMenu.mainMenu();
-//		}
 		
 		return user;
 	}
@@ -84,10 +70,6 @@ public class Transaction {
 	public User findUser(String un) {
 		User user = null;
 		user = udi.findUserByUsername(un);
-//		if(user==null) {
-////			System.out.println("No such user exists.");
-////			adminMenu.mainMenu();
-//		} 
 		return user;
 	}
 	public List<String> findAllUsernames(){
@@ -138,15 +120,6 @@ public class Transaction {
 		}
 	}
 	
-//	public void insertIntoJunction(String un) {
-//		try (Connection conn = DriverManager.getConnection(url, username, password)) {
-//			PreparedStatement ps = conn.prepareStatement("INSERT INTO junctiontable VALUES (?,null)");
-//			ps.setString(1, un);
-//			ps.executeUpdate();
-//		} catch (SQLException e) {
-//			e.printStackTrace();
-//		}
-//	}
 	// this method will replace the one above, since it does not depend on a sequence existing for the
 	// junction table.
 	public void insertIntoJunction(String un,String aid) {
@@ -163,7 +136,7 @@ public class Transaction {
 	// methods for accounts -- deposit, withdraw, transfer, approve & delete
 	public static Boolean checkApproved(Account a) {
 		if (a.getIsApproved()==0) {
-			System.out.println("Account is not approved. Unable to complete transaction.");
+			System.out.println("Note: Account is not approved, transactions with it are prohibited.");
 			return false;
 		}
 

@@ -50,3 +50,7 @@
 2019-08-11 09:16:51 INFO  Transaction:81 - User Dan created.
 2019-08-11 09:16:52 INFO  Transaction:81 - User Carol created.
 2019-08-11 09:16:52 INFO  Transaction:175 - Account null created.
+2019-08-11 09:27:31 INFO  Transaction:193 - Account 1 approved.
+2019-08-11 09:27:41 INFO  Transaction:193 - Account 2 approved.
+2019-08-11 09:28:07 INFO  Transaction:176 - 20.0 withdrawn from account 1
+2019-08-11 09:28:20 INFO  Transaction:218 - 20000.0 transferred from account 1 to accound 2

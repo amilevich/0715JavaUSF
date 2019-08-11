@@ -15,7 +15,6 @@ public class AccountDimple implements AccountDAO {
 	private static String password = "sambo";
 	@Override
 	public void insertAccount(Account a) {
-		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url, username,password)){
 			PreparedStatement ps = conn.prepareStatement("INSERT INTO accounts VALUES (null,?,?,?)");
 			ps.setDouble(1, a.getBalance());
@@ -31,7 +30,6 @@ public class AccountDimple implements AccountDAO {
 	@Override
 	public Account findAccountByAID(String aid) {
 		Account a = null;
-		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url,username,password)){
 			PreparedStatement ps = conn.prepareStatement("SELECT * FROM accounts WHERE aid =?");
 			ps.setString(1, aid);
@@ -50,19 +48,16 @@ public class AccountDimple implements AccountDAO {
 
 	@Override
 	public List<Account> findAllAccounts() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void updateAccountBalance(Account a) {
-		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url,username,password)){
 			PreparedStatement ps = conn.prepareStatement("UPDATE accounts SET balance = ? WHERE aid =?");
 			ps.setDouble(1, a.getBalance());
 			ps.setString(2, a.getAID());
 			ps.executeUpdate();
-//			p
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
@@ -71,12 +66,10 @@ public class AccountDimple implements AccountDAO {
 
 	@Override
 	public void deleteAccount(Account a) {
-		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url,username,password)){
 			PreparedStatement ps = conn.prepareStatement("DELETE FROM accounts WHERE aid =?");
 			ps.setString(1, a.getAID());
 			ps.executeUpdate();
-//			p
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}
@@ -84,13 +77,10 @@ public class AccountDimple implements AccountDAO {
 
 	@Override
 	public void updateAccountApproval(Account a) {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
 		try(Connection conn = DriverManager.getConnection(url,username,password)){
 			PreparedStatement ps = conn.prepareStatement("UPDATE accounts SET isapproved=1 WHERE aid= ?");
 			ps.setString(1, a.getAID());
 			ps.executeUpdate();
-//			p
 		} catch(SQLException e) {
 			e.printStackTrace();
 		}

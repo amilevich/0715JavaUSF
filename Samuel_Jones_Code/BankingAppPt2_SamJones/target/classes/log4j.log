@@ -41,3 +41,12 @@
 2019-08-11 08:23:26 INFO  Transaction:175 - Account null created.
 2019-08-11 08:24:28 INFO  Transaction:220 - Account 2 approved.
 2019-08-11 08:25:25 INFO  Transaction:214 - Account 2 destroyed.
+2019-08-11 09:12:00 INFO  Transaction:81 - User Latifa created.
+2019-08-11 09:16:04 INFO  Transaction:81 - User admin created.
+2019-08-11 09:16:05 INFO  Transaction:81 - User emp created.
+2019-08-11 09:16:23 INFO  Transaction:81 - User Sam created.
+2019-08-11 09:16:24 INFO  Transaction:81 - User Monk created.
+2019-08-11 09:16:25 INFO  Transaction:175 - Account null created.
+2019-08-11 09:16:51 INFO  Transaction:81 - User Dan created.
+2019-08-11 09:16:52 INFO  Transaction:81 - User Carol created.
+2019-08-11 09:16:52 INFO  Transaction:175 - Account null created.
