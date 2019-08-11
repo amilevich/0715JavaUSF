@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="Finished converting the ApplicationDAO to use jdbc.">
+    <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/checkingAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/checkingAccounts.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/ApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/ApplicationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApplicationCreationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/CheckingAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/JoinAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/AccountDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/AccountDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/ApplicationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/ApplicationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/PendingApplicationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/PendingApplicationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApplicationCreationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApplicationCreationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/CheckingAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/CheckingAccounts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/JoinAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/JoinAccounts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/PendingJointApplicationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/PendingJointApplicationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +160,7 @@
       <workItem from="1565103554421" duration="44000" />
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
-      <workItem from="1565282848420" duration="15104000" />
+      <workItem from="1565282848420" duration="16362000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -206,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565467306920</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added the ability for a customer to apply for an account and for that application to be properly stored in the database.">
+      <created>1565547342008</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565547342008</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +229,8 @@
     <MESSAGE value="Completed the refactor of both UserDAO and CustomerDAO. They now use jdbc to connect to the database instead of using the serialized maps." />
     <MESSAGE value="Finished converting the account dao to use jdbc." />
     <MESSAGE value="Finished converting the ApplicationDAO to use jdbc." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished converting the ApplicationDAO to use jdbc." />
+    <MESSAGE value="Added the ability for a customer to apply for an account and for that application to be properly stored in the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the ability for a customer to apply for an account and for that application to be properly stored in the database." />
   </component>
   <component name="masterDetails">
     <states>

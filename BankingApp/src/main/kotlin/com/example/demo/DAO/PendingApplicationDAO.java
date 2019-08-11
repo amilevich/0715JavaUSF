@@ -39,7 +39,7 @@ public class PendingApplicationDAO implements Select<CustomerApplicationJoin>
 
         for(AccountApplication app : appList)
         {
-            if (pendingAccounts.getCustomerByApplication(app) != null)
+            if (this.getCustomerByAppId(app.getApplicationId()).getCustomerID() != 0)
             {
                 Customer customer = this.getCustomerByAppId(app.getApplicationId());
                 CustomerApplicationJoin join = new CustomerApplicationJoin();

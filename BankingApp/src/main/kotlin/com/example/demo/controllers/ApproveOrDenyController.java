@@ -17,7 +17,6 @@ public class ApproveOrDenyController
     public ObservableList<CustomerApplicationJoin> getAllOpenApplications()
     {
         ObservableList<CustomerApplicationJoin> joinList = FXCollections.observableArrayList();
-        ArrayList<CustomerApplicationJoin> list = pendingJointApplicationDAO.selectAll();
         joinList.addAll(pendingApplicationDAO.selectAll());
         joinList.addAll(pendingJointApplicationDAO.selectAll());
         return joinList;
