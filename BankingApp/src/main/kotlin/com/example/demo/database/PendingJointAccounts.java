@@ -63,7 +63,7 @@ public class PendingJointAccounts
 
         this.jointAppMap.remove(app);
         applicationDAO.delete(id);
-        this.jointDAO.insert(customers);
+        //this.jointDAO.insert(customers);
     }
 
     public void denyCustomer(int id)

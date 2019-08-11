@@ -15,7 +15,6 @@ public class EditInfoController
     public void sendUpdate(Customer customer)
     {
         customerDAO.update(customer);
-        appManagerDAO.updateCustomer(customer);
     }
 
     public Customer getCustomer(FullCustomerViewModel model)

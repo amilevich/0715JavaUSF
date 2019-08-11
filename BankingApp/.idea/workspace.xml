@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingApplicationDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/PendingJointApplicationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/checkingAccounts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/checkingAccounts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/AppManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/JointAppManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/EditInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/EditInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/database/PendingAccounts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/AppManagerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/AppManagerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/EditInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/EditInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingAccounts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/database/PendingAccounts.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +164,7 @@
       <workItem from="1565103554421" duration="44000" />
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
-      <workItem from="1565282848420" duration="17071000" />
+      <workItem from="1565282848420" duration="20313000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -207,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565548630237</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Admin and employee can now approve and delete both checking and joint applications with the results being properly mirrored in the database.">
+      <created>1565550298779</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565550298779</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +249,8 @@
     <MESSAGE value="Finished converting the ApplicationDAO to use jdbc." />
     <MESSAGE value="Added the ability for a customer to apply for an account and for that application to be properly stored in the database." />
     <MESSAGE value="Admin and employee can now view open applications that have been created and stored in the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin and employee can now view open applications that have been created and stored in the database." />
+    <MESSAGE value="Admin and employee can now approve and delete both checking and joint applications with the results being properly mirrored in the database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin and employee can now approve and delete both checking and joint applications with the results being properly mirrored in the database." />
   </component>
   <component name="masterDetails">
     <states>

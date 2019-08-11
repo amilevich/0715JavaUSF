@@ -23,7 +23,6 @@ public class TransactionController
         Account account = accountDAO.selectOne(accountNumber);
         account.setBalance(account.getBalance() - amount);
         accountDAO.update(account);
-        appManagerDAO.update(account);
     }
 
     public void deposit(int accountNumber, double amount)
@@ -31,7 +30,6 @@ public class TransactionController
         Account account = accountDAO.selectOne(accountNumber);
         account.setBalance(account.getBalance() + amount);
         accountDAO.update(account);
-        appManagerDAO.update(account);
     }
 
     public void transfer(int senderID, int receiverID,double amount)
@@ -43,9 +41,6 @@ public class TransactionController
 
         accountDAO.update(sender);
         accountDAO.update(receiver);
-
-        appManagerDAO.update(sender);
-        appManagerDAO.update(receiver);
     }
 
     public void delete(int id)

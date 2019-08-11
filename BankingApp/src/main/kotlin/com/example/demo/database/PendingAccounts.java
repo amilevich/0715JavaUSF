@@ -77,7 +77,7 @@ public class PendingAccounts
 
         this.applicationMap.remove(app);
         appDAO.delete(id);
-        this.managerDAO.insert(customer);
+        //this.managerDAO.insert(customer);
     }
 
     public void denyCustomer(int id)
