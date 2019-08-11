@@ -2,8 +2,6 @@ package com.example.demo.controllers;
 
 import com.example.demo.DAO.CustomerDAO;
 import com.example.demo.data.CurrentLoggedInCustomer;
-import com.example.demo.database.PendingAccounts;
-import com.example.demo.database.PendingJointAccounts;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
 

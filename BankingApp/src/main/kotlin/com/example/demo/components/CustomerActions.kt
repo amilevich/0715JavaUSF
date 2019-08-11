@@ -1,14 +1,11 @@
 package com.example.demo.components
 
-import com.example.demo.controllers.LogoutController
 import com.example.demo.view.MainView
 import javafx.geometry.Pos
 import tornadofx.*
 
 class CustomerActions : View("My View")
 {
-    private val logout = LogoutController()
-
     override val root = vbox {
         alignment = Pos.CENTER_LEFT
         spacing = 20.0
@@ -25,7 +22,6 @@ class CustomerActions : View("My View")
             }
             button("Logout") {
                 action {
-                    logout.writeFiles()
                     close()
                     find(MainView::class).openWindow()
                 }

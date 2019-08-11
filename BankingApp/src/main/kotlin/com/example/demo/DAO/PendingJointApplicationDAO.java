@@ -1,11 +1,9 @@
 package com.example.demo.DAO;
 
 import com.example.demo.data.CustomerApplicationJoin;
-import com.example.demo.database.PendingJointAccounts;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
-import oracle.jdbc.proxy.annotation.Pre;
 
 import java.sql.*;
 import java.util.ArrayList;

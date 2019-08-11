@@ -1,6 +1,5 @@
 package com.example.demo.DAO;
 
-import com.example.demo.database.Accounts;
 import com.example.demo.model.Account;
 import com.example.demo.utility.ConnectionManager;
 

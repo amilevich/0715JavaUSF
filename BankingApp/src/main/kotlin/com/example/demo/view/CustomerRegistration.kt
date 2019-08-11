@@ -45,7 +45,6 @@ class CustomerRegistration : Fragment("Registration")
                     action {
                         customerModel.commit()
                         controller.registerCustomer(customerModel.item)
-                        controller.saveData()
                         close()
                         find(MainView::class).openWindow()
                         find<RegistrationConfirmation>().apply { openModal() }

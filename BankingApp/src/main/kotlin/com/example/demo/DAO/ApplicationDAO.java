@@ -1,9 +1,7 @@
 package com.example.demo.DAO;
 
-import com.example.demo.database.Applications;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.utility.ConnectionManager;
-import oracle.jdbc.proxy.annotation.Pre;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

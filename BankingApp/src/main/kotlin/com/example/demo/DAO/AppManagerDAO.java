@@ -1,10 +1,8 @@
 package com.example.demo.DAO;
 
-import com.example.demo.database.CheckingAccounts;
 import com.example.demo.model.Account;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
-import oracle.jdbc.proxy.annotation.Pre;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -36,12 +34,13 @@ public class AppManagerDAO implements Delete<Account>
         ArrayList<Integer> accountIds = new ArrayList<>();
         Connection connection = connectionManager.getConnection();
         try {
-            PreparedStatement getIdsStatement = connection.prepareStatement("SELECT * from CUSTOMER_ACCOUNTS where CUSTOMER_ID = ?");
+            PreparedStatement getIdsStatement = connection.prepareStatement("SELECT ACCOUNT_ID from CUSTOMER_ACCOUNTS where CUSTOMER_ID = ?");
             getIdsStatement.setInt(1, customer.getCustomerID());
 
             ResultSet accountIdSet = getIdsStatement.executeQuery();
             while (accountIdSet.next())
             {
+                int accId = accountIdSet.getInt(1);
                 accountIds.add(accountIdSet.getInt(1));
             }
 

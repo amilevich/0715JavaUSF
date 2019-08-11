@@ -1,7 +1,5 @@
 package com.example.demo.DAO;
 
-import com.example.demo.data.UserData;
-import com.example.demo.database.Customers;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
 

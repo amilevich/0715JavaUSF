@@ -1,12 +1,7 @@
 package com.example.demo.DAO;
 
-import com.example.demo.DAO.Delete;
-import com.example.demo.DAO.Insert;
-import com.example.demo.DAO.Select;
 import com.example.demo.data.UserData;
-import com.example.demo.database.UserTable;
 import com.example.demo.utility.ConnectionManager;
-import oracle.jdbc.proxy.annotation.Pre;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

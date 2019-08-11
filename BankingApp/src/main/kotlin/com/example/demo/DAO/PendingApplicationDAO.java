@@ -1,7 +1,6 @@
 package com.example.demo.DAO;
 
 import com.example.demo.data.CustomerApplicationJoin;
-import com.example.demo.database.PendingAccounts;
 import com.example.demo.model.AccountApplication;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;

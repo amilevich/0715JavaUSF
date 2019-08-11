@@ -1,8 +1,6 @@
 package com.example.demo.DAO;
 
-import com.example.demo.database.JoinAccounts;
 import com.example.demo.model.Account;
-import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
 
 import java.sql.Connection;
