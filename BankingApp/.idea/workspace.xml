@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +116,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TornadoFX.MyApp">
+    <configuration name="IdCheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tornadofx-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.tests.IdCheckTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.checkCorrectLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tornadofx-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.tests.LoginTest" />
+      <option name="METHOD_NAME" value="checkCorrectLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyApp" type="TORNADOFX_RUNCONFIGURATION" factoryName="TornadoFX Configuration Factory" temporary="true" run-type="App" live-views="false" live-stylesheets="false" dump-stylesheets="false">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.app.MyApp" />
       <module name="tornadofx-maven-project" />
@@ -125,6 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TornadoFX.MyApp" />
+        <item itemvalue="JUnit.IdCheckTest" />
+        <item itemvalue="JUnit.LoginTest.checkCorrectLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +192,7 @@
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
       <workItem from="1565282848420" duration="22328000" />
-      <workItem from="1565556283448" duration="2603000" />
+      <workItem from="1565556283448" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -236,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565632651208</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed the path to the log file within log4j properties file to point to the correct location.">
+      <created>1565632980714</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1565632980714</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,18 +309,8 @@
     <MESSAGE value="Customers can now see their account information that is retrieved from the database." />
     <MESSAGE value="Completed the transition from serialized data structures to using jdbc to communicate with a sql database. Deleted all old files having to do with serialization." />
     <MESSAGE value="Added logging of all transactions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added logging of all transactions." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/CustomerHomeController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fixed the path to the log file within log4j properties file to point to the correct location." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the path to the log file within log4j properties file to point to the correct location." />
   </component>
   <component name="masterDetails">
     <states>

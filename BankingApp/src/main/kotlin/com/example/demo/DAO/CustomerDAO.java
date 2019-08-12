@@ -1,5 +1,6 @@
 package com.example.demo.DAO;
 
+import com.example.demo.data.UserData;
 import com.example.demo.model.Customer;
 import com.example.demo.utility.ConnectionManager;
 
@@ -11,16 +12,19 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 {
 	ConnectionManager connectionManager = ConnectionManager.getInstance();
 
+	UserDAO userDAO = new UserDAO();
+
 	@Override
 	public void update(Customer obj)
 	{
 		Connection connection = connectionManager.getConnection();
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement("UPDATE CUSTOMERS set FIRSTNAME = ?, " +
-					"LASTNAME = ?, ADDRESS = ?");
+					"LASTNAME = ?, ADDRESS = ? where CUSTOMER_ID = ?");
 			preparedStatement.setString(1, obj.getFirstname().getValue());
 			preparedStatement.setString(2, obj.getLastname().getValue());
 			preparedStatement.setString(3, obj.getAddress().getValue());
+			preparedStatement.setInt(4, obj.getCustomerID());
 
 			preparedStatement.execute();
 		} catch (SQLException e) {
@@ -32,7 +36,6 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 	public Customer selectOne(int id)
 	{
 		Connection connection = connectionManager.getConnection();
-		UserDAO userDAO = new UserDAO();
 		Customer customer = null;
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement("SELECT * from CUSTOMERS where CUSTOMER_ID = ?");
@@ -48,7 +51,8 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 				customer.setLastname(resultSet.getString(3));
 				customer.setAddress(resultSet.getString(4));
 
-
+				UserData userData = userDAO.selectOne(customer.getCustomerID());
+				customer.setUsername(userData.getUsername());
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -74,6 +78,9 @@ public class CustomerDAO implements Insert<Customer>, Select<Customer>,
 				customer.setFirstname(resultSet.getString(2));
 				customer.setLastname(resultSet.getString(3));
 				customer.setAddress(resultSet.getString(4));
+
+				UserData userData = userDAO.selectOne(customer.getCustomerID());
+				customer.setUsername(userData.getUsername());
 
 				customers.add(customer);
 			}
