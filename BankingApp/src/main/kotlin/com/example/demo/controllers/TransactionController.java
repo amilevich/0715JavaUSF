@@ -5,6 +5,7 @@ import com.example.demo.DAO.AppManagerDAO;
 import com.example.demo.DAO.CustomerDAO;
 import com.example.demo.DAO.JointAppManagerDAO;
 import com.example.demo.Scopes.CustomerScope;
+import com.example.demo.logging.TransactionLogger;
 import com.example.demo.model.Account;
 import com.example.demo.model.Customer;
 
@@ -18,11 +19,14 @@ public class TransactionController
 
     JointAppManagerDAO jointAppManagerDAO = new JointAppManagerDAO();
 
+    TransactionLogger logger = new TransactionLogger();
+
     public void withdraw(int accountNumber, double amount)
     {
         Account account = accountDAO.selectOne(accountNumber);
         account.setBalance(account.getBalance() - amount);
         accountDAO.update(account);
+        logger.logWithdrawl(accountNumber, amount);
     }
 
     public void deposit(int accountNumber, double amount)
@@ -30,9 +34,10 @@ public class TransactionController
         Account account = accountDAO.selectOne(accountNumber);
         account.setBalance(account.getBalance() + amount);
         accountDAO.update(account);
+        logger.logDeposit(accountNumber, amount);
     }
 
-    public void transfer(int senderID, int receiverID,double amount)
+    public void transfer(int senderID, int receiverID, double amount)
     {
         Account sender = accountDAO.selectOne(senderID);
         Account receiver = accountDAO.selectOne(receiverID);
@@ -41,6 +46,8 @@ public class TransactionController
 
         accountDAO.update(sender);
         accountDAO.update(receiver);
+
+        logger.logTransfer(senderID, receiverID, amount);
     }
 
     public void delete(int id)

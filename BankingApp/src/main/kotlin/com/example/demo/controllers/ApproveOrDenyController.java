@@ -6,13 +6,11 @@ import com.example.demo.data.CustomerApplicationJoin;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.util.ArrayList;
-
 public class ApproveOrDenyController
 {
-    PendingApplicationDAO pendingApplicationDAO = new PendingApplicationDAO();
+    private PendingApplicationDAO pendingApplicationDAO = new PendingApplicationDAO();
 
-    PendingJointApplicationDAO pendingJointApplicationDAO = new PendingJointApplicationDAO();
+    private PendingJointApplicationDAO pendingJointApplicationDAO = new PendingJointApplicationDAO();
 
     public ObservableList<CustomerApplicationJoin> getAllOpenApplications()
     {
