@@ -1,0 +1,19 @@
+2019-08-04 17:46:12 INFO  CustomerDAOImpl:51 - 100.0 was deposited into [bart]'s Account
+2019-08-04 17:46:24 INFO  CustomerDAOImpl:42 - 80.0 was withdrawn from [bart]'s Account
+2019-08-04 21:18:56 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:20:39 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:20:39 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:22:25 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:22:25 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:25:05 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:25:05 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:25:05 INFO  CustomerDAOImpl:69 - 0.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-04 21:25:35 INFO  CustomerDAOImpl:41 - 0.0 was withdrawn from [barton]'s Account
+2019-08-04 21:25:35 INFO  CustomerDAOImpl:53 - 50.0 was deposited into [barton]'s Account
+2019-08-04 21:25:35 INFO  CustomerDAOImpl:69 - 50.0 was withdrawn from [barton] and depositied into [lester]
+2019-08-12 09:20:51 INFO  AccountImpl:31 - 100.0 was withdrawn from 1's Account
+2019-08-12 09:20:52 INFO  AccountImpl:43 - 100.0 was deposited into 1's Account
+2019-08-12 09:20:54 INFO  AccountImpl:59 - 50.0 was withdrawn from 1 and depositied into 2
+2019-08-12 09:21:16 INFO  AccountImpl:31 - 50.0 was withdrawn from 1's Account
+2019-08-12 09:22:29 INFO  AccountImpl:59 - 50.0 was withdrawn from 1 and depositied into 2
+2019-08-12 09:59:10 INFO  AccountImpl:46 - 500.0 was deposited into 1's Account
