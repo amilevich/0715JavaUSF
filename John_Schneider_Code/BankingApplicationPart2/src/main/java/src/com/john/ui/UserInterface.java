@@ -179,25 +179,31 @@ public class UserInterface
 		System.out.println("Type in ID of account to deposit to:");
 		ID = in.nextLine();
 		
-		double amount = 0;
-		System.out.println("Type amount to deposit:");
-		String s_Amount = in.nextLine();
+		if(!core.isInt(ID)) {
+			Logging.log.warn("User input invalid ID \""+ID+"\". Restarting deposit to Account screen.");
+			System.out.println("Invalid ID. Try again.");
+			depositToAccount(username);
+		} else {
+			double amount = 0;
+			System.out.println("Type amount to deposit:");
+			String s_Amount = in.nextLine();
 		
-		if(core.isDouble(s_Amount)) {
-			amount = Double.parseDouble(s_Amount);
+			if(core.isDouble(s_Amount)) {
+				amount = Double.parseDouble(s_Amount);
 			
-			if(amount > 0) {
-				Logging.log.info("User input to depost $"+amount+" to Account: "+ID+". Attempting deposit.");
-				core.depositToAccount(username, ID, amount);
+				if(amount > 0) {
+					Logging.log.info("User input to depost $"+amount+" to Account: "+ID+". Attempting deposit.");
+					core.depositToAccount(username, ID, amount);
+				} else {
+					Logging.log.warn("User input invalid deposit amount: $"+amount+". Restarting deposit to Account screen.");
+					System.out.println("Invalid deposit amount. Try again");
+					depositToAccount(username);
+				}
 			} else {
-				Logging.log.warn("User input invalid deposit amount: $"+amount+". Restarting deposit to Account screen.");
-				System.out.println("Invalid deposit amount. Try again");
+				Logging.log.warn("User input invalid number entry \""+s_Amount+"\". Restarting deposit to Account screen.");
+				System.out.println("Invalid number entry. Try again.");
 				depositToAccount(username);
 			}
-		} else {
-			Logging.log.warn("User input invalid number entry \""+s_Amount+"\". Restarting deposit to Account screen.");
-			System.out.println("Invalid number entry. Try again.");
-			depositToAccount(username);
 		}
 	}
 	
@@ -209,25 +215,31 @@ public class UserInterface
 		System.out.println("Type in ID of account to withdraw from:");
 		ID = in.nextLine();
 		
-		double amount = 0;
-		System.out.println("Type amount to withdraw:");
-		String s_Amount = in.nextLine();
+		if(!core.isInt(ID)) {
+			Logging.log.warn("User input invalid ID \""+ID+"\". Restarting withdraw from account screen.");
+			System.out.println("Invalid ID. Try again.");
+			withdrawFromAccount(username);
+		} else {
+			double amount = 0;
+			System.out.println("Type amount to withdraw:");
+			String s_Amount = in.nextLine();
 		
-		if(core.isDouble(s_Amount)) {
-			amount = Double.parseDouble(s_Amount);
+			if(core.isDouble(s_Amount)) {
+				amount = Double.parseDouble(s_Amount);
 			
-			if(amount > 0) {
-				Logging.log.info("User input to withdraw $"+amount+" from Account: "+ID+". Attempting withdraw.");
-				core.withdrawFromAccount(username, ID, amount);
+				if(amount > 0) {
+					Logging.log.info("User input to withdraw $"+amount+" from Account: "+ID+". Attempting withdraw.");
+					core.withdrawFromAccount(username, ID, amount);
+				} else {
+					Logging.log.warn("User input invalid withdraw amount: "+amount+". Restarting withdraw from Account screen.");
+					System.out.println("Invalid withdraw amount. Try again");
+					withdrawFromAccount(username);
+				}
 			} else {
-				Logging.log.warn("User input invalid withdraw amount: "+amount+". Restarting withdraw from Account screen.");
-				System.out.println("Invalid withdraw amount. Try again");
+				Logging.log.warn("User input invalid number entry \""+s_Amount+"\". Restarting withdraw from Account screen.");
+				System.out.println("Invalid number entry. Try again.");
 				withdrawFromAccount(username);
 			}
-		} else {
-			Logging.log.warn("User input invalid number entry \""+s_Amount+"\". Restarting withdraw from Account screen.");
-			System.out.println("Invalid number entry. Try again.");
-			withdrawFromAccount(username);
 		}
 	}
 	
@@ -377,8 +389,16 @@ public class UserInterface
 			from = in.nextLine();
 			System.out.println("Type ID of account to transfer to:");
 			to = in.nextLine();
-			Logging.log.info("User input transfer from Accout ID: "+from+" to Account ID: "+to);
-			operateTransferFunds(username, from, to);
+			
+			if(!core.isInt(from) || !core.isInt(to)) {
+				Logging.log.warn("User input invalid ID \""+from+" or "+to+"\". Restarting user logged in screen.");
+				System.out.println("Invalid ID. Try again.");
+				transferFundsMenu(username);
+			} else {
+				Logging.log.info("User input transfer from Accout ID: "+from+" to Account ID: "+to);
+				operateTransferFunds(username, from, to);
+			}
+			
 			break;
 		case "2":
 			Logging.log.info("User chose option 2. Exiting transfer funds menu screen.");
@@ -523,8 +543,16 @@ public class UserInterface
 			String ID = in.nextLine();
 			Logging.log.info("User input Account ID: "+ID+" to cancel.");
 			Logging.log.info("Attempting to cancel Account ID: "+ID+".");
-			core.denyAccountByID(username, ID);
-			adminLoggedIn(username);
+			
+			if(core.isInt(ID)) {
+				core.denyAccountByID(username, ID);
+				adminLoggedIn(username);
+			} else {
+				Logging.log.warn("User input invalid ID \""+ID+"\". Restarting user logged in screen.");
+				System.out.println("Invalid ID. Try again.");
+				adminLoggedIn(username);
+			}
+			
 			break;
 		default:
 			Logging.log.warn("User chose invalid option \""+option+"\". Restarting user logged in screen.");

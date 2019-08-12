@@ -216,6 +216,8 @@ public class CoreStarter
 	
 	void denyAccountByID(String username, String ID)
 	{
+		if(!isInt(ID)) return;
+		
 		Account accountToDeny = getAccountByID(ID);
 		
 		if(accountToDeny == null) {
@@ -306,6 +308,16 @@ public class CoreStarter
 	{
 		try{
 			Double.parseDouble(str);
+			return true;
+		} catch(Exception e) {
+			return false;
+		}
+	}
+	
+	boolean isInt(String str)
+	{
+		try {
+			Integer.parseInt(str);
 			return true;
 		} catch(Exception e) {
 			return false;

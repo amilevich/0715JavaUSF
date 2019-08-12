@@ -45,25 +45,6 @@ public class AccountManager implements Serializable
 		}
 	}
 	
-	/*public int getTotalAccountNumber()
-	{
-		Set<String> users = getKeySet();
-		ArrayList<Account> accounts;
-		
-		int count = 1;
-		
-		if(users == null)
-			return count;
-		
-		for(String s : users)
-		{
-			accounts = userAccounts.get(s);
-			count += accounts.size();
-		}
-		
-		return count;
-	}*/
-	
 	public int getTotalAccountNumber()
 	{
 		Set<String> users = getKeySet();
