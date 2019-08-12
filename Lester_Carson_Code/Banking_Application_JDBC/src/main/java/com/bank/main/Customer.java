@@ -19,7 +19,7 @@ public class Customer {
 			
 			System.out.println("Type out the number of your desired operation");
 			System.out.println("1. Create a new User");
-			System.out.println("2. Create a new Account:");
+			System.out.println("2. Create a new Account");
 			System.out.println("3. Open an Account");
 			System.out.println("4. Exit");
 			
@@ -44,7 +44,7 @@ public class Customer {
 				pass = sc.nextLine();
 				System.out.println("Now enter you AccountID for your Account: ");
 				id = sc.nextLine();
-				if(acc.Open(Integer.valueOf(id)) && use.Login(name, pass, 1)) {
+				if(use.Login(name, pass, 1, Integer.valueOf(id)) && acc.Open(Integer.valueOf(id))) {
 					CustomerOpen(acc);
 				}
 			} else if (input.equals("4")) {

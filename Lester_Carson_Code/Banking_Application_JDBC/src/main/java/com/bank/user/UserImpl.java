@@ -10,8 +10,8 @@ public class UserImpl {
 		System.out.println("User created...");
 	}
 	
-	public boolean Login(String name, String pass, int input) {
-		user = use.selectUserByUsernameAndPassword(name, pass, input);
+	public boolean Login(String name, String pass, int input, int id) {
+		user = use.selectUserByUsernameAndPassword(name, pass, input, id);
 		if(user != null) {
 			return true;
 		}

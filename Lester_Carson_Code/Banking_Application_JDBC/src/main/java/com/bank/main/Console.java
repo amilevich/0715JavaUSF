@@ -29,7 +29,7 @@ public class Console {
 				name = sc.nextLine();
 				System.out.println("Now enter your password: ");
 				password = sc.nextLine();
-				if(use.Login(name, password, 2)) {
+				if(use.Login(name, password, 2, 0)) {
 					Employee.EmployeeRun();
 				} else {
 					System.out.println("Invalid Username and/or Password");
@@ -39,7 +39,7 @@ public class Console {
 				name = sc.nextLine();
 				System.out.println("Now enter your password: ");
 				password = sc.nextLine();
-				if(use.Login(name, password, 3)) {
+				if(use.Login(name, password, 3, 0)) {
 					Bank_Admin.Bank_AdminRun();
 				} else {
 					System.out.println("Invalid Username and/or Password");

@@ -32,6 +32,7 @@ public class AccountImpl {
 		if (acc.getBalance() >= amt) {
 			acc.setBalance(acc.getBalance() - amt);
 			loggy.info(amt + " was withdrawn from " + acc.getAccountID() + "'s Account");
+			System.out.println("Deposit Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
 		} else {
@@ -44,6 +45,7 @@ public class AccountImpl {
 		if (amt > 0) {
 			acc.setBalance(acc.getBalance() + amt);
 			loggy.info(amt + " was deposited into " + acc.getAccountID() + "'s Account");
+			System.out.println("Withdraw Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
 		} else {
@@ -60,6 +62,7 @@ public class AccountImpl {
 			acc2.setBalance(acc2.getBalance() + bal);
 			use.updateAccountBalance(acc2);
 			loggy.info(bal + " was withdrawn from " + acc.getAccountID() + " and depositied into " + acc2.getAccountID());
+			System.out.println("Transfer Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
 		} else {

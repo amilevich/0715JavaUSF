@@ -5,6 +5,5 @@ import com.bank.user.User;
 public interface UserDAO {
 
 	public void insertUser(User u);
-	public User selectUserByUsername(String name);
-	public User selectUserByUsernameAndPassword(String name, String password, int input);
+	public User selectUserByUsernameAndPassword(String name, String password, int input, int id);
 }

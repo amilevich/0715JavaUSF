@@ -17,3 +17,5 @@
 2019-08-12 09:21:16 INFO  AccountImpl:31 - 50.0 was withdrawn from 1's Account
 2019-08-12 09:22:29 INFO  AccountImpl:59 - 50.0 was withdrawn from 1 and depositied into 2
 2019-08-12 09:59:10 INFO  AccountImpl:46 - 500.0 was deposited into 1's Account
+2019-08-12 14:49:44 INFO  AccountImpl:46 - 100.0 was deposited into 1's Account
+2019-08-12 14:50:01 INFO  AccountImpl:62 - 300.0 was withdrawn from 1 and depositied into 2
