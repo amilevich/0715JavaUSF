@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 public class TransactionLogger
 {
-    static Logger transactionLogger = LogManager.getLogger(TransactionLogger.class);
+    final static Logger transactionLogger = LogManager.getLogger(TransactionLogger.class);
 
     public void logWithdrawl(int accountId, double amount)
     {

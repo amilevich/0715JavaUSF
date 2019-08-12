@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/accounts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/applications.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/checkingAccounts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/customers.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/jointAccounts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/pendingAccounts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/pendingJointAccounts.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/users.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/ApproveOrDenyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/TransactionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/ApproveOrDenyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/controllers/TransactionController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +157,7 @@
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
       <workItem from="1565282848420" duration="22328000" />
-      <workItem from="1565556283448" duration="2296000" />
+      <workItem from="1565556283448" duration="2603000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -239,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565556205889</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added logging of all transactions.">
+      <created>1565632651208</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1565632651208</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +266,8 @@
     <MESSAGE value="Admin and employee can now approve and delete both checking and joint applications with the results being properly mirrored in the database." />
     <MESSAGE value="Customers can now see their account information that is retrieved from the database." />
     <MESSAGE value="Completed the transition from serialized data structures to using jdbc to communicate with a sql database. Deleted all old files having to do with serialization." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed the transition from serialized data structures to using jdbc to communicate with a sql database. Deleted all old files having to do with serialization." />
+    <MESSAGE value="Added logging of all transactions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added logging of all transactions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
