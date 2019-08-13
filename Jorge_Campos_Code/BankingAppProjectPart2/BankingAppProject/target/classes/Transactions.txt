@@ -1,0 +1,59 @@
+2019-08-04 18:33:53 INFO  Bank:313 - testlog deposited 100.0
+2019-08-04 18:34:07 INFO  Bank:299 - testlog withdrew 25.0
+2019-08-04 18:37:07 INFO  Bank:313 - testlog deposited 10.0
+2019-08-04 18:37:44 INFO  Bank:299 - testlog withdrew 10.0
+2019-08-04 18:38:05 INFO  Bank:299 - testlog withdrew 5.0
+2019-08-04 18:38:05 INFO  Bank:327 - testlog deposited 5.0 to bob
+2019-08-04 18:53:53 INFO  Bank:313 - testlog deposited 15.0
+2019-08-04 18:54:03 INFO  Bank:299 - testlog withdrew 10.0
+2019-08-04 18:54:31 INFO  Bank:299 - testlog withdrew 5.0
+2019-08-04 18:54:31 INFO  Bank:327 - testlog deposited 5.0 to bob
+2019-08-04 20:09:14 INFO  Bank:88 - admin edited tom's approval setting from true to true
+2019-08-05 14:12:43 INFO  Bank:135 - admin canceled joint1's account
+2019-08-05 14:17:22 INFO  Bank:135 - admin canceled joint2's account
+2019-08-05 14:19:52 INFO  Bank:311 - testlog deposited 5.0
+2019-08-05 14:24:29 INFO  Bank:311 - test deposited 50.0
+2019-08-05 14:30:40 INFO  Bank:135 - admin canceled test's account
+2019-08-05 14:34:42 INFO  Bank:135 - admin canceled employee1's account
+2019-08-05 16:35:15 INFO  Bank:135 - admin canceled test's account
+2019-08-05 20:32:15 INFO  Bank:311 - trial deposited 100.0
+2019-08-05 20:32:30 INFO  Bank:297 - trial withdrew 12.0
+2019-08-05 20:32:43 INFO  Bank:297 - trial withdrew 3.0
+2019-08-05 20:32:43 INFO  Bank:325 - trial deposited 3.0 to tom
+2019-08-05 20:39:46 INFO  Bank:297 - trial withdrew 10.0
+2019-08-11 23:35:14 INFO  Bank:421 - John deposited 100.0
+2019-08-11 23:35:22 INFO  Bank:407 - John withdrew 5.0
+2019-08-11 23:37:36 INFO  Bank:421 - John deposited 100.0
+2019-08-11 23:37:51 INFO  Bank:407 - John withdrew 5.0
+2019-08-11 23:44:12 INFO  Bank:139 - admin edited employee access from true to false
+2019-08-11 23:46:07 INFO  Bank:134 - admin edited employee access from false to true
+2019-08-11 23:47:13 INFO  Bank:123 - admin edited employee1's approval setting from true to false
+2019-08-11 23:47:24 INFO  Bank:118 - admin edited employee1's approval setting from false to true
+2019-08-11 23:47:40 INFO  Bank:89 - admin edited account number from null to 1234
+2019-08-12 00:02:38 INFO  Bank:123 - admin edited Bob's approval setting from true to false
+2019-08-12 00:05:55 INFO  Bank:165 - admin canceled Ted's account
+2019-08-12 10:39:19 INFO  Bank:427 - Bob deposited 500.0
+2019-08-12 10:39:31 INFO  Bank:413 - Bob withdrew 125.0
+2019-08-12 10:39:47 INFO  Bank:413 - Bob withdrew 50.0
+2019-08-12 10:39:47 INFO  Bank:441 - Bob deposited 50.0 to Tom
+2019-08-12 10:40:00 WARN  Bank:408 - Error, not enough funds
+2019-08-12 10:40:17 WARN  Bank:422 - Error, Not an accepted amount(negative)
+2019-08-12 10:47:39 INFO  Bank:427 - Bob deposited 150.0
+2019-08-12 10:48:09 INFO  Bank:413 - Bob withdrew 150.0
+2019-08-12 10:48:09 INFO  Bank:441 - Bob deposited 150.0 to Tom
+2019-08-12 10:50:17 INFO  Bank:413 - Tom withdrew 100.0
+2019-08-12 10:50:17 INFO  Bank:441 - Tom deposited 100.0 to Bob
+2019-08-12 15:56:35 INFO  Bank:456 - John deposited 500.0
+2019-08-12 15:57:21 INFO  Bank:456 - Mary deposited 100.0
+2019-08-12 16:06:05 INFO  Bank:457 - Mary deposited 500.0
+2019-08-12 16:13:07 INFO  Bank:457 - Mary deposited 100.0
+2019-08-12 16:13:26 INFO  Bank:438 - John withdrew 200.0
+2019-08-12 16:18:17 INFO  Bank:457 - Dylan deposited 900.0
+2019-08-12 16:18:37 INFO  Bank:438 - Dylan withdrew 150.0
+2019-08-12 16:18:37 INFO  Bank:476 - Dylan deposited 150.0 to John
+2019-08-12 16:26:18 INFO  Bank:438 - Dylan withdrew 5.0
+2019-08-12 16:26:18 INFO  Bank:476 - Dylan deposited 5.0 to Mary
+2019-08-13 09:24:30 INFO  Bank:470 - Mark deposited 900.0
+2019-08-13 09:25:19 INFO  Bank:451 - Mark withdrew 125.0
+2019-08-13 09:25:20 INFO  Bank:489 - Mark deposited 125.0 to John
+2019-08-13 09:25:56 INFO  Bank:451 - John withdrew 5.0
