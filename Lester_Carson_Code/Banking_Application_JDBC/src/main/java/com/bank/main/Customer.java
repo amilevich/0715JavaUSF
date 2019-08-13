@@ -44,7 +44,7 @@ public class Customer {
 				pass = sc.nextLine();
 				System.out.println("Now enter you AccountID for your Account: ");
 				id = sc.nextLine();
-				if(use.Login(name, pass, 1, Integer.valueOf(id)) && acc.Open(Integer.valueOf(id))) {
+				if(use.Login(name, pass, Integer.valueOf(id), 1) && acc.Open(Integer.valueOf(id))) {
 					CustomerOpen(acc);
 				}
 			} else if (input.equals("4")) {

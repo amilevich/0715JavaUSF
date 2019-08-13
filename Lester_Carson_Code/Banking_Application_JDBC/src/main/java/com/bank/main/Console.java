@@ -31,8 +31,6 @@ public class Console {
 				password = sc.nextLine();
 				if(use.Login(name, password, 2, 0)) {
 					Employee.EmployeeRun();
-				} else {
-					System.out.println("Invalid Username and/or Password");
 				}
 			} else if (input.equals("3")) {
 				System.out.println("Please enter a username for your account:");
@@ -41,8 +39,6 @@ public class Console {
 				password = sc.nextLine();
 				if(use.Login(name, password, 3, 0)) {
 					Bank_Admin.Bank_AdminRun();
-				} else {
-					System.out.println("Invalid Username and/or Password");
 				}
 			} else if (input.equals("4")) {
 				System.out.println("Exiting...");

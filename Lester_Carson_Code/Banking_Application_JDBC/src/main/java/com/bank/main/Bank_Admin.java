@@ -17,7 +17,8 @@ public class Bank_Admin {
 			System.out.println("Please Pick an Operation");
 			System.out.println("1. Approve/Cancel Accounts");
 			System.out.println("2. Edit Account");
-			System.out.println("3. Exit");
+			System.out.println("3. View Account Information");
+			System.out.println("4. Exit");
 
 			input = sc.nextLine();
 			if (input.equals("1")) {
@@ -33,6 +34,10 @@ public class Bank_Admin {
 					Customer.CustomerOpen(acc);
 				}
 			} else if (input.equals("3")) {
+				System.out.println("Please enter a accountID for the account you want to view:");
+				input = sc.nextLine();
+				acc.View(Integer.valueOf(input));
+			} else if (input.equals("4")) {
 				break;
 			} else {
 				System.out.println("Please type in the integer that best corresponds to you:");

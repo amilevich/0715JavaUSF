@@ -22,7 +22,6 @@ public class UserDAOImpl implements UserDAO {
 			ps.setString(2, u.getPassword());
 			ps.setInt(3, u.getType());
 			ps.executeUpdate();
-			
 		} catch (SQLException e) {
 			System.out.println("Username already exists...");
 		}
@@ -38,17 +37,16 @@ public class UserDAOImpl implements UserDAO {
 			PreparedStatement ps1 = conn.prepareStatement("SELECT * FROM acclink WHERE pk_accountID = ? AND pk_username = ?");
 			ps.setString(1, name);
 			ps.setString(2, pass);
-			ResultSet rs1;
+			ResultSet rs, rs1;
 			if (input == 1) {
 				ps1.setInt(1, id);
 				ps1.setString(2, name);
-				
 				rs1 = ps1.executeQuery();
 				if (!rs1.next()) {
 					return null;
 				}
 			}
-			ResultSet rs = ps.executeQuery();
+			rs = ps.executeQuery();
 			while (rs.next()) {
 				u = new User(rs.getString("username"), rs.getString("password"), rs.getInt("type"));
 			}

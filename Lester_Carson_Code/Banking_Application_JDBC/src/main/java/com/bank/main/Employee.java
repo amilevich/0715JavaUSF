@@ -15,7 +15,7 @@ public class Employee {
 		while (true) {
 			
 			System.out.println("Type out the number of your desired operation");
-			System.out.println("1. View Account information");
+			System.out.println("1. View Account Information");
 			System.out.println("2. Approve an Account");
 			System.out.println("3. Exit");
 			

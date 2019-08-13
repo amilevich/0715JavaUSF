@@ -10,12 +10,13 @@ public class UserImpl {
 		System.out.println("User created...");
 	}
 	
-	public boolean Login(String name, String pass, int input, int id) {
-		user = use.selectUserByUsernameAndPassword(name, pass, input, id);
-		if(user != null) {
+	public boolean Login(String name, String pass, int id, int input) {
+		user = use.selectUserByUsernameAndPassword(name, pass, id, input);
+		//statement for hard-coded employee and bank_admin. Function broke down for unknown reason
+		if((user != null && user.getType() == id)|| (name.equals("employee") && user.getType() == 2) || name.equals("bankadmin") && user.getType() == 3) {
 			return true;
 		}
-		System.out.println("Login in failed, incorrect username and/or password...");
+		System.out.println("Login in failed, incorrect username and/or password, or incorrect account type");
 		return false;	
 	}
 }

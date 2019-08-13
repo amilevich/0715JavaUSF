@@ -10,7 +10,6 @@ public class AccountImpl {
 	
 	public void Create(String name, String pass) {
 		use.insertAccount(new Account(), name);
-		System.out.println("Account +  Created...");
 	}
 	
 	public boolean Open(int accID) {
@@ -79,7 +78,7 @@ public class AccountImpl {
 	public void View(int accID) {
 		acc = use.selectAccountByID(accID);
 		if (acc != null) {
-			System.out.println(acc.toString());
+			System.out.println(acc.toString() + "Users: " + use.selectUsernamesLinkedToAccount(accID));
 			System.out.println("For isapproved: 0 = not approved, 1 = approved.");
 		} else {
 			System.out.println("Account could not be found...");
