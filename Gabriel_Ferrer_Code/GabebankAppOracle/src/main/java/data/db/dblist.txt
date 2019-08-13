@@ -1,0 +1,14 @@
+/// aws rds oracle 
+url = jdbc:oracle:thin:@gabebank.cbvpgyiaxyiq.us-east-2.rds.amazonaws.com:1521/ORCL
+user = cgabferr
+pass = zHyDk98dF
+/// oracle xe local
+url = jdbc:oracle:thin:@localhost:1521/xe
+user = cgabferr
+pass = zHyDk98dF
+driver = oracle.jdbc.driver.OracleDriver
+/// aws rds oracle
+url = jdbc:oracle:thin:@gabebank.cbvpgyiaxyiq.us-east-2.rds.amazonaws.com:1521/ORCL
+user = gabferr
+pass = nkjYRFU656##
+driver = oracle.jdbc.driver.OracleDriver
