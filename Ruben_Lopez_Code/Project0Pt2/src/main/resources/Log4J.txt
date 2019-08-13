@@ -1,0 +1,6 @@
+2019-08-12 20:17:37 INFO  Loginmenu:64 -  User LopezR013 Was logged in
+2019-08-13 08:11:22 INFO  Register:59 - New account created. Accounnumber 13Password 123
+2019-08-13 08:12:52 INFO  Register:59 - New account created. Accounnumber 14Password 1234
+2019-08-13 09:55:08 INFO  Register:59 - New account created. Accounnumber 15Password 123
+2019-08-13 09:55:54 INFO  Loginmenu:64 -  User LopezR013 Was logged in
+2019-08-13 09:56:59 INFO  AP:44 - 12 was approved 
