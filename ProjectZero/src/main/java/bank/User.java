@@ -1,3 +1,6 @@
+/* Note to self: AccountNumber2 methods work. Everything else, not so much.
+*  For part 2, cleanse code/restart if needed, account 2 methods are superior and actually function.
+*/ 
 package bank;
 
 import java.io.FileInputStream;
@@ -36,7 +39,7 @@ public class User extends Bank implements Serializable
 		password = "password";
 		approved = false;
 		joint = false;
-		employee = false;
+		employee = true;
 		admin = false;
 		System.out.println("Welcome " + s + " to the Iron Bank.");
 	}
@@ -47,7 +50,8 @@ public class User extends Bank implements Serializable
 		joint = false;
 		employee = false;
 		admin = false;
-		System.out.println("Welcome " + s + " to the Iron Bank.");
+		
+//		System.out.println("Welcome " + s + " to the Iron Bank.");
 	}
 	public double getBalance(String username) 
 	{
@@ -62,12 +66,14 @@ public class User extends Bank implements Serializable
 		int select;
 		double amount;
 		Scanner s = new Scanner(System.in);
-		System.out.println("Welcome to the iron bank.");
-		System.out.println("Enter your username to begin the login process, or type in 'new' to initiate account creation.");
+		System.out.println("Thank you for choosing this bank branch.");
+		System.out.println("");
+		System.out.println("Enter your username to begin the login process, or type in 'create account' to initiate account creation.");
 		username = s.nextLine();
-		if (username.compareToIgnoreCase("new") == 0) 
+		if ((username.compareToIgnoreCase("new") == 0)||(username.compareToIgnoreCase("create account")==0))
 		{				
-			System.out.println("Do you wish to apply for a joint account? \n\t Type y for yes or n for no.");
+			System.out.println("Will this be a joint account?");
+			System.out.println("Type y for yes or n for no.");
 			String temp = s.nextLine();
 			if(temp.compareToIgnoreCase("y") == 0) 
 			{				
@@ -105,48 +111,53 @@ public class User extends Bank implements Serializable
 						System.out.println("1) Deposit");
 						System.out.println("2) Withdraw");
 						System.out.println("3) Transfer Money");
-						System.out.println("4) Exit/Logout");
+						System.out.println("4) Log Out");
 						select = s.nextInt();	
 						switch(select) {
 						case(1):
-							System.out.print("Please enter your deposit amount. ");
+							System.out.println("Please enter your deposit amount. ");
 							amount = s.nextDouble();
 							deposit(username,amount);
 							break;
 						case(2):
-							System.out.print("Please enter your withdrawl amount. ");
+							System.out.println("Please enter your withdrawl amount. ");
 							amount = s.nextDouble();
 							withdraw(username,amount);
 							break;
 						case(3):
-							System.out.print("Please enter an amount to transfer.");
+							System.out.println("Please enter an amount to transfer.");
 							amount = s.nextDouble();
 							s.nextLine();
-							System.out.print("Please enter the account number to transfer to: ");
+							System.out.println("Please enter the account number to transfer to: ");
 							acctNum2 = s.nextLine();
 							transfer(username,amount,acctNum2);
 							break;
 						case(4):
-							System.out.print("Thank you for your business.");
-							break;
+							System.out.println("Thank you for your business.");
+//							break;
+						menu();
 						default:
 							System.out.println("Invalid input. Please try again.");
 							break;
 						}							
 					}while(select != 4);
+					menu();
 				}
 				
 				else {				//employee menu
-					if(!users.get(username).admin) {
-						do {
+					if(!users.get(username).admin) 
+					{
+						do 
+						{
 							System.out.println("Welcome employee " + username +". ");
-							System.out.println("You have " + balance + " in your account.");
+//							System.out.println("You have $" + balance + " in your account.");
 							System.out.println("Please select your intended action: \n 1) View Account");
-							System.out.println("2) Approve Acount");
-							System.out.println("3) Exit/Logout");
+							System.out.println("2) Approve account");
+							System.out.println("3) Log out");
 							select = s.nextInt();	
 							s.nextLine();
-							switch(select) {
+							switch(select) 
+							{
 							case(1):
 								System.out.print("Please enter account username: ");
 								acctNum2 = s.nextLine();
@@ -164,9 +175,13 @@ public class User extends Bank implements Serializable
 								System.out.println("Invalid input. Please try again.");
 								break;
 							}							
-						}while(select != 3);
-					}else
+						}
+						while(select != 3);
+					}
+					else
+					{
 						adminMenu(username);
+					}
 				}
 				
 			}else if(!findAccount(username))
@@ -181,19 +196,21 @@ public class User extends Bank implements Serializable
 		//s.close();
 	}
 
-	private void adminMenu(String username) {
+	private void adminMenu(String username) throws Exception 
+	{
 		String accountNumber2;
 		int select;
 		Scanner s = new Scanner(System.in);
 		
-		do {
+		do 
+		{
 			System.out.println("Welcome administrator " + username + ". ");
 			System.out.println("Select an action to perform from the menu below.");
 			System.out.println("");
 			System.out.println("1) View account");
 			System.out.println("2) Approve an account");
-			System.out.println("3) Edit account");
-			System.out.println("4) Add an employee");
+			System.out.println("3) Promote an account");
+			System.out.println("4) Edit account");
 			System.out.println("5) View all users");
 			System.out.println("6) Log out");
 			select = s.nextInt();
@@ -208,36 +225,36 @@ public class User extends Bank implements Serializable
 			case(2):
 				System.out.print("Enter the username of the account to approve.");
 				System.out.println("");
-			s.next();
 				accountNumber2 = s.nextLine();
 				((Employee)(users.get(username))).approveAcct(accountNumber2);
 				System.out.println("Account approved.");
 				break;
 			case(3):
+				System.out.print("Enter the username of the account to promote.");
+				System.out.println("");
+				accountNumber2 = s.nextLine();
+				((Employee)(users.get(username))).employ(accountNumber2);
+				System.out.println(accountNumber2 + " is now an employee.");
+				break;
+			case(4):
 				System.out.print("Enter the username of the account you wish to edit.");
 				System.out.println("");
 				s.next();
 				accountNumber2 = s.nextLine();
 				((Admin)(users.get(username))).editAcct(accountNumber2);
 				break;
-			case(4):
-				System.out.print("Enter the account that you wish to upgrade to employee.");
-			System.out.println("");
-			s.next();
-				accountNumber2 = s.nextLine();
-				((Admin)(users.get(username))).addEmployee(accountNumber2);
-				break;
 			case(5):
 				System.out.println("Current list of users: "+ users.keySet());
-			System.out.println("");
+				System.out.println("");
 				break;
 			case(6):
 				System.out.print("Thank you for your business.");
-				break;
+				logout();
+				menu();
 			default:
 				System.out.println("Invalid input. Please try again.");
 				break;
-			}							
+			}		
 		}
 		while(select != 6);		
 	}
@@ -275,7 +292,8 @@ public class User extends Bank implements Serializable
         	return false;
 	}
 	
-	void logout() {					
+	void logout() 
+	{					
 		save();
 		System.out.println("\n\n");
 		balance = 0;
@@ -354,7 +372,7 @@ public class User extends Bank implements Serializable
 	@Override
 	public String toString() 
 	{
-		return "User [accountNumber=" + accountNumber + ", userName=" + userName + ", password=" + password + ", balance=" + balance
-				+ ", approved=" + approved + ", joint=" + joint + ", employee=" + employee + ", admin=" + admin + "]";
+		return "These are the details of username " + userName + ", who has an account number " + accountNumber + ". \n" + userName + "'s password is " + password + " and the account has a current balance of $" + balance
+				+ "." + "\n Approval status is " + approved + ", joint account is " + joint + ", employee status is " + employee + ", admin status is " + admin + ". \n\n";
 	}
 }

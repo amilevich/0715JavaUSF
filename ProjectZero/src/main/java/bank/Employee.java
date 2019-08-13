@@ -30,5 +30,9 @@ public class Employee extends User
 	{
 		users.get(username).approved = true;
 	}
+	public void employ(String username)
+	{
+		users.get(username).employee = true;
+	}
 
 }
