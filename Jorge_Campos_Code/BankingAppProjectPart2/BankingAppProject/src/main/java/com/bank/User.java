@@ -273,7 +273,7 @@ public class User extends Bank implements Serializable{
 				else {				//employee menu
 					if(!users.get(username).admin) {
 						do {
-							System.out.println("Welcome Employee " + username +": \t\tYour Current balance is: "+ balance);
+							System.out.println("\nWelcome Employee " + username +": \t\tYour Current balance is: "+ balance);
 							System.out.println("Please select action: \n1) View Account \n"
 									+ "2) Approve Acount\n"
 									+ "3) Exit/Logout");
@@ -520,7 +520,7 @@ public class User extends Bank implements Serializable{
 	@Override
 	public String toString() {
 		return "User [acctNum=" + acctNum + ", userName=" + userName + ", balance=" + balance + ", approved=" 
-				+ approved + ", joint=" + joint + ", employee=" + employee + ", admin=" + admin + "]";
+				+ approved + ", joint=" + joint + ", employee=" + employee + ", admin=" + admin + "]\n";
 	}
 
 	

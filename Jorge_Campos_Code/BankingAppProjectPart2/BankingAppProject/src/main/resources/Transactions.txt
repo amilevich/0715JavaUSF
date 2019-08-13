@@ -57,3 +57,7 @@
 2019-08-13 09:25:19 INFO  Bank:451 - Mark withdrew 125.0
 2019-08-13 09:25:20 INFO  Bank:489 - Mark deposited 125.0 to John
 2019-08-13 09:25:56 INFO  Bank:451 - John withdrew 5.0
+2019-08-13 16:10:54 INFO  Bank:108 - admin edited John's account password from jpass to password
+2019-08-13 16:11:16 INFO  Bank:108 - admin edited Mary's account password from mpass to password
+2019-08-13 16:11:45 INFO  Bank:108 - admin edited Mark's account password from mpass to password
+2019-08-13 16:21:39 INFO  Bank:478 - Steve deposited 434.0
