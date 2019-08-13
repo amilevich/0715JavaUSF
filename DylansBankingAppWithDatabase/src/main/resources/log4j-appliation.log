@@ -1,0 +1,78 @@
+2019-08-05 14:23:26 INFO  LogInMenu:47 - Wolf Logged In
+2019-08-05 14:23:33 INFO  CustomerMenu:54 - WolfDeposited 200.0 into account
+2019-08-05 14:23:40 INFO  CustomerMenu:84 - WolfWithdrew 50.0 from account
+2019-08-05 14:23:43 INFO  CustomerMenu:60 - WolfChecked current account balance
+2019-08-05 16:20:07 INFO  CustomerMenu:54 - WolfDeposited 200.0 into account
+2019-08-05 16:20:15 INFO  CustomerMenu:84 - WolfWithdrew 50.0 from account
+2019-08-05 16:20:19 INFO  CustomerMenu:60 - WolfChecked current account balance
+2019-08-10 18:26:50 INFO  LogInMenu:77 - Wolf Logged In
+2019-08-10 18:30:15 INFO  LogInMenu:77 - Wolf Logged In
+2019-08-10 18:49:32 INFO  LogInMenu:77 - Ninja Logged In
+2019-08-10 19:00:03 INFO  LogInMenu:77 - Wolf Logged In
+2019-08-10 19:03:49 INFO  LogInMenu:77 - Wolf Logged In
+2019-08-10 20:22:52 INFO  LogInMenu:77 - Wolf Logged In
+2019-08-10 20:47:30 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 12:51:54 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 12:52:01 INFO  CustomerMenu:61 - WolfDeposited $200.0 into account.
+2019-08-11 12:55:45 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 12:55:54 INFO  CustomerMenu:67 - WolfChecked current account balance
+2019-08-11 13:01:59 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 13:02:09 INFO  CustomerMenu:61 - WolfDeposited $200.0 into account.
+2019-08-11 13:02:16 INFO  CustomerMenu:67 - WolfChecked current account balance
+2019-08-11 13:02:45 INFO  CustomerMenu:107 - Wolfwith ID 21 Withdrew $50.0 from account
+2019-08-11 13:10:06 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 13:10:30 INFO  LogInMenu:79 - Wolf Logged In
+2019-08-11 13:15:01 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 13:16:46 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 13:17:06 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:04:19 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:04:38 INFO  CustomerMenu:124 - Wolfwith ID 1 Deposited $20.0 from account
+2019-08-11 15:04:38 INFO  CustomerMenu:63 - WolfDeposited $20.0 into account.
+2019-08-11 15:04:51 INFO  CustomerMenu:69 - WolfChecked current account balance
+2019-08-11 15:11:57 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:12:49 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:13:28 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:14:36 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:18:11 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:21:17 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:37:12 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 15:42:42 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 16:32:27 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 16:32:55 INFO  LogInMenu:80 - Ninja Logged In
+2019-08-11 16:33:26 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:19:31 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:19:53 INFO  LogInMenu:80 - Ninja Logged In
+2019-08-11 18:20:20 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:25:01 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:25:52 INFO  CustomerMenu:128 - Wolfwith ID 1 Deposited $400.0 from account
+2019-08-11 18:25:52 INFO  CustomerMenu:60 - WolfDeposited $400.0 into account.
+2019-08-11 18:26:06 INFO  CustomerMenu:66 - WolfChecked current account balance
+2019-08-11 18:29:25 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:29:30 INFO  CustomerMenu:66 - WolfChecked current account balance
+2019-08-11 18:30:25 INFO  CustomerMenu:128 - Wolfwith ID 1 Deposited $20.0 from account
+2019-08-11 18:30:25 INFO  CustomerMenu:60 - WolfDeposited $20.0 into account.
+2019-08-11 18:30:34 INFO  CustomerMenu:66 - WolfChecked current account balance
+2019-08-11 18:34:05 INFO  LogInMenu:80 - Wolf Logged In
+2019-08-11 18:35:28 INFO  CustomerMenu:66 - WolfChecked current account balance
+2019-08-11 18:35:37 INFO  CustomerMenu:128 - Wolfwith ID 1 Deposited $400.0 from account
+2019-08-11 18:35:37 INFO  CustomerMenu:60 - WolfDeposited $400.0 into account.
+2019-08-11 18:35:42 INFO  CustomerMenu:66 - WolfChecked current account balance
+2019-08-11 18:35:50 INFO  CustomerMenu:113 - Wolfwith ID 1 Withdrew $100.0 from account
+2019-08-11 18:36:04 INFO  CustomerMenu:143 - WolfAccessed Joint account
+2019-08-11 18:36:20 INFO  CustomerMenu:113 - Wolfwith ID 1 Withdrew $100.0 from account
+2019-08-11 18:36:21 INFO  CustomerJointMenu:138 - Wolfwith account ID 113 Deposited $100.0 from account
+2019-08-11 18:36:21 INFO  CustomerJointMenu:76 - Wolf Transfered 100.0 from Checking into Joint
+2019-08-11 18:36:43 INFO  CustomerJointMenu:124 - Wolfwith Account ID 113 Withdrew $50.0 from account
+2019-08-11 18:36:45 INFO  CustomerMenu:128 - Wolfwith ID 1 Deposited $50.0 from account
+2019-08-11 18:36:45 INFO  CustomerJointMenu:87 - Wolf Transfered 50.0 from Joint into Checking
+2019-08-11 18:38:27 INFO  CustomerJointMenu:138 - Wolfwith account ID 113 Deposited $200.0 from account
+2019-08-11 18:38:27 INFO  CustomerJointMenu:61 - WolfDeposited $200.0 into Joint account.
+2019-08-11 18:40:55 INFO  LogInMenu:80 - Ninja Logged In
+2019-08-11 18:40:59 INFO  CustomerMenu:66 - NinjaChecked current account balance
+2019-08-11 18:42:14 INFO  CustomerMenu:143 - NinjaAccessed Joint account
+2019-08-11 18:42:39 INFO  CustomerMenu:128 - Ninjawith ID 2 Deposited $400.0 from account
+2019-08-11 18:42:39 INFO  CustomerMenu:60 - NinjaDeposited $400.0 into account.
+2019-08-11 18:45:21 INFO  CustomerMenu:143 - NinjaAccessed Joint account
+2019-08-11 18:45:57 INFO  CustomerMenu:113 - Ninjawith ID 2 Withdrew $100.0 from account
+2019-08-11 18:45:58 INFO  CustomerJointMenu:138 - Ninjawith account ID 113 Deposited $100.0 from account
+2019-08-11 18:45:58 INFO  CustomerJointMenu:76 - Ninja Transfered 100.0 from Checking into Joint
