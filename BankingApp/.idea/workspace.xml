@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/DAO/CustomerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/DAO/CustomerDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/LoginForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm$$special$$inlined$with$lambda$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/components/LoginForm.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +78,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="TornadoFX Code View" />
         <option value="Class" />
       </list>
     </option>
@@ -192,7 +198,7 @@
       <workItem from="1565103611202" duration="229000" />
       <workItem from="1565103854791" duration="1457000" />
       <workItem from="1565282848420" duration="22328000" />
-      <workItem from="1565556283448" duration="4926000" />
+      <workItem from="1565556283448" duration="7041000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
@@ -278,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565632980714</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fixed a bug causing username to not populate in the customer info view. Fixed a bug causing edits on customer info to apply to all customers. Added some unit testing.">
+      <created>1565635253172</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1565635253172</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +323,8 @@
     <MESSAGE value="Completed the transition from serialized data structures to using jdbc to communicate with a sql database. Deleted all old files having to do with serialization." />
     <MESSAGE value="Added logging of all transactions." />
     <MESSAGE value="Fixed the path to the log file within log4j properties file to point to the correct location." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the path to the log file within log4j properties file to point to the correct location." />
+    <MESSAGE value="Fixed a bug causing username to not populate in the customer info view. Fixed a bug causing edits on customer info to apply to all customers. Added some unit testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug causing username to not populate in the customer info view. Fixed a bug causing edits on customer info to apply to all customers. Added some unit testing." />
   </component>
   <component name="masterDetails">
     <states>

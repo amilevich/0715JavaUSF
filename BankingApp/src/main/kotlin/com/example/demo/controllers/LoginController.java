@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.DAO.CustomerDAO;
+import com.example.demo.DAO.EmployeeDAO;
 import com.example.demo.data.CurrentLoggedInCustomer;
 import com.example.demo.data.CurrentLoggedInEmployee;
 import com.example.demo.DAO.UserDAO;
@@ -35,9 +36,9 @@ public class LoginController
 
     public void setLoggedInEmployee(String username, String password)
     {
-        IdGenerator generator = new IdGenerator();
+        EmployeeDAO employeeDAO = new EmployeeDAO();
         CurrentLoggedInEmployee currentEmployee = CurrentLoggedInEmployee.getInstance();
-        Employee employee = new Employee(generator.generateId(), username, password);
+        Employee employee = new Employee(employeeDAO.getEmployeeIdByUsername(username), username, password);
         currentEmployee.setEmployee(employee);
     }
 }

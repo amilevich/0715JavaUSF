@@ -1,6 +1,7 @@
 package com.example.demo.components
 
 import com.example.demo.controllers.LoginController
+import com.example.demo.modals.FailedLogin
 import com.example.demo.model.User
 import com.example.demo.view.CustomerHome
 import com.example.demo.view.EmployeeHome
@@ -50,6 +51,10 @@ class LoginForm : Fragment("My View")
                             close()
                             find(EmployeeHome::class).openWindow()
                         }
+                    }
+                    else
+                    {
+                        find(FailedLogin::class).openModal()
                     }
                 }
             }
