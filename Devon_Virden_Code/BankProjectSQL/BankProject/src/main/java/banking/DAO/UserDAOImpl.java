@@ -13,7 +13,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public void addUser(User user) {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con.prepareStatement("INSERT INTO bank_user VALUES(?,?,?,?)");
 			prep.setString(1, user.getID());
 			prep.setString(2, user.getName());
@@ -30,7 +30,7 @@ public class UserDAOImpl implements UserDAO {
 	public ArrayList<User> getTiedUsers(Account account) {
 		try {
 			ArrayList<User> users = new ArrayList<User>();
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con.prepareStatement(
 					"SELECT * FROM linker RIGHT OUTER JOIN bank_user ON linker.user_id=bank_user.user_id WHERE account_number = ?");
 			prep.setInt(1, account.getNumber());
@@ -50,7 +50,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public User getUser(String userid) {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			User writer = new User();
 			PreparedStatement prep = con.prepareStatement("SELECT * FROM bank_user WHERE user_id = ?");
 			prep.setString(1, userid);
@@ -70,7 +70,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public void updateUser(User user) {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con
 					.prepareStatement("UPDATE bank_user SET user_name=?,user_password=? WHERE user_id = ?");
 			prep.setString(1, user.getName());
@@ -86,7 +86,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public boolean findUser(String userid) {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con.prepareStatement("SELECT * FROM bank_user WHERE user_id = ?");
 			prep.setString(1, userid);
 			ResultSet res = prep.executeQuery();
@@ -105,7 +105,7 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public String getType(String userid) {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			String type = new String();
 			PreparedStatement prep = con.prepareStatement("SELECT user_type FROM bank_user WHERE user_id = ?");
 			prep.setString(1, userid);
@@ -125,7 +125,7 @@ public class UserDAOImpl implements UserDAO {
 	public int size() {
 		try {
 		int size = 0;
-		Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+		Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 		PreparedStatement prep = con.prepareStatement("SELECT * FROM bank_user");
 		ResultSet res = prep.executeQuery();
 		while (res.next()) {
@@ -143,7 +143,7 @@ public class UserDAOImpl implements UserDAO {
 	public int getCustomers() {
 		try {
 			int size = 0;
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con.prepareStatement("SELECT * FROM bank_user WHERE user_type = 'CUSTOMER'");
 			ResultSet res = prep.executeQuery();
 			while (res.next()) {

@@ -12,7 +12,7 @@ public class Committer {
 
 	public static void commit() {
 		try {
-			Connection con = DriverManager.getConnection(Info.url, Info.user, Info.pass);
+			Connection con = DriverManager.getConnection(Info.getUrl(), Info.getUser(), Info.getPass());
 			PreparedStatement prep = con.prepareStatement("COMMIT");
 			prep.execute();
 			prep.cancel();
