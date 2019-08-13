@@ -89,8 +89,10 @@ public class User {
 			}
 		}
 		if (temp.equals(pass)) {
+			String prev = name;
 			System.out.println("\rPlease enter your new name:");
 			name = scan.nextLine();
+			ibis.info(prev + " changed their name to " + name);
 		} else {
 			System.out.println("Password/pin incorrect, signing out");
 			this.signOut(menu);

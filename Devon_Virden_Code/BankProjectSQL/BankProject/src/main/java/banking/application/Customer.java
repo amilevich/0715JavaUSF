@@ -54,6 +54,7 @@ public class Customer extends User {
 			}
 		}
 		if (temp.equals(pass)) {
+			ibis.info(name+" changed their password.");
 			this.setPassword();
 		} else {
 			System.out.println("Password incorrect, signing out");
