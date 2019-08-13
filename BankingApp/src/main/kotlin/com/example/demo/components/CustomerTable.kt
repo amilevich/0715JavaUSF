@@ -15,7 +15,8 @@ class CustomerTable : Fragment("Employee")
 
     override val root = vbox {
         paddingTop = 25.0
-        spacing = 20.0
+        spacing = 10.0
+        label("Double click on a row to open it.")
         tableview(controller.allCustomers) {
             minWidth = 280.0
             onUserSelect {customer ->
