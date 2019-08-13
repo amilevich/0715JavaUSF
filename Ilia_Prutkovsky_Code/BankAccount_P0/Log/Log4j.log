@@ -1,0 +1,104 @@
+August 04 2019 07:22:06 INFO  EmployeeActions:129 - account was approved
+August 04 2019 07:23:06 INFO  EmployeeActions:129 - account was approved
+August 04 2019 07:27:34 INFO  EmployeeActions:129 - account was approved
+August 04 2019 07:27:41 INFO  EmployeeActions:171 - Customre wasn't approved yet
+August 04 2019 07:33:24 INFO  EmployeeActions:129 - account was approved
+August 04 2019 07:33:29 INFO  EmployeeActions:170 - Customre wasn't approved yet
+August 04 2019 07:46:13 INFO  EmployeeActions:127 - account was approved
+August 04 2019 07:48:17 INFO  EmployeeActions:127 - account was approved
+August 04 2019 07:49:07 INFO  EmployeeActions:127 - account was approved
+August 04 2019 07:50:05 INFO  EmployeeActions:168 - Customre wasn't approved yet
+August 04 2019 07:52:05 INFO  EmployeeActions:119 - account was approved
+August 04 2019 07:52:11 INFO  EmployeeActions:160 - Customre wasn't approved yet
+August 04 2019 08:03:08 INFO  NewCustomerWR:37 - Customer profile was created and saved
+August 04 2019 08:04:40 INFO  NewCustomerWR:37 - Customer profile was created and saved
+August 04 2019 08:06:32 INFO  NewCustomerWR:37 - Customer profile was created and saved
+August 04 2019 08:12:42 INFO  NewCustomerWR:39 - Customer profile was created and saved
+August 04 2019 08:14:03 INFO  NewCustomerWR:39 - Customer profile was created and saved
+August 04 2019 08:14:55 INFO  NewCustomerWR:58 - Customer information was read
+August 04 2019 08:15:15 INFO  EmployeeActions:119 - account was approved
+August 04 2019 08:15:28 INFO  EmployeeActions:160 - Customre wasn't approved yet
+August 05 2019 02:41:24 INFO  NewCustomerWR:39 - Customer profile was created and saved
+August 05 2019 02:42:23 INFO  NewCustomerWR:58 - Customer information was read
+August 05 2019 02:42:39 INFO  EmployeeActions:123 - account was approved
+August 05 2019 02:43:38 INFO  EmployeeActions:164 - Customre wasn't approved yet
+August 05 2019 03:27:34 INFO  NewCustomerWR:39 - Customer profile was created and saved
+August 05 2019 04:14:47 INFO  NewCustomerWR:39 - Customer profile was created and saved
+August 11 2019 05:45:33 INFO  EmployeeActions:352 - Customer log in the system
+August 11 2019 05:51:12 INFO  EmployeeActions:352 - Customer log in the system
+August 11 2019 06:09:12 INFO  EmployeeActions:415 - Customer log in the system
+August 11 2019 06:13:13 INFO  EmployeeActions:425 - Customer log in the system
+August 11 2019 06:17:23 INFO  EmployeeActions:416 - Customer log in the system
+August 11 2019 06:18:35 INFO  EmployeeActions:416 - Customer log in the system
+August 11 2019 06:19:33 INFO  EmployeeActions:416 - Customer log in the system
+August 11 2019 06:20:07 INFO  EmployeeActions:416 - Customer log in the system
+August 11 2019 06:28:19 INFO  EmployeeActions:418 - Customer log in the system
+August 11 2019 06:33:12 INFO  EmployeeActions:418 - Customer log in the system
+August 11 2019 06:35:31 INFO  EmployeeActions:419 - Customer log in the system
+August 11 2019 06:44:42 INFO  EmployeeActions:447 - Customer log in the system
+August 11 2019 07:21:10 INFO  EmployeeActions:496 - Customer log in the system
+August 11 2019 07:21:41 INFO  EmployeeActions:496 - Customer log in the system
+August 11 2019 07:40:45 INFO  EmployeeActions:495 - Customer log in the system
+August 11 2019 07:44:31 INFO  EmployeeActions:498 - Customer log in the system
+August 11 2019 07:55:28 INFO  EmployeeActions:498 - Customer log in the system
+August 11 2019 07:58:06 INFO  EmployeeActions:498 - Customer log in the system
+August 11 2019 08:10:21 INFO  EmployeeActions:496 - Customer log in the system
+August 11 2019 08:18:41 INFO  EmployeeActions:496 - Customer log in the system
+August 11 2019 08:34:24 INFO  EmployeeActions:496 - Customer log in the system
+August 12 2019 10:25:58 WARN  EmployeeActions:504 - Customer tried to log in with wrong username\password
+August 12 2019 10:26:07 INFO  EmployeeActions:496 - Customer log in the system
+August 12 2019 02:51:41 INFO  EmployeeActions:511 - Customer log in the system
+August 12 2019 11:39:15 INFO  EmployeeActions:376 - Customer log in the system
+August 12 2019 11:46:10 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 12 2019 11:46:16 INFO  EmployeeActions:379 - Customer log in the system
+August 12 2019 11:54:16 INFO  EmployeeActions:379 - Customer log in the system
+August 12 2019 11:55:49 WARN  EmployeeActions:379 - Customer tried to log in with wrong username\password
+August 12 2019 11:56:00 WARN  EmployeeActions:379 - Customer tried to log in with wrong username\password
+August 12 2019 11:56:08 WARN  EmployeeActions:379 - Customer tried to log in with wrong username\password
+August 13 2019 12:01:48 WARN  EmployeeActions:385 - Customer tried to log in with unproved status
+August 13 2019 12:01:55 WARN  EmployeeActions:385 - Customer tried to log in with unproved status
+August 13 2019 12:03:36 WARN  EmployeeActions:395 - Customer tried to log in with wrong username\password
+August 13 2019 12:03:47 WARN  EmployeeActions:395 - Customer tried to log in with wrong username\password
+August 13 2019 12:05:18 WARN  EmployeeActions:384 - Customer tried to log in with unproved status
+August 13 2019 12:05:25 WARN  EmployeeActions:384 - Customer tried to log in with unproved status
+August 13 2019 12:08:15 WARN  EmployeeActions:389 - Customer tried to log in with unproved status
+August 13 2019 12:10:51 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:10:58 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:11:02 WARN  EmployeeActions:399 - Customer tried to log in with wrong username\password
+August 13 2019 12:11:09 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:11:14 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:14:21 WARN  EmployeeActions:391 - Customer tried to log in with unproved status
+August 13 2019 12:14:58 WARN  EmployeeActions:391 - Customer tried to log in with unproved status
+August 13 2019 12:16:16 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:16:21 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:16:26 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:16:33 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:18:50 WARN  EmployeeActions:390 - Customer tried to log in with unproved status
+August 13 2019 12:21:07 WARN  EmployeeActions:383 - Customer tried to log in with unproved status
+August 13 2019 12:22:12 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:23:49 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:24:00 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:26:17 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:28:37 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:28:46 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:28:59 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:30:12 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:32:46 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:33:00 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:33:51 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:33:59 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:36:18 WARN  EmployeeActions:389 - Customer tried to log in with wrong username\password
+August 13 2019 12:37:08 WARN  EmployeeActions:388 - Customer tried to log in with wrong username\password
+August 13 2019 12:37:51 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:38:20 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:38:36 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:39:44 WARN  EmployeeActions:387 - Customer tried to log in with wrong username\password
+August 13 2019 12:40:17 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 12:52:53 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 03:56:43 INFO  EmployeeActions:379 - Customer log in the system
+August 13 2019 04:17:45 INFO  EmployeeActions:383 - Customer log in the system
+August 13 2019 04:18:32 INFO  EmployeeActions:383 - Customer log in the system
+August 13 2019 04:23:33 INFO  EmployeeActions:377 - Customer log in the system
+August 13 2019 04:30:52 INFO  EmployeeActions:358 - Customer log in the system
+August 13 2019 04:32:27 INFO  EmployeeActions:358 - Customer log in the system
+August 13 2019 04:37:20 INFO  EmployeeActions:357 - Customer log in the system
