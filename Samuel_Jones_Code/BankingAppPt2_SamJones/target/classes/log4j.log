@@ -73,3 +73,28 @@
 2019-08-12 21:14:13 INFO  Transaction:67 - User Louise created.
 2019-08-12 21:14:14 INFO  Transaction:148 - Account created.
 2019-08-12 21:15:42 INFO  Transaction:193 - Account 2 approved.
+2019-08-12 21:18:13 INFO  Transaction:193 - Account 1 approved.
+2019-08-12 21:18:35 INFO  Transaction:218 - 9000.0 transferred from account 2 to accound 1
+2019-08-12 21:27:51 INFO  Transaction:67 - User BG created.
+2019-08-12 21:27:52 INFO  Transaction:67 - User WB created.
+2019-08-12 21:27:53 INFO  Transaction:148 - Account created.
+2019-08-12 21:28:09 INFO  Transaction:193 - Account 3 approved.
+2019-08-12 21:28:31 INFO  Transaction:218 - 1.0E7 transferred from account 3 to accound 1
+2019-08-13 09:36:11 INFO  Transaction:67 - User admin created.
+2019-08-13 09:37:14 INFO  Transaction:67 - User emp created.
+2019-08-13 09:41:12 INFO  Transaction:176 - 1000000.0 withdrawn from account 1
+2019-08-13 09:43:11 INFO  Transaction:176 - 8000000.0 withdrawn from account 1
+2019-08-13 09:43:21 INFO  Transaction:176 - 1000000.0 withdrawn from account 1
+2019-08-13 09:45:38 INFO  Transaction:67 - User JB created.
+2019-08-13 09:45:43 INFO  Transaction:67 - User BlizzardCEO created.
+2019-08-13 09:45:44 INFO  Transaction:148 - Account created.
+2019-08-13 09:46:09 INFO  Transaction:193 - Account 4 approved.
+2019-08-13 09:47:00 INFO  Transaction:218 - 2300.0 transferred from account 1 to accound 4
+2019-08-13 09:58:07 INFO  Transaction:67 - User billg created.
+2019-08-13 09:58:09 INFO  Transaction:67 - User warrb created.
+2019-08-13 09:58:11 INFO  Transaction:148 - Account created.
+2019-08-13 09:58:49 INFO  Transaction:193 - Account 5 approved.
+2019-08-13 09:59:12 INFO  Transaction:218 - 100.0 transferred from account 5 to accound 1
+2019-08-13 10:00:31 INFO  Transaction:162 - 300.0 deposited into account 1
+2019-08-13 10:00:47 INFO  Transaction:176 - -100.0 withdrawn from account 1
+2019-08-13 10:01:00 INFO  Transaction:176 - 300.0 withdrawn from account 1
