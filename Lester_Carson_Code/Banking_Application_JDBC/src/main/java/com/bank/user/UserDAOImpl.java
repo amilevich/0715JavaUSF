@@ -24,7 +24,7 @@ public class UserDAOImpl implements UserDAO {
 			ps.executeUpdate();
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
+			System.out.println("Username already exists...");
 		}
 	}
 

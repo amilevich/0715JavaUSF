@@ -10,13 +10,13 @@ public class AccountImpl {
 	
 	public void Create(String name, String pass) {
 		use.insertAccount(new Account(), name);
-		System.out.println("Account Created...");
+		System.out.println("Account +  Created...");
 	}
 	
 	public boolean Open(int accID) {
 		acc = use.selectAccountByID(accID);
 		if (acc != null && acc.getIsapproved() == 1) {
-			System.out.println("Account has been opened...");
+			System.out.println("Account " + acc.getAccountID() + " has been opened...");
 			return true;
 		}
 		System.out.println("Could not find account, or account has not been approved...");
@@ -25,13 +25,13 @@ public class AccountImpl {
 	
 	public void AddUsername(String name) {
 		use.insertUsernameToAccount(acc, name);
-		System.out.println(name + " has benn added to your account...");
+		System.out.println(name + " has been added to your account...");
 	}
 	
 	public double Withdraw(Double amt) {
 		if (acc.getBalance() >= amt) {
 			acc.setBalance(acc.getBalance() - amt);
-			loggy.info(amt + " was withdrawn from " + acc.getAccountID() + "'s Account");
+			loggy.info(amt + " was withdrawn from Account " + acc.getAccountID() + "'s Account");
 			System.out.println("Deposit Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
@@ -44,7 +44,7 @@ public class AccountImpl {
 	public double Deposit(Double amt) {
 		if (amt > 0) {
 			acc.setBalance(acc.getBalance() + amt);
-			loggy.info(amt + " was deposited into " + acc.getAccountID() + "'s Account");
+			loggy.info(amt + " was deposited into Account " + acc.getAccountID() + "'s Account");
 			System.out.println("Withdraw Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
@@ -61,7 +61,7 @@ public class AccountImpl {
 			acc.setBalance(acc.getBalance() - bal);
 			acc2.setBalance(acc2.getBalance() + bal);
 			use.updateAccountBalance(acc2);
-			loggy.info(bal + " was withdrawn from " + acc.getAccountID() + " and depositied into " + acc2.getAccountID());
+			loggy.info(bal + " was withdrawn from Account " + acc.getAccountID() + " and deposited into Account " + acc2.getAccountID());
 			System.out.println("Transfer Successful...");
 			System.out.println("You now have " + acc.getBalance() + " in your account.");
 			return acc.getBalance();
@@ -80,6 +80,7 @@ public class AccountImpl {
 		acc = use.selectAccountByID(accID);
 		if (acc != null) {
 			System.out.println(acc.toString());
+			System.out.println("For isapproved: 0 = not approved, 1 = approved.");
 		} else {
 			System.out.println("Account could not be found...");
 		}

@@ -19,3 +19,20 @@
 2019-08-12 09:59:10 INFO  AccountImpl:46 - 500.0 was deposited into 1's Account
 2019-08-12 14:49:44 INFO  AccountImpl:46 - 100.0 was deposited into 1's Account
 2019-08-12 14:50:01 INFO  AccountImpl:62 - 300.0 was withdrawn from 1 and depositied into 2
+2019-08-12 16:07:01 INFO  AccountImpl:34 - 100.0 was withdrawn from 2's Account
+2019-08-12 16:07:22 INFO  AccountImpl:64 - 200.0 was withdrawn from 2 and depositied into 1
+2019-08-12 16:09:46 INFO  AccountImpl:34 - 100.0 was withdrawn from 2's Account
+2019-08-12 16:10:22 INFO  AccountImpl:34 - 200.0 was withdrawn from 1's Account
+2019-08-13 09:45:58 INFO  AccountImpl:34 - 200.0 was withdrawn from Account 1's Account
+2019-08-13 09:46:13 INFO  AccountImpl:47 - 200.0 was deposited into Account 1's Account
+2019-08-13 09:54:43 INFO  AccountImpl:34 - 100.0 was withdrawn from Account 2's Account
+2019-08-13 09:54:50 INFO  AccountImpl:34 - 50.0 was withdrawn from Account 2's Account
+2019-08-13 09:55:07 INFO  AccountImpl:34 - 200.0 was withdrawn from Account 1's Account
+2019-08-13 09:55:18 INFO  AccountImpl:34 - 200.0 was withdrawn from Account 1's Account
+2019-08-13 09:56:16 INFO  AccountImpl:47 - 100.0 was deposited into Account 1's Account
+2019-08-13 09:58:35 INFO  AccountImpl:47 - 100.0 was deposited into Account 1's Account
+2019-08-13 09:58:35 INFO  AccountImpl:47 - 50.0 was deposited into Account 1's Account
+2019-08-13 09:58:36 INFO  AccountImpl:64 - 50.0 was withdrawn from Account 1 and deposited into Account 2
+2019-08-13 10:00:00 INFO  AccountImpl:47 - 100.0 was deposited into Account 1's Account
+2019-08-13 10:00:00 INFO  AccountImpl:34 - 100.0 was withdrawn from Account 1's Account
+2019-08-13 10:00:02 INFO  AccountImpl:47 - 100.0 was deposited into Account 1's Account
