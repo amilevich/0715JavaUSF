@@ -197,11 +197,11 @@ public class Transaction {
 		Account a1 = adi.findAccountByAID(aid1);
 		Account a2 = adi.findAccountByAID(aid2);
 		if(!checkApproved(a1)) {
-			System.out.println("First account is not approved.");
+			System.out.println("Sender of transfer is not approved.");
 			return;
 		}
 		else if(!checkApproved(a2)) {
-			System.out.println("Second account is not approved.");
+			System.out.println("Recipient of transfer is not approved.");
 			return;
 		}
 		else if(aid1.equals(aid2)) {
