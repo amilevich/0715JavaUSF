@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="0715JavaUSF/PackageFun/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekADayFiveExamples/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekADayFourExamples/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekADayOneExamples/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekADayThreeExamples/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekADayTwoExamples/src"/>
+	<classpathentry kind="src" path="0715JavaUSF/WeekBDayOneExamples/src"/>
+	<classpathentry kind="output" path="0715JavaUSF/PackageFun/bin"/>
+</classpath>
