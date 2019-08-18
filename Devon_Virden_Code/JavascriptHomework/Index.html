@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DOM</title>
+</head>
+<body>
+  
+  <div>
+    <div>
+      <h3>Sum: <span id="sum"></span></h3>
+      <h5 id="currentTime"></h5>
+    </div>
+    <div>
+      <h1>United <span data-customAttr="USA">States</span> of America (<span id="USA">USA</span>)</h1>
+      <div>
+	  <select id="colors" name="colors">
+	    <option value="green">Green</option>
+	    <option value="blue">Blue</option>
+	    <option value="red" selected="selected">Red</option>
+	    <option value="purple">Purple</option>
+	    <option value="yellow" selected="selected">Yellow</option>
+	  </select>
+      </div>
+    </div>
+    <p id="helloWorld">Hello, World!</p>
+    <div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+        </tr>
+        <tr>
+          <td class="empName">John</td>
+          <td class="dep">Sales</td>
+        </tr>
+        <tr>
+          <td class="empName">Amy</td>
+          <td class="dep">Finance</td>
+        </tr>
+        <tr>
+          <td class="empName">Austin</td>
+          <td class="dep">Sales</td>
+        </tr>
+        <tr>
+          <td class="empName">Katie</td>
+          <td class="dep">Marketing</td>
+        </tr>
+        <tr>
+          <td class="empName" data-customAttr="court">Courtney</td>
+          <td class="dep">Sales</td>
+        </tr>
+        <tr>
+          <td class="empName">Scout</td>
+          <td class="dep">Sales</td>
+        </tr>
+      </table>
+    </div>
+    <form id="firstForm">
+      <a class="click">Click <span>Here2</span></a>
+	  <input type="text" data-customAttr="7"/><br/>
+	  <input type="text" data-customAttr="24"/><br/>
+	  <input type="radio" name="favoriteAnimal" value="dog"/>Dog<br/>
+	  <input class= "favColor" type="radio" name="favoriteColor" value="blue"/>Blue<br/>
+	  <input id="num1" value="num1" class="nums" type="text"/><br/>
+	  <input type="radio" name="favoriteAnimal" value="cat"/>Cat<br/>
+	  <input class= "favColor" type="radio" name="favoriteColor" value="red"/>Red<br/>
+	  <input type="radio" name="favoriteAnimal" value="horse"/>Horse<br/>
+	  <input type="radio" name="favoriteAnimal" value="dolphin"/>Dolphin<br/>
+	  <a class="click">Click <span>Here</span></a><br/>
+	  <input type="radio" name="favoriteAnimal" value="eagle"/>Eagle<br/>
+	  <input class= "favColor" type="radio" name="favoriteColor" value="green"/>Green<br/>
+	  <input class= "favColor" type="radio" name="favoriteColor" value="orange"/>Orange<br/>
+	  <select id="hobbies" name="hobbies">
+	    <option value="photography">Photography</option>
+	    <option value="football" selected="selected">Football</option>
+	    <option value="kayaking" selected="selected">Kayaking</option>
+	    <option value="hiking">Hiking</option>
+	    <option value="programming" selected="selected">Programming</option>
+	  </select>
+	  <input id="num2" value="num2" class="nums" type="text"/>
+	  <select id="skills" name="skills">
+	    <option value="java">Java</option>
+	    <option value="net">.NET</option>
+	    <option value="dom" selected="selected">DOM</option>
+	    <option value="html">HTML</option>
+	    <option value="css">CSS</option>
+	    <option value="javascript" selected="selected">Javascript</option>
+	  </select>
+    </form>
+  </div>
+  
+  <a class="click">Click Here</a>
+  <a class="click">Click <span data-customAttr="500">Here3</span></a>
+  <a class="click">Click Here</a>
+	  
+  <script type="text/javascript" src="packet.js">
+    //TODO: Javascript homework
+  </script>
+  
+</body>
+</html>
