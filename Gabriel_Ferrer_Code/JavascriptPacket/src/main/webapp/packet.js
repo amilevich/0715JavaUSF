@@ -327,31 +327,16 @@ function changeColor(color) {
 
 // 9
 var employees = document.getElementsByClassName('empName');
-var notEmployees = document.querySelectorAll("td:not(.empName)");
 
 [...employees].forEach(el => {
-    el.addEventListener('mouseenter', function () {
-        if (this.style.visibility === "hidden") {
-            this.style.visibility = "visible";
-        } else {
-            this.style.visibility = "hidden";
-        }
+    el.addEventListener('mouseover', function () {
+    	if (this.style.opacity == 0) {
+    		this.style.opacity = 1
+    	} else {
+    		this.style.opacity = 0
+    	}
     });
-
 });
-
-[...notEmployees].forEach(el => {
-    el.addEventListener('mouseenter', function () {
-    	[...employees].forEach(ell => {
-	        if (ell.style.visibility === "hidden") {
-	            ell.style.visibility = "visible";
-	        } else {
-	            ell.style.visibility = "hidden";
-	        }
-    	});
-    });
-
-})
 
 
 // 10
