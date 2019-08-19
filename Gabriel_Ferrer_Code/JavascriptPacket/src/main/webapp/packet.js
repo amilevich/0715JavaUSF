@@ -1,6 +1,6 @@
 //PART I
 //1.
-let fib = (n) => {
+function fib (n) {
     // /0, 1, 1, 2, 3, 5, 8, 13, 21, 34
     let start = 0;
     let next = 1;
@@ -18,7 +18,7 @@ console.log("part 1, q 1")
 console.log(fib(9)); // 1
 
 // 2
-let bubbleSort = (numArray) => {
+function bubbleSort (numArray) {
 
     for (let i = 0; i < numArray.length - 1; i++) {
         for (let j = 0; j < numArray.length - i - 1; j++) {
