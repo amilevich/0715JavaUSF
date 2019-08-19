@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffc6a99-0148-4a3d-adfa-e9b43e24c1af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/AccountTable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerTable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/components/CustomerTable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tornadofx-maven-project.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,12 +165,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@779d3f93" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -192,6 +186,7 @@
       <workItem from="1565103854791" duration="1457000" />
       <workItem from="1565282848420" duration="22328000" />
       <workItem from="1565556283448" duration="7288000" />
+      <workItem from="1565896941589" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="Added a singleton class to manage my connection to the database.">
       <created>1565457909333</created>
