@@ -119,7 +119,17 @@ function isEven(nsomeNum) {
 Define function isPalindrome(someStr)
 Return true if someStr is a palindrome, otherwise return false
 */
-0
+
+function reverseStr(someStr) {
+    var someStr = "Im a string";
+    for (i = 0; i < someStr.length; i++) {
+        someStr = someStr.substring(1, someStr.length() - i) + someStr.substring(0, 1)
+            + someStr.substring(someStr.length() - i, someStr.length());
+        console.log(someStr);
+    }
+}
+console.log(reverseStr(someStr));
+
 
 /*
 8. Shapes
@@ -181,7 +191,7 @@ var developer = {Name:'luke', age: 25, height: 6.1};
 function traverseObject(someObj) {
 console.log(Object.keys(someObj));
 }
-console.log(devlodeveloperper)
+console.log(developer)
 
 
 /*
