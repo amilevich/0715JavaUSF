@@ -1,0 +1,21 @@
+<div class="clicker-container centered-content-container">
+    <button class="btn btn-danger" (click)="increment(1)">Increment by 1</button>
+
+    <span *ngFor="let x of incrementors">
+        <button *ngIf = "counter >= x" class="btn btn-danger"
+            (click)="increment(x)">Increment by {{x}}</button>
+    </span>
+    <!-- *ngFor and *ngIf are examples of structural directives-->
+    <!--{{}} -> syntax for creating one way data binding, whatever
+    the value of x is, it will be reflected in the name of the button
+
+    Data binding allows us to pass values, properties, functions between
+    the TypeScript file and our template (html file).
+
+    One way binding (interpolation) -> from ts to html {{}}
+    Two way binding -> from ts to html and from html to ts [()]
+    Property binding -> one way binding for properties []
+                        -> bind an attribute directive to an element
+-->
+
+</div>
