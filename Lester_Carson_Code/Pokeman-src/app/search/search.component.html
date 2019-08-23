@@ -1,0 +1,14 @@
+<div class="row mt-4">
+    <div class="col-10 offset-1">
+        <div class="row p-4">
+            <input type="text" class='col-6 offset-1' [(ngModel)]='searchTerm'/>
+            <div class="btn btn-danger col-2" (click)='clickSearch()'>Search</div>
+        </div>
+        <div class="col-15">
+            <h5>Picture:</h5>
+            <img src="{{image}}">
+            <h5>ID: {{id}}</h5>
+            <h4>Type: {{type}}</h4>
+        </div>
+    </div>
+</div>
