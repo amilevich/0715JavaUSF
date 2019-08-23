@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <div class="col-10 offset-1">
+        <div class="row text-center pt-4 pb-4">
+            <input type="text" placeholder="Pokemon Name" [(ngModel)]='searchTerm' class="col-5 offset-1">
+            <button class="btn btn-success" (click)='clickSearch()'> Search Poke </button>
+        </div>
+        <div class="row centered-content-container">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="col-3">
+                                    <div>{{_pokemon}} </div>
+                                    <div>{{_pokemonType}}</div>
+
+                                </div>
+
+                                <div class="col-3">
+                                    <img src="{{_pokemonImg}}" style="width:100px;" alt="" class="card-img">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
