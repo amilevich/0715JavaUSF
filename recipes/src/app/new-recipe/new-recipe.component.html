@@ -1,0 +1,25 @@
+<form>
+    <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+        <label for="type">Type of Recipe: </label>
+        <input type="text" class="form-control" name="type" [(ngModel)]="type">
+    </div>
+    <div class="form-group">
+        <label for="picture">Picture Link: </label>
+        <input type="text" class="form-control" name="picture" [(ngModel)]="pictureUrl">
+    </div>
+    <div class="form-group">
+        <label for="ingredients">Enter ingredient then click add: </label>
+        <input type="text" class="form-control" name="ingredients" [(ngModel)]="tempIngredient">
+        <button type="button" (click)="addIngredient()" class="btn btn-danger">Add</button>
+        <span>Ingredients: {{ingredientsString}}</span>
+    </div>
+    <div class="form-group">
+        <label for="description">Directions: </label>
+        <input type="text" class="form-control" name="directions" [(ngModel)]="directions">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="submitRecipe()">Submit</button>
+</form>

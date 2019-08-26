@@ -1,0 +1,12 @@
+<div>
+    <h1>{{recipe.name}}</h1>
+    <img src="{{recipe.pictureUrl}}">
+    <h5>Type: {{recipe.category}}</h5>
+    <div>
+        <h5>Ingredients: </h5>
+        <div *ngFor="let temp of recipe.ingredients">
+            <h6>{{temp}}</h6>
+        </div>
+    </div>
+    <h5>Directions: {{recipe.directions}}</h5>
+</div>

@@ -1,0 +1,19 @@
+<div class="btn-group mr-3">
+    <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+        <button class="btn btn-outline-primary" ngbDropdownToggle>Category</button>
+        <div class="dropdown-menu" ngbDropdownMenu>
+        <button ngbDropdownItem (click)="filter('Entree')">Entree</button>
+        <button ngbDropdownItem (click)="filter('Appetiser')">Appetiser</button>
+        <button ngbDropdownItem (click)="filter('Dessert')">Dessert</button>
+        <button ngbDropdownItem (click)="filter('None')">None</button>
+        </div>
+    </div>
+</div>
+<div class="row" *ngFor="let temp of recipeList">
+    <div class="col-12">
+        <div class="row border border-secondary">
+            <div class="col-12">{{temp.name}}</div>
+            <button type="button" class="btn btn-danger" (click)="saveRecipe(temp)" routerLink="view">View</button>
+        </div>
+    </div>
+</div>
