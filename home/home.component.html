@@ -1,0 +1,8 @@
+<h3>Current food list:</h3>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Enter Category" aria-label="Enter Category" aria-describedby="button-addon2" [(ngModel)]='_cat'>
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="populate()">Search</button>
+    </div>
+  </div>
+<ul class="list-group-item list-group-item-action" *ngFor="let food of foodList" (click)="redirect(food.name)">{{food.name}} ({{food.category}})</ul>
