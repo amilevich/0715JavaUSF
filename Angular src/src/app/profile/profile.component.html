@@ -1,0 +1,24 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Food name" aria-label="Food name" aria-describedby="button-addon2" [(ngModel)]='_search'>
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="populate()">Search</button>
+    </div>
+  </div>
+
+  <div class="card" style="width: 42rem;">
+    <img [src]="sel.selected.imageUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">{{sel.selected.name}}</p>
+    </div>
+  </div>
+<br>
+<div style="text-align:left">
+    <h3>Ingredients:</h3>
+    <h4>{{sel.selected.ingredients}}</h4>
+</div>
+<br>
+<div style="text-align:left">
+    <h3>Instructions:</h3>
+    <h4>{{sel.selected.directions}}</h4>
+</div>
+

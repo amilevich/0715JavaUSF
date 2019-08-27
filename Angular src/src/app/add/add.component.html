@@ -1,0 +1,33 @@
+<div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Name</span>
+    </div>
+    <textarea class="form-control" aria-label="Name" [(ngModel)]='_name'></textarea>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Category</span>
+    </div>
+    <textarea class="form-control" aria-label="Category" [(ngModel)]='_category'></textarea>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Ingredients</span>
+    </div>
+    <textarea class="form-control" aria-label="Ingredients" [(ngModel)]='_ingredients'></textarea>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Instructions</span>
+    </div>
+    <textarea class="form-control" aria-label="_description"></textarea>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Image URL</span>
+    </div>
+    <textarea class="form-control" aria-label="url" [(ngModel)]='_url'></textarea>
+  </div>
+  <button type="button" class="btn btn-primary btn-lg" (click)="addFood()">ADD RECIPE</button>
+
+
