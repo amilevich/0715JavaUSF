@@ -2,13 +2,19 @@
     <div class="input-group-prepend">
       <span class="input-group-text">Name</span>
     </div>
-    <textarea class="form-control" aria-label="Name" [(ngModel)]='_name'></textarea>
+    <input type="text" class="form-control" aria-label="Name" [(ngModel)]='_name'>
   </div>
   <div class="input-group">
     <div class="input-group-prepend">
       <span class="input-group-text">Category</span>
     </div>
-    <textarea class="form-control" aria-label="Category" [(ngModel)]='_category'></textarea>
+    <input type="text" class="form-control" aria-label="Category" [(ngModel)]='_category'/>
+  </div>
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Image URL</span>
+    </div>
+    <input type="text" class="form-control" aria-label="url" [(ngModel)]='_url'/>
   </div>
   <div class="input-group">
     <div class="input-group-prepend">
@@ -20,13 +26,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text">Instructions</span>
     </div>
-    <textarea class="form-control" aria-label="_description"></textarea>
-  </div>
-  <div class="input-group">
-    <div class="input-group-prepend">
-      <span class="input-group-text">Image URL</span>
-    </div>
-    <textarea class="form-control" aria-label="url" [(ngModel)]='_url'></textarea>
+    <textarea class="form-control" aria-label="Description" [(ngModel)]='_description'></textarea>
   </div>
   <button type="button" class="btn btn-primary btn-lg" (click)="addFood()">ADD RECIPE</button>
 
