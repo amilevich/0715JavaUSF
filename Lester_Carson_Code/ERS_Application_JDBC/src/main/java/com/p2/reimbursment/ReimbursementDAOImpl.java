@@ -5,6 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.p2.highlander.HighConn;
 
 public class ReimbursementDAOImpl implements ReimbursementDAO {
 
@@ -23,8 +27,9 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	@Override
 	public void insertReimbursment(Reimbursement r) {
 
-		try (Connection conn = DriverManager.getConnection(url, username, password)) {
-			PreparedStatement ps = conn.prepareStatement("INSERT INTO ERS_REIMBURSEMENT VALUES(?,?,?,?,?,?,?,?,?,?)");
+		try {
+			PreparedStatement ps = HighConn.db.conn
+					.prepareStatement("INSERT INTO ERS_REIMBURSEMENT VALUES(?,?,?,?,?,?,?,?,?,?)");
 			ps.setInt(1, r.getId());
 			ps.setInt(2, r.getAmount());
 			ps.setTimestamp(3, r.getSubmitted());
@@ -42,37 +47,34 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	}
 
 	@Override
-	public Reimbursement selectAllReimbursments() {
+	public List<Reimbursement> selectAllReimbursments() {
 
-		Reimbursement r = null;
-		try (Connection conn = DriverManager.getConnection(url, username, password)) {
-
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT ORDER BY REIR_ID");
+		List<Reimbursement> reims = new ArrayList<Reimbursement>();
+		try {
+			PreparedStatement ps = HighConn.db.conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT ORDER BY REIR_ID");
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				r = new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
-						rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10));
+				reims.add(new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
+				rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return r;
+		return reims;
 	}
 
 	@Override
 	public Reimbursement selectReimbursmentById(int id) {
 
 		Reimbursement r = null;
-		try (Connection conn = DriverManager.getConnection(url, username, password)) {
+		try {
 
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT WHERE REIR_ID = ?");
+			PreparedStatement ps = HighConn.db.conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT WHERE REIR_ID = ?");
 			ps.setInt(1, id);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				r = new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
-						rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10));
+				rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9), rs.getString(10));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -81,29 +83,29 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 	}
 
 	@Override
-	public Reimbursement selectReimbursmentByAuthor(String author) {
+	public List<Reimbursement> selectReimbursmentByAuthor(String author) {
 
-		Reimbursement r = null;
+		List<Reimbursement> reims = new ArrayList<Reimbursement>();
 		try (Connection conn = DriverManager.getConnection(url, username, password)) {
 
 			PreparedStatement ps = conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT WHERE REIR_AUTHOR = ?");
 			ps.setString(1, author);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				r = new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
+				reims.add(new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
 						rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10));
+						rs.getString(10)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return r;
+		return reims;
 	}
 
 	@Override
-	public Reimbursement selectReimbursmentByType(String type) {
+	public List<Reimbursement> selectReimbursmentByType(String type) {
 
-		Reimbursement r = null;
+		List<Reimbursement> reims = new ArrayList<Reimbursement>();
 		try (Connection conn = DriverManager.getConnection(url, username, password)) {
 
 			PreparedStatement ps = conn
@@ -111,34 +113,34 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 			ps.setString(1, type);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				r = new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
+				reims.add(new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
 						rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10));
+						rs.getString(10)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return r;
+		return reims;
 	}
 
 	@Override
-	public Reimbursement selectReimbursmentByStatus(String status) {
+	public List<Reimbursement> selectReimbursmentByStatus(String status) {
 
-		Reimbursement r = null;
+		List<Reimbursement> reims = new ArrayList<Reimbursement>();
 		try (Connection conn = DriverManager.getConnection(url, username, password)) {
 
 			PreparedStatement ps = conn.prepareStatement("SELECT * FROM ERS_REIMBURSEMENT WHERE REIR_STATUS = ?");
 			ps.setString(1, status);
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
-				r = new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
+				reims.add(new Reimbursement(rs.getInt(1), rs.getInt(2), rs.getTimestamp(3), rs.getTimestamp(4),
 						rs.getString(5), rs.getBlob(6), rs.getString(7), rs.getString(8), rs.getString(9),
-						rs.getString(10));
+						rs.getString(10)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return r;
+		return reims;
 	}
 
 	@Override
@@ -148,9 +150,19 @@ public class ReimbursementDAOImpl implements ReimbursementDAO {
 
 			PreparedStatement ps = conn
 					.prepareStatement("UPDATE ERS_REIMBURSEMENT SET REIR_STATUS = ? WHERE REIR_ID = ?");
+			PreparedStatement ps2 = conn
+					.prepareStatement("UPDATE ERS_REIMBURSEMENT SET REIR_RESOLVED = ? WHERE REIR_ID = ?");
+			PreparedStatement ps3 = conn
+					.prepareStatement("UPDATE ERS_REIMBURSEMENT SET REIR_RESOLVER = ? WHERE REIR_ID = ?");
 			ps.setString(1, r.getStatus());
 			ps.setInt(2, r.getId());
+			ps2.setTimestamp(1, r.getResolved());
+			ps2.setInt(2, r.getId());
+			ps3.setString(1, r.getResolver());
+			ps3.setInt(2, r.getId());
 			ps.executeUpdate();
+			ps2.executeUpdate();
+			ps3.executeUpdate();
 			ps.cancel();
 		} catch (SQLException e) {
 			e.printStackTrace();

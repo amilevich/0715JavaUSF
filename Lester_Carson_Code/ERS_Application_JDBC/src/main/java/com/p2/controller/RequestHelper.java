@@ -18,6 +18,9 @@ public class RequestHelper {
 		case "/ERS_Application_JDBC/Update.do":
 			return UpdateController.Update(request);
 			
+		case "/ERS_Application_JDBC/TableView.do":
+			return TableViewController.View(response);
+			
 		default:
 			return "/index.html";
 		}
