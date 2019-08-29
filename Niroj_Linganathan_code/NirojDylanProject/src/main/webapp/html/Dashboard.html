@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Reimburstment </title> 
+</head>
+<link rel="stylesheet" type="text/css" href="Style.css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body id="body">
+	<header>
+		<div class="container">
+			<div id="branding">
+					<h1>
+					Y<span class="highlight">A</span>GLE
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Services</a></li>
+					<li><a href="index.html">Sign In</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- ------------------------------------------------------------------------------------------------------- -->
+	<style>
+* {box-sizing: border-box}
+</style>
+<button class="tablink" onclick="openPage('dash', this, 'grey')" id="defaultOpen">Dash Board</button>
+<button class="tablink" onclick="openPage('application', this, 'grey')">Reimburstment Application </button>
+<button class="tablink" onclick="openPage('status', this, 'grey')">Check Application Status</button>
+<button class="tablink" onclick="openPage('history', this, 'grey')">View Previous Applications</button>
+ 
+  
+  
+<div id="dash" class="tabcontent" >
+<form method="POST" action="Dashboard.do" role="form">
+
+ <H4 id="name1"></h4>
+ </form>
+  </div>
+ 
+<div id="application" class="tabcontent">
+  
+  <h5 class="h5">Welcome User Name</h5>
+  <br>
+<form method="POST" action="Dashboard1.do" role="form">
+  <label class="employeeLabel">Employee ID</label>
+  <input class="box" type="text" name="emp_id">
+  <br>
+  <label>Date of Expense</label>
+  <input class="box" type="text" name="date_of_expense">
+  <br>
+   <label>Date of Request</label>
+  <input class="box" type="text" name="date_of_request">
+  <br>
+  <H5>Expenses</H5>
+  <label>Travel  </label>
+  <input type="checkbox" value="">
+  <input type="text" name="travel_amount">
+  <br>
+  <label>Lodging</label>
+  <input type="checkbox" value="">
+  <input type="text" name="lodgeing_amount">
+  <br>
+  <label>Food</label>
+  <input type="checkbox" value="">
+  <input type="text" name="food_amount">
+  <br>
+  <label>Other Amount</label>
+  <input type="checkbox" value="">
+  <input type="text" name="other_amount">
+  <input type="text" name="expense_comments">
+  <br>
+  <label>Total Expense</label>
+  <input class="box" type="text" name="claim_total">
+  <br>
+  <button type="submit" class="button1">Log In</button>
+  </form>
+  
+</div>
+
+<div id="status" class="tabcontent">
+  
+</div>
+
+<div id="history" class="tabcontent">
+ 
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	<!-- ---------------------------------------------------------------------------------------------------------- -->
+	
+	<footer id="footerReimbusrtment">
+		<p>Niroj & Dylan Project-01,Copyright &copy; 2019</p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript"	src="../js/ReimbursmentPage.js"></script>
+</body>
+</html>
