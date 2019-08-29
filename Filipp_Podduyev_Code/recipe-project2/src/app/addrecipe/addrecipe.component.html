@@ -1,0 +1,14 @@
+<div class="centered-content-container">
+        <form (ngSubmit)="addRecipe(newRecipe)">
+            <input type="text" name="recipe-name" [(ngModel)]="newRecipe.name" placeholder="Enter Name">
+            <input type="text" name="recipe-category" [(ngModel)]="newRecipe.category" placeholder="Enter Food Category">
+            <input type="text" name="recipe-url" [(ngModel)]="newRecipe.picture" placeholder="Enter the Image Url">
+            <input type="text" name="recipe-ingredients" [(ngModel)]="newRecipe.ingredients" placeholder="Enter Ingredients">
+            <input type="text" name="recipe-directions" [(ngModel)]="newRecipe.directions" placeholder="Enter Directions">
+            <button class="btn btn-primary" type="submit">Add Recipe</button>
+        </form>
+    
+        <div  *ngFor="let r of recipe">
+            <app-recipe [recipe]="r"></app-recipe>
+        </div>
+    </div> 
