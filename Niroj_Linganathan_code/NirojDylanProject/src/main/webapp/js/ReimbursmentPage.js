@@ -6,7 +6,7 @@
 
 window.onload = function() {
 	getEmpInfo();
-	
+	getTicketInfo()
 }
 
 
@@ -20,11 +20,11 @@ function getEmpInfo() {
 		}
 	}
 	
-	xhttp.open("GET", 'http://localhost:8080/NirojDylanProject/html/Dashboard.do',
+	xhttp.open("GET", 'http://localhost:8081/NirojDylanProject/html/Dashboard.do',
 			true);
 	
 	xhttp.send();
-	
+	//xhttp.abort();
 }
 
 function setValues(emp){
@@ -39,12 +39,12 @@ function getFormInfo() {            // for populating forms into Manager dashboa
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
 			let form = JSON.parse(xhttp.responseText);
-			console.log(xhttp);
+			//console.log(xhttp);
 			setValues(emp);
 		}
 	}
 
-	xhttp.open("GET", 'http://localhost:8080/NirojDylanProject/html/Dashboard.html',
+	xhttp.open("GET", 'http://localhost:8081/NirojDylanProject/html/Dashboard.html',
 			true);
 	xhttp.send();
 }
@@ -57,7 +57,7 @@ function getTicketInfo() {       // for populating forms into  dashboard table
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             let claimTickets = JSON.parse(xhttp.responseText);  //need to check if we are populating jason variables/lists correctly
 //          setValues(user);
-            
+            console.log(claimTickets);
         
             
             var table = document.getElementById("myTable");
@@ -93,7 +93,7 @@ function getTicketInfo() {       // for populating forms into  dashboard table
             console.log(claimTickets);
         }
     }
-    xhttp.open("GET", 'http://localhost:8080/NirojDylanProject/html/Dashboard.html', //LoadingPending.do?
+    xhttp.open("GET", 'http://localhost:8081/NirojDylanProject/html/Dashboard.html', //LoadingPending.do?
             true);
     xhttp.send();
     

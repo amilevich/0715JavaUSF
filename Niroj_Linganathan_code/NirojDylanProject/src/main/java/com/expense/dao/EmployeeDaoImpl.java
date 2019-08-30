@@ -63,7 +63,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
 				employee = new Employee(rs.getInt("emp_id"), rs.getString("first_name"), rs.getString("last_name"), rs.getString("title"), rs.getString("email"),rs.getString("username"),
 						rs.getString("password"));
 			}
-			System.out.println(employee);
+			//System.out.println(employee);
 			
 		} catch (SQLException e) {
 			e.printStackTrace();

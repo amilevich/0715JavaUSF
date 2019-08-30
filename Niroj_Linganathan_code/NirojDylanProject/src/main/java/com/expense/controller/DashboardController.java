@@ -20,7 +20,7 @@ public class DashboardController {
 		try {
 			//converting the object employee into JSON for JavaScript to receive
 			response.getWriter().write(new ObjectMapper().writeValueAsString(emp));
-			//System.out.println(emp+"gusqus");
+			//System.out.println(emp.getEmpId());
 		} catch (JsonProcessingException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -75,5 +75,5 @@ public class DashboardController {
 		return "/html/Dashboard.html";
 		
 	}
-	
+		
 }

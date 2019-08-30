@@ -63,13 +63,17 @@ public class LoginController {
 		EmployeeDaoImpl empDaoImpl = new EmployeeDaoImpl();
 		Employee emp = new Employee();
 		emp = empDaoImpl.selectEmpByUsername(username, password);
-		System.out.println(emp);
+		//System.out.println(emp);
 
 		TicketDaoImpl ticketDao = new TicketDaoImpl();
 		List<Ticket> ticketList = new ArrayList<>();
 		ticketList = ticketDao.selectPendingTicketsByEmpId(emp.getEmpId());
 		System.out.println(ticketList);
-
+		//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@changed by Niroj
+		List<Ticket> allTickets=new ArrayList<>();
+		allTickets=ticketDao.selectTicketsByEmpId(emp.getEmpId());
+		//System.out.println(allTickets);
+		//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@changed by Niroj
 		try {
 			if (username.equals(emp.getUsername()) && password.equals(emp.getPassword())) {
 				request.getSession().setAttribute("Employee", emp);
@@ -87,4 +91,8 @@ public class LoginController {
 		return "/html/index.html";
 
 	}
+	
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%changed by Niroj
+	
+	//%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 }
