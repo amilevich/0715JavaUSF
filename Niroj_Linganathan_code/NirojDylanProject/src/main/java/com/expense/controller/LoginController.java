@@ -68,17 +68,17 @@ public class LoginController {
 		TicketDaoImpl ticketDao = new TicketDaoImpl();
 		List<Ticket> ticketList = new ArrayList<>();
 		ticketList = ticketDao.selectPendingTicketsByEmpId(emp.getEmpId());
-		System.out.println(ticketList);
+		//System.out.println(ticketList);
 		//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@changed by Niroj
 		List<Ticket> allTickets=new ArrayList<>();
 		allTickets=ticketDao.selectTicketsByEmpId(emp.getEmpId());
-		//System.out.println(allTickets);
+		System.out.println(allTickets);
 		//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@changed by Niroj
 		try {
 			if (username.equals(emp.getUsername()) && password.equals(emp.getPassword())) {
 				request.getSession().setAttribute("Employee", emp);
 
-				response.getWriter().write(new ObjectMapper().writeValueAsString(ticketList));
+				response.getWriter().write(new ObjectMapper().writeValueAsString(allTickets));
 
 				return "/html/Dashboard.html";
 			}
