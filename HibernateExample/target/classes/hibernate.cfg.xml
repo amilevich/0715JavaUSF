@@ -10,8 +10,8 @@
 
 
 		<mapping class="com.revature.domains.HoneyPot" />
-		<mapping class="com.revature.domains.Bear" />
-		<mapping class="com.revature.domains.Cave" />
+		<!-- <mapping class="com.revature.domains.Bear" />
+		<mapping class="com.revature.domains.Cave" /> -->
 
 
 	</session-factory>
