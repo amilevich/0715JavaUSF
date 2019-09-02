@@ -1,0 +1,168 @@
+2019-09-01 20:55:57 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 20:55:57 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 20:55:59 INFO  Logging:26 - Logging all tickets belonging to Employee: username
+2019-09-01 20:56:06 INFO  Logging:22 - employee: username submitted ticket: OTHER, 124324, aergertgtrhartherh
+2019-09-01 20:56:08 INFO  Logging:42 - Ticket saved.
+2019-09-01 20:56:09 INFO  Logging:26 - Logging all tickets belonging to Employee: username
+2019-09-01 20:56:12 INFO  Logging:13 - Logging current user out.
+2019-09-01 20:56:19 INFO  Logging:21 - Attempting to login Username: employee, Password: 3mpl0y33
+2019-09-01 20:56:19 INFO  Logging:31 - Login successful. Logging in Employee: employee
+2019-09-01 20:56:20 INFO  Logging:26 - Logging all tickets belonging to Employee: employee
+2019-09-01 20:56:26 INFO  Logging:22 - employee: employee submitted ticket: LODGING, doga, getrharth
+2019-09-01 20:56:26 WARN  Logging:44 - Invalid amount entry. Ticket not saved.
+2019-09-01 20:56:28 INFO  Logging:26 - Logging all tickets belonging to Employee: employee
+2019-09-01 20:56:32 INFO  Logging:22 - employee: employee submitted ticket: FOOD, 44, awrgeg
+2019-09-01 20:56:34 INFO  Logging:42 - Ticket saved.
+2019-09-01 20:56:35 INFO  Logging:26 - Logging all tickets belonging to Employee: employee
+2019-09-01 20:56:36 INFO  Logging:13 - Logging current user out.
+2019-09-01 20:56:40 INFO  Logging:21 - Attempting to login Username: aefgthrth, Password: rth4
+2019-09-01 20:56:40 WARN  Logging:36 - Login failed. User does not exist.
+2019-09-01 20:56:46 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 20:56:46 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 20:56:46 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 20:56:50 INFO  Logging:20 - Approveing ticket ID: 122
+2019-09-01 20:56:51 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 20:56:54 INFO  Logging:24 - Denying ticket ID: 142
+2019-09-01 20:56:55 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 20:57:06 INFO  Logging:16 - Filter by - Username: employee, Type: FOOD, Status: Approved requested.
+2019-09-01 20:57:06 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 20:57:12 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:00:58 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:01:00 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:01:13 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:01:15 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:01:54 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 21:01:54 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 21:01:55 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:01:57 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:02:59 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:03:01 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:03:42 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:03:44 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:04:47 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:04:47 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:04:48 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:04:59 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:05:19 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:05:21 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:11:01 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 21:11:01 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 21:11:02 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:11:19 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:11:26 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:11:26 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:11:26 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:13:05 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:15:24 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:18:30 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:18:34 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:18:36 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:18:52 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:19:08 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:19:25 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:19:37 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:19:48 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:20:01 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:21:27 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:21:45 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:21:55 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:22:42 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:22:54 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:23:37 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 21:23:37 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 21:23:38 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:24:28 INFO  Logging:22 - Employee: username submitted ticket: LODGING, , 
+2019-09-01 21:24:28 WARN  Logging:44 - Invalid amount entry. Ticket not saved.
+2019-09-01 21:24:28 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:24:53 INFO  Logging:22 - Employee: username submitted ticket: OTHER, , d
+2019-09-01 21:24:53 WARN  Logging:44 - Invalid amount entry. Ticket not saved.
+2019-09-01 21:24:54 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:25:51 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:25:58 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:25:58 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:25:59 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:26:16 INFO  Logging:16 - Filter by - Username: gggggggggggggggggggh, Type: , Status:  requested.
+2019-09-01 21:26:16 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:26:18 INFO  Logging:13 - Logging current user out.
+2019-09-01 21:26:24 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:26:24 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:26:24 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:27:44 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:27:44 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:27:48 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:27:48 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:27:48 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:27:52 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:28:00 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:28:00 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:28:00 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:28:06 INFO  Logging:20 - Approving ticket ID: 101
+2019-09-01 21:28:07 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:28:12 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:28:19 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:28:19 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:28:19 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:28:31 INFO  Logging:16 - Filter by - Username: username, Type: , Status:  requested.
+2019-09-01 21:28:31 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:28:36 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:28:43 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:28:43 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:28:43 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:28:51 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:28:58 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 21:28:58 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 21:28:58 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:29:06 INFO  Logging:22 - Employee: username submitted ticket: FOOD, 9999999999, aejrghblkerg
+2019-09-01 21:29:08 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:29:08 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:29:55 INFO  Logging:22 - Employee: username submitted ticket: LODGING, 1234567890, ghghghghghghgh
+2019-09-01 21:29:57 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:29:58 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:30:32 INFO  Logging:22 - Employee: username submitted ticket: LODGING, 469, afg
+2019-09-01 21:30:33 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:30:34 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:31:38 INFO  Logging:22 - Employee: username submitted ticket: LODGING, 469, afg
+2019-09-01 21:31:39 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:31:39 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:31:47 INFO  Logging:22 - Employee: username submitted ticket: LODGING, 12345678, dfergserg
+2019-09-01 21:31:48 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:31:49 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:31:57 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:32:04 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:32:04 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:32:04 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:32:21 INFO  Logging:20 - Approving ticket ID: 186
+2019-09-01 21:32:21 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:32:24 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:32:32 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:32:32 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:32:32 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:32:45 INFO  Logging:16 - Filter by - Username: , Type: , Status:  requested.
+2019-09-01 21:32:45 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:32:48 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:32:59 INFO  Logging:21 - Attempting to login Username: username, Password: password
+2019-09-01 21:32:59 INFO  Logging:31 - Login successful. Logging in Employee: username
+2019-09-01 21:33:00 INFO  Logging:26 - Loading all tickets belonging to Employee: username
+2019-09-01 21:33:05 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:33:40 INFO  Logging:21 - Attempting to login Username: employee, Password: 3mpl0y33
+2019-09-01 21:33:40 INFO  Logging:31 - Login successful. Logging in Employee: employee
+2019-09-01 21:33:41 INFO  Logging:26 - Loading all tickets belonging to Employee: employee
+2019-09-01 21:34:06 INFO  Logging:22 - Employee: employee submitted ticket: FOOD, 00000000, aeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghisss
+2019-09-01 21:34:08 INFO  Logging:42 - Ticket saved.
+2019-09-01 21:34:08 INFO  Logging:26 - Loading all tickets belonging to Employee: employee
+2019-09-01 21:34:39 INFO  Logging:22 - Employee: employee submitted ticket: LODGING, , aeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgigtaeirlkghilerhgaeirlkghilerhgi
+2019-09-01 21:34:39 WARN  Logging:44 - Invalid amount entry. Ticket not saved.
+2019-09-01 21:34:39 INFO  Logging:26 - Loading all tickets belonging to Employee: employee
+2019-09-01 21:34:55 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:35:05 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:35:05 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:35:05 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:35:13 INFO  Logging:24 - Denying ticket ID: 187
+2019-09-01 21:35:14 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:35:30 INFO  Logging:16 - Filter by - Username: employee, Type: , Status: Denied requested.
+2019-09-01 21:35:30 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:35:36 INFO  Logging:16 - Logging current user out.
+2019-09-01 21:35:43 INFO  Logging:21 - Attempting to login Username: manager, Password: password
+2019-09-01 21:35:43 INFO  Logging:29 - Login successful. Logging in Finance Manager: manager
+2019-09-01 21:35:43 INFO  Logging:21 - Loading all tickets to be displayed to Finance Manager.
+2019-09-01 21:35:50 INFO  Logging:16 - Logging current user out.
