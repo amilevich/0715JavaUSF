@@ -1,0 +1,46 @@
+body {
+	background-image: url("../pics/art.jpg");
+}
+
+#cardlogin {
+	margin: 100 auto; 
+	float: none; 
+	margin-top: 100px; 
+	max-width: 600px;
+}
+
+@media screen and (min-width: 992px) {
+	.modal-lg {
+		width: 950px;
+	}
+}
+
+.card-deck {
+	margin-top: 150px;
+	margin-left: 170px;
+	width: 1000px;
+	height: 300px;
+}
+
+#accordion {
+	margin-left: 20px;
+	margin-top: 30px;
+	width: 1250px;
+}
+
+#pendingTable {
+	width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#requestHistoryTable {
+	width: 1240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: 250px;
+	height: 400px;
+}

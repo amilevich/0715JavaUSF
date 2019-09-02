@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Page</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.5/hyperform.min.css">
+<link
+	href="https://unpkg.com/tabulator-tables@4.3.0/dist/css/tabulator.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.1/css/bootstrap/tabulator_bootstrap4.css"
+	rel="stylesheet">
+<link href="https://printjs-4de6.kxcdn.com/print.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="card-deck" id="carddeck">
+		<div class="card bg-success">
+			<div class="card-body" id="history-anchor">
+				<a href="#" data-toggle="modal" data-target="#historyModal">
+					<h5>View Past Tickets</h5> <img
+					src="pics/history.png" class="img-fluid" alt="Sample photo">
+				</a>
+			</div>
+		</div>
+		<div class="card bg-secondary">
+			<div class="card-body" id="request">
+			<a href="#" data-toggle="modal" data-target="#requestModal">
+					<h5>Reimbursement Request</h5>
+					<img src="pics/submit.png" class="img-fluid" alt="Sample photo">
+			</a>
+			</div>
+		</div>
+		<div class="card bg-warning">
+			<div class="card-body" id="info">
+			<a href="#" data-toggle="modal" data-target="#infoModal"
+				data-backdrop="static" data-keyboard="false">
+					<h5>Edit My Information</h5>
+					<img src="pics/edit.png" class="img-fluid" alt="Sample photo">
+			</a>
+			</div>
+		</div>
+		<div class="card bg-danger">
+			<div class="card-body" id="logout">
+			<a href="#" data-toggle="modal" data-target="#logOutModal">
+					<h5>Log out</h5>
+					<img src="pics/edit.png" class="img-fluid" alt="Sample photo">
+			</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="historyModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document"
+			style="width: 1250px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">My Past
+						Tickets</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div id="request-history-table"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary pdfbtn" id="pdf-button">Print
+						to PDF</button>
+					<button type="button" class="btn btn-primary csvbtn" id="csv-button">Save
+						to CSV</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="requestModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">My
+						Reimbursement Request</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="request-form">
+						<div class="form-group">
+							<!-- must be disabled and provide the exact date of request -->
+							<input type="text" class="form-control" id="date-request"
+								placeholder="" readonly>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="description-request" rows="3"
+								placeholder="Description" name="description" required></textarea>
+						</div>
+						<div class="form-group">
+							<label for="reimb-type">Type of Reimbursement:</label> <select
+								class="form-control" id="type-request" name="type">
+								<option>LODGING</option>
+								<option>TRAVEL</option>
+								<option>FOOD</option>
+								<option>OTHER</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="amount-request"
+								placeholder="Amount" name="ammount" required min="10" step=".01">
+							<!-- 								oninvalid="setCustomValidity('Please type amount of at least $10.00')"> -->
+						</div>
+						<div class="form-group">
+							<span>
+							<input id="file-request" type="file" class="form-control"
+								name="receipt" accept=".jpg, .jpeg, .png" />
+							<div>File Limit: 5MB</div>
+							</span>
+						</div>
+						<div class="form-group">
+							<input type="button" class="btn btn-primary"
+								id="request-form-button" value="Request">
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="infoModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Edit My
+						Information</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close" id="close-edit-button">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+
+				<!-- Edit My Information -->
+				<div class="modal-body">
+					<form id="edit-form">
+						<div class="form-group">
+							<input type="text" class="form-control" id="firstname-register"
+								placeholder="Firstname" name="fnameReg" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="lastname-register"
+								placeholder="Lastname" name="lnameReg" required>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="email-register"
+								placeholder="Email" name="emailReg" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="username-register"
+								placeholder="Username" name="unReg" required minlength="5"
+								maxlength="15">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control"
+								id="password-register" placeholder="New Password" name="pwReg"
+								minlength="5" maxlength="20" required>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control"
+								id="conf-password-register" placeholder="Confirm New Password"
+								name="cpwReg" required>
+						</div>
+						<!-- <button>go</button> -->
+						<div class="form-group">
+							<button class="btn btn-primary" id="edit-form-button">Edit</button>
+							<!-- <input type="button" class="btn btn-primary"
+								id="edit-form-button" value="Edit"> -->
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="logOutModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<h5 class="modal-title" id="exampleModalLongTitle">Are you
+						sure you want to log out?</h5>
+				</div>
+				<div class="modal-footer">
+					<form action="/ers/out" method="POST" id="exit-form">
+						<input type="submit" class="btn btn-primary" id="exit-button"
+							value="Yes">
+					</form>
+					<button class="btn btn-secondary" data-dismiss="modal">No</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.5/hyperform.min.js"></script>
+	<script type="text/javascript"
+		src="https://unpkg.com/tabulator-tables@4.3.0/dist/js/tabulator.min.js"></script>
+	<script type="text/javascript"
+		src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+		integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+	<script
+		src="https://rawgit.com/kawanet/msgpack-lite/master/dist/msgpack.min.js"></script>
+	<script src="https://momentjs.com/downloads/moment.js"></script>
+	<script src="js/validator.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/employee.js"></script>
+</body>
+
+</html>
