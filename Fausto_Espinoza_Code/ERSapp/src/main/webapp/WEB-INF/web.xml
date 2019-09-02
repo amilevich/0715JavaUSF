@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ERSapp</display-name>
+  <!-- <listener>
+        <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class>
+  </listener> -->
+  <!-- <context-param>
+  	<param-name>Log4j-config-Location</param-name>
+  	<param-value>/WEB-INF/Log4j.properties</param-value>
+  </context-param> -->
+  
+  <!-- <context-param>
+        <param-name>log4jContextName</param-name>
+        <param-value>ERSapp</param-value>
+   </context-param> -->
+  
+  <servlet>
+  	<servlet-name>MainServlet</servlet-name>
+  	<servlet-class>com.ers.project.servlets.MainServlet</servlet-class>
+  	<!-- <init-param>
+	  <param-name>log4j-init-file</param-name>
+	  <param-value>WEB-INF/log4j.properties</param-value>
+	</init-param> -->
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>MainServlet</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+     
+</web-app>

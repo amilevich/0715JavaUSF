@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Roles</title>
+<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+		font-size:0;"src/main/webapp/html/UserRoles.html"
+		box-sizing:border-box;
+		
+	}
+	
+	.block{
+		border: 1px solid #000;
+		width:40%;
+		display:inline-block;
+		font-size:18px;
+		padding:50px;
+	}
+
+</style>
+</head>
+<body>
+
+	<form action="addRoles" method="GET">		
+		<div id="Column1" class="block">
+			<input type="text" name="nameRoles" placeholder="Name Role">
+			<input type="submit"><br>
+			<a href="CodeMenu.html" >Go back at Menu</a>
+		</div>
+		<div id="Column2" class="block">
+			<table id="myTable">
+				<thead>
+					<tr id="myTableHead">
+						<th>Id</th>
+						<th>Name</th>
+					</tr>
+				</thead>
+				<tbody id="myTableBody">
+				</tbody>
+			</table>
+		</div>
+	</form> 	
+	
+<!-- 	<script type="text/javascript" src="../js/AjaxStatus.js"></script> -->
+</body>
+</html>

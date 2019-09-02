@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Denied Reimbursements</title>
+
+<style>
+
+	body{
+		background-image:url("https://cdn.sendx.io/prod/upload/img/19/07/29/21/8168/full.jpg");
+		background-size: cover;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="../css/Style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+	<nav class="navbar fixed-top navbar-dark bg-dark">
+		<form action="HomeMangApr.do" method="POST"><a> <button class="btn btn-outline-primary">Home</button></a></form>
+		<form action="TickectMang.do" method="POST"><a><button class="btn btn-outline-primary">View All Pending Reimbursements</button></a></form>  
+		<form action="TickectMangApr.do" method="POST"><a><button class="btn btn-outline-primary">View All Approved Reimbursements</button></a></form>
+		<form action="TickectMangDen.do" method="POST"><a><button class="btn btn-outline-primary">View All Denied Reimbursements</button></a></form>
+		<form method="POST" action="logout.do"><a >
+		  <button type="submit" class="btn btn-primary" id="logout">Logout</button>
+		  </a></form>
+	</nav>
+	</header>	
+<br>
+<br>
+<br>
+<div>
+	<h3 style="color:rgb(15, 39, 54);">Denied Reimbursement Tickets</h3>
+</div>
+<br>
+
+<div>
+	<form action="TickectMangDen.do" method="POST"></form>
+	<table id="myTable" border="1">
+		<thead id="mytHead">
+			<tr>
+				<th>Ticket #</th>
+				<th>Employee</th>
+				<th>Amount</th>
+				<th>Date</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody id="mytbody"></tbody>
+	</table>
+	<script type="text/javascript" src="../js/AjaxPassHistoryDeny.js"></script>
+
+</div>
+</body>
+</html>

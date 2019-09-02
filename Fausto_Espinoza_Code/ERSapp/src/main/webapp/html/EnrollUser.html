@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Enroll User</title>
+<style>
+		body {
+			background-image: url("https://www.hospitalitynet.org/picture/xxl_153089364.jpg");
+			background-size: cover;
+		} 
+		
+	</style>
+
+	<!-- ../css/ -->
+<link rel="stylesheet" type="text/css" href="../css/Style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+crossorigin="anonymous">
+</head>
+<body>
+
+	<br>
+	<div>
+		<h3 style="color:rgb(32, 91, 131);">Please create your account below:</h3>
+		
+	</div>
+<br>
+<div>
+	<form action="Enroll.do" method="POST">
+			<div class="form-group row">
+			<div class="col-sm-3 my-1" style=border-style:solid;border-width:2px;padding:15px;background-color:rgba(255,255,255,0.6)>
+				<label for="firstName">First Name</label>
+				<input type="text" name="firstName" class="form-control" placeholder="Enter First Name">
+			
+				<label for="lastName">Last Name</label>
+				<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Enter Last Name">
+			
+				<label for="Username2">Username</label>
+			  	<input type="text" name="username" class="form-control" placeholder="Enter Username">
+			
+				<label for="exampleInputPassword2">Password</label>
+				<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+			
+				<label for="email">Email</label>
+				<input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email">
+			
+				<label for="userRole">Role</label>
+				<select id="userRole" name="userRole" class="form-control"></select>
+			
+			<br>
+			<input type="submit" class="btn btn-primary"/>		
+		</form>			
+				
+		<script type="text/javascript" src="../js/AjaxObject.js"></script>
+
+</div>		
+</body>
+</html>

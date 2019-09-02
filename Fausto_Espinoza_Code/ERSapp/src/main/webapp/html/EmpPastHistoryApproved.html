@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>View Approved Reimbursements</title>
+</head>
+<br>
+
+<style>
+
+table, th, tr {
+	color: #11183a;
+	font-weight: bold;
+	} 
+
+body {
+	background-image:url("https://thumbs.dreamstime.com/b/business-travel-expense-word-cloud-wordcloud-made-text-129924752.jpg");
+	background-repeat: no-repeat; 
+    background-size: cover; 
+	}
+</style>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../css/Style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-dark bg-dark">
+			<form action="HomeEmplApr.do" method="POST"><a> <button class="btn btn-outline-primary">Home</button></a></form>
+			<form action="ReisbormentTicket.do" method="POST"><a><button class="btn btn-outline-primary">Create New Reimbursement Ticket</button></a></form>
+			<form action="PastTicketEmpl.do" method="POST"><a><button class="btn btn-outline-primary">View Pending Reimbursements</button></a></form>
+			<form action="EmployeePatsA.do" method="POST"><a><button class="btn btn-outline-primary">View Approved Reimbursements</button></a></form>
+			<form action="EmployeePatsD.do" method="POST"><a><button class="btn btn-outline-primary">View Denied Reimbursements</button></a></form>
+			<form method="POST" action="logout.do"><a >
+			<button type="submit" class="btn btn-primary" id="logout">Logout</button>
+			</a></form>
+		</nav>
+	</header>
+<br>
+<br>
+<div>
+	<h3 style="color:rgb(32, 91, 131);">Your Approved Reimbursement Tickets</h3>
+</div>	
+<br>
+
+<div>
+<table id="myTable" border="1">
+		<thead id="mytHead">
+			<tr>
+				<th>Ticket #</th>
+				<th>Amount</th>
+				<th>Date</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody id="mytbody"></tbody>
+	</table>
+	<script type="text/javascript" src="../js/AjaxPassHistoryEmp2.js"></script>
+
+</div>
+</body>
+</html>

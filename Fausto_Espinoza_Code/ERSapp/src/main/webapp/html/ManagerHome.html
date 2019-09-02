@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manager Home</title>
+
+<style>
+
+body{
+	background-image:url("https://cdn.sendx.io/prod/upload/img/19/07/29/21/8168/full.jpg");
+	background-size: cover;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="../css/Style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+	crossorigin="anonymous">
+</head>
+
+<body>
+<header>
+	<nav class="navbar fixed-top navbar-dark bg-dark">
+  		<form action="HomeMangApr.do" method="POST"><a> <button class="btn btn-outline-primary">Home</button></a></form>
+		<form action="TickectMang.do" method="POST"><a><button class="btn btn-outline-primary">View All Pending Reimbursements</button></a></form>  
+		<form action="TickectMangApr.do" method="POST"><a><button class="btn btn-outline-primary">View All Approved Reimbursements</button></a></form>
+  		<form action="TickectMangDen.do" method="POST"><a><button class="btn btn-outline-primary">View All Denied Reimbursements</button></a></form>
+  		<form method="POST" action="logout.do"><a >
+		<button type="submit" class="btn btn-primary" id="logout">Logout</button>
+		</a></form>
+	</nav>
+</header>
+<br>
+<br>
+<br>
+<h1 style="color:rgb(255, 136, 0); text-align: center">Welcome to Your Home Page</h1>
+<br>
+
+<h3 style="color:rgb(32, 91, 131); text-align: center;font-weight: bold">Please Make Your Selection Above</h3>
+
+</body>
+</html>

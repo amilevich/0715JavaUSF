@@ -1,0 +1,351 @@
+2019-09-01 11:04:18 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 12:51:10 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 12:53:09 INFO  RegisterController:53 -  User created: Daniel Espinoza
+2019-09-01 12:59:48 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 13:02:58 INFO  RegisterController:53 -  User created: Daniel Espinoza
+2019-09-01 13:03:59 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 13:04:00 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 13:04:07 INFO  CreateTicketController:49 -  User: Fausto Espinoza
+2019-09-01 13:04:08 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 13:04:28 INFO  CreateTicketController:49 -  User: Fausto Espinoza
+2019-09-01 13:04:29 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 13:04:31 INFO  EmployeeController:15 - Employee Home
+2019-09-01 13:04:48 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:04:49 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:14:21 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:14:22 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:15:33 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:15:40 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:15:57 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:16:02 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 13:18:23 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:18:25 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:21:07 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:22:55 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:22:57 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:23:16 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 13:23:18 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:24:07 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 13:24:08 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:37:28 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 13:37:29 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:37:40 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 13:37:41 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 13:37:48 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 13:37:49 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 13:37:55 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 13:37:56 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:23:42 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 14:23:44 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 14:24:04 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 14:24:06 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:24:33 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 14:24:34 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:27:37 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 14:27:38 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:27:43 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 14:27:44 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:27:46 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 14:27:47 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:37:47 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 14:39:00 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 14:39:01 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 14:40:35 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 14:40:56 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 14:40:57 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 14:41:02 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 14:41:06 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 14:41:07 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:41:09 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 14:41:10 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 14:42:22 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 14:42:24 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 14:42:42 INFO  CreateTicketController:49 -  User: Fausto Espinoza
+2019-09-01 14:42:43 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 14:42:45 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 14:42:46 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 14:43:14 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 14:43:15 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 14:44:48 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 14:46:14 INFO  RegisterController:53 -  User created: Danny Shikura
+2019-09-01 14:49:47 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 14:49:49 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 14:56:30 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 14:56:31 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:07:56 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:07:57 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:04 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:08:05 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:08 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:08:09 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:12 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:08:14 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:08:17 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:08:18 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:08:19 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:21 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:08:22 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:25 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:08:26 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:08:40 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:08:41 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:08:41 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:08:56 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:08:57 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:08:58 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:08:59 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:09:07 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:09:08 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:09:11 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:09:12 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:09:29 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:09:30 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:09:51 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:09:52 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:09:54 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:09:55 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:09:57 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:09:57 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:10:13 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 17:11:53 INFO  RegisterController:53 -  User created: Gael Ngouana
+2019-09-01 17:17:59 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:18:00 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:18:02 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:18:03 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:18:04 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:18:05 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:18:06 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:18:08 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:18:09 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:18:10 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:18:11 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:18:12 INFO  EmployeeController:15 - Employee Home
+2019-09-01 17:18:34 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:18:35 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:18:38 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:18:39 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:18:39 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:18:40 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:18:41 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:18:44 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:18:45 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:18:46 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:18:48 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:18:49 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:18:51 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:18:52 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:19:00 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:19:01 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:20:04 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:20:06 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:20:12 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:23:39 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:23:40 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:32:54 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:32:55 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:32:58 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:32:59 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:32:59 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:33:01 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:33:02 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:33:04 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:33:12 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:33:13 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:33:14 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:33:15 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:33:17 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:21 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:34:22 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:34:23 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:24 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:34:25 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:34:26 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:27 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:34:28 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:34:29 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:31 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:34:32 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:34:33 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:35 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:34:36 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:34:37 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:34:38 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:34:39 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 17:34:46 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 17:34:51 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:34:52 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:34:58 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:35:00 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:35:03 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:35:04 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:35:06 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 17:36:25 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 17:36:27 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 17:36:27 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:36:28 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:36:33 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:36:34 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:36:39 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 17:36:40 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 17:37:04 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:37:10 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 17:37:11 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:37:12 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:37:13 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 17:37:15 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:58:30 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 17:58:34 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 17:58:36 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 18:23:12 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 18:23:24 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 18:23:27 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 18:23:27 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 18:23:36 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 18:45:16 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 18:45:17 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 18:45:20 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 18:45:21 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 18:45:24 INFO  EmployeeController:15 - Employee Home
+2019-09-01 18:45:25 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 18:45:26 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 18:47:10 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 18:47:12 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 18:47:13 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 18:47:14 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 18:47:15 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 18:47:17 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:21:49 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:21:50 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:21:52 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 21:21:52 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:21:55 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 21:22:00 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 21:22:01 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:22:03 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:22:04 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:22:06 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:22:07 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:22:09 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 21:22:10 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:22:11 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 21:22:12 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:22:13 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:22:14 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:22:15 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:22:16 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 21:22:59 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:23:07 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:23:09 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:23:30 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:23:30 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:23:50 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:23:52 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:23:53 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:23:56 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:23:57 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:23:58 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:23:59 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:23:59 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:01 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:24:02 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:24:03 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:04 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:05 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:24:05 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:06 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:24:06 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:07 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:24:12 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:12 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:24:14 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:24:17 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:24:18 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:24:47 INFO  CreateTicketController:49 -  User: Fausto Espinoza
+2019-09-01 21:24:48 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:24:50 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:24:51 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:00 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:15 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:25:15 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:25:16 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:17 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:25:18 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:19 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:20 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:25:21 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:27 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:28 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:25:29 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:30 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:31 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:25:32 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:33 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:34 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:25:35 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:25:36 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:25:37 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:25:38 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:28:20 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:28:21 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:28:24 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:28:25 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:28:30 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:28:30 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:28:32 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:28:32 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:28:35 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:28:35 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:28:39 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:30:56 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 21:30:57 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:31:33 INFO  CreateTicketController:49 -  User: Ella Rozenblum
+2019-09-01 21:31:33 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:31:51 INFO  CreateTicketController:49 -  User: Ella Rozenblum
+2019-09-01 21:31:52 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 21:31:53 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:31:54 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:31:59 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:32:03 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:32:06 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 21:32:06 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 21:32:15 INFO  EmployeeController:15 - Employee Home
+2019-09-01 21:32:32 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 21:32:33 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 21:33:11 INFO  ChangeStatusController:57 -  User: Daniel Espinoza
+2019-09-01 21:33:12 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 21:33:14 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:33:22 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 21:33:38 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:33:40 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:59:26 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:59:48 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 21:59:51 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 21:59:58 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 21:59:59 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 22:00:08 INFO  MangTicketAprController:13 - Manager Home
+2019-09-01 22:00:09 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 22:04:36 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 22:04:37 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 22:04:43 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 22:04:44 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 22:04:48 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 22:04:50 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 22:10:15 INFO  EnrollUserController:32 -  Send JSON Data to user enroll
+2019-09-01 22:10:56 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 22:10:57 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 22:10:59 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 22:11:00 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 22:11:03 INFO  PastTicketEmplController:13 - Past Employee Ticket
+2019-09-01 22:11:04 INFO  FindTicketsEmplController:37 -  Send JSON Data to tickets Empl
+2019-09-01 22:11:05 INFO  ReisbormentTicketontroller:13 - Manager Home
+2019-09-01 22:11:06 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 22:11:33 INFO  CreateTicketController:49 -  User: Fausto Espinoza
+2019-09-01 22:11:35 INFO  ErsTypeController:30 -  Send JSON Data to type
+2019-09-01 22:11:38 INFO  EmployeeController:15 - Employee Home
+2019-09-01 22:11:52 INFO  MangTicketAprController:13 - Get tickets
+2019-09-01 22:11:54 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 22:11:55 INFO  MangTicketAprController:13 - Managertickets
+2019-09-01 22:11:56 INFO  FindTicketsMangController:34 -  Send JSON Data to tickets
+2019-09-01 22:11:59 INFO  MangTicketAprController:13 - Manager Tickets
+2019-09-01 22:12:00 INFO  PendTicketsController:36 -  Send JSON Data to tickets
+2019-09-01 22:12:03 INFO  MangTicketAprController:13 - Manager Home
