@@ -14,8 +14,8 @@ public class SessionFactoryUtil {
 		configuration.setProperty("hibernate.connection.username", System.getenv("BEARS_USERNAME"));
 		configuration.setProperty("hibernate.connection.password", System.getenv("BEARS_PASSWORD"));
 		configuration.setProperty("hibernate.connection.url", 
-				"jdbc:postgresql://" + System.getenv("BEARS_URL") + ":5432/nick_1905java?");
-		configuration.setProperty("hibernate.default_schema", System.getenv("BEARS_SCHEMA"));
+				"jdbc:oracle:thin:@db0715java.ce8jdxpwtsbf.us-east-2.rds.amazonaws.com:1521:orcl");
+		//configuration.setProperty("hibernate.default_schema", System.getenv("BEARS_SCHEMA"));
 		
 		ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 				.applySettings(configuration.getProperties()).build();

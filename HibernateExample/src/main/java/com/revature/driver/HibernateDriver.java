@@ -12,7 +12,9 @@ public class HibernateDriver {
 	private static SessionFactory sf = SessionFactoryUtil.getSessionFactory();
 	
 	public static void main(String[] args) {
-
+		Session sess=sf.openSession();
+		System.out.println("Everything fine");
+		sess.close();
 	}
 	
 }

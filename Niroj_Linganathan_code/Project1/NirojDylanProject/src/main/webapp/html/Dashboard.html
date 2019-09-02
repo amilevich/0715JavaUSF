@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Reimburstment </title> 
+</head>
+<link rel="stylesheet" type="text/css" href="Style.css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body id="body">
+	<header>
+		<div class="container">
+			<div id="branding">
+					<h1>
+					D<span class="highlight">Y</span>ROJ
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Services</a></li>
+					<li><a href="index.html">Sign In</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		
+
+<style>
+
+* {box-sizing: border-box}
+</style>
+
+<button class="tablink" onclick="openPage('dash', this, 'grey')" id="defaultOpen">Dash Board</button>
+<button class="tablink" onclick="openPage('pending', this, 'grey')">Pending All Applications</button>
+<button class="tablink" onclick="openPage('application', this, 'grey')">Reimburstment Application </button>
+<button class="tablink" onclick="openPage('history', this, 'grey')">View All Previous Applications</button>
+ 
+  
+  
+<div id="dash" class="tabcontent" >
+<form method="POST" action="Dashboard.do" role="form">
+<H4 id="name1"></h4>
+ </form>
+  </div>
+  
+ 
+  
+  
+  <div id="pending" class="tabcontent">
+ <form method="POST" action="PendingById.do" role="form">
+ <table id="myTablePending" class="table">
+         <tr class="Trow">
+           <th> Claim ID </th>
+           <th> Employee ID</th>
+           <th> Manager ID</th>
+           <th> Travel Cost</th>
+           <th> Lodgeing Cost </th>
+           <th> Food Cost</th>
+           <th> Misc Cost</th>
+           <th> Total </th>
+           <th> Date of Claim </th>
+           <th> Claim Status </th>
+           <th> Comments </th>
+         </tr>
+    </table>
+    </form> 
+</div>
+  
+ 
+  
+<div id="application" class="tabcontent">
+<form method="POST" action="Dashboard1.do" role="form">
+<H4 id="name3"></h4>
+<div class="div1">
+  <label class="employeeLabel">Employee ID</label>
+  <input id="TEid" class="box1" type="text" name="emp_id">
+  <label>Date of Expense</label>
+  <input class="box1" type="text" name="date_of_expense">
+   <label>Date of Request</label>
+  <input id="DateOfRequest" class="box1" type="text" name="date_of_request" >
+  </div>
+  <br>
+  <H5 id="expense">Expenses</H5>
+  <div class="div2">
+  <label>Travel</label>
+  <input type="checkbox" value="">
+  <input class="box1" type="text" name="travel_amount">
+  <label>Lodging</label>
+  <input type="checkbox" value="">
+  <input class="box1" type="text" name="lodgeing_amount"> 
+  </div>
+ <br>
+ <br>
+  <div class="div3">
+  <label>Food</label>
+  <input type="checkbox" value="">
+  <input class="box1" type="text" name="food_amount">
+  <label>Other Amount</label>
+  <input type="checkbox" value="">
+  <input class="box1" type="text" name="other_amount">
+  </div>
+  <br>
+  <br>
+  <div class="div4">
+  <label>Comments</label>
+  <input type="text" name="expense_comments">
+  </div>
+  <br>
+  <br>
+  <div class="div5">
+  <label>Total Expense</label>
+  <input class="box" class="box" type="text" name="claim_total">
+  </div>
+  <br>
+  <button type="submit" class="button1">Submit</button>
+  </form>
+  
+</div>
+
+<div id="history" class="tabcontent">
+ <form method="POST" action="getTicket.do" role="form">
+  
+ <table id="myTable" class="table">
+         <tr class="Trow">
+           <th> Claim ID </th>
+           <th> Employee ID</th>
+           <th> Manager ID</th>
+           <th> Travel Cost</th>
+           <th> Lodgeing Cost </th>
+           <th> Food Cost</th>
+           <th> Misc Cost</th>
+           <th> Total </th>
+           <th> Date of Claim </th>
+           <th> Claim Status </th>
+           <th> Comments </th>
+         </tr>
+    </table>
+   </form>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+	<!-- ---------------------------------------------------------------------------------------------------------- -->
+	
+	<footer id="footerReimbusrtment" >
+		<p>Niroj & Dylan Project-01,Copyright &copy; 2019</p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript"	src="../js/ReimbursmentPage.js"></script>
+</body>
+</html>
