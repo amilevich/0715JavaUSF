@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+		<link rel = "stylesheet"
+   type = "text/css"
+   href = "table.css" />
+</head>
+<body>
+	<h1>Welcome to the Manager Approve and Deny page</h1>
+	
+	<div id="userId"></div>
+	<div id="userName"></div>
+
+	<div id="userFirstName"></div>
+	<div id="userLastName"></div>
+	<div id="userEmail"></div>
+
+	
+	<table id="myTable" class="table">
+  		<tr>
+    		<th> ReimbID </th>
+    		<th> ReimbAmount</th>
+    		<th> Submitted time stamp</th>
+    		<th> Resolved time stamp</th>
+    		<th> Description </th>
+    		<th> Author ID</th>
+    		<th>  Resolver ID</th>
+    		<th> StatusID </th>
+    		<th> Type </th>
+  		</tr>
+	</table>
+	<br>
+	<form method="POST" action="bark.do" >
+	<select id="selectBar1" name="selectBar1" >
+		
+		<option value="2">Approve</option>
+		
+		<option value="3">Deny</option>
+	</select>
+	
+	<br>
+	<br>
+	<select id="selectBar2" name="selectBar2" ></select>
+	<br>
+	<input type="submit"
+			class="btn btn-primary" id="SubmitButton" value="Submit" />
+	</form>
+	
+	<br>
+
+	<br>
+	<br>
+	
+	<a href="http://localhost:8080/PROJECT1/html/Home.html"
+	class="btn btn-primary" id="NewTicketButton">Go back</a>
+	
+	<script type="text/javascript" src="../js/AppDenied.js"></script>
+</body>
+</html>

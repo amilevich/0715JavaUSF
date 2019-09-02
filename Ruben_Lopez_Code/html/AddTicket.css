@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+form {
+   display: inline-block;
+}
+body { 
+  	
+   
+   background: url('http://www.desktopimages.org/preview/get_photo/770453/1920/1080g') no-repeat top center;
+   background-size: 100%;
+   height:100vh;
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+   text-align: center;
+}
+.container{
+	text-align:center;
+}

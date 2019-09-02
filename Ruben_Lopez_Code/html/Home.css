@@ -1,0 +1,103 @@
+@charset "ISO-8859-1";
+body {
+   text-align: center;
+}
+.container{
+	text-align:center;
+}
+form {
+   display: inline-block;
+}
+body { 
+  	
+   
+   background: url('http://www.desktopimages.org/preview/get_photo/770453/1920/1080g') no-repeat top center;
+   background-size: 100%;
+   height:100vh;
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.container2 {
+   	z-index: 1;
+
+	left: 100%;
+	left: 18.5%;
+  
+   	width:1000px;
+   height:100vh;
+	position: relative;
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+   	width: 1000px;
+  	background: #eeff2e;
+   	mix-blend-mode: screen;
+   	display:block;
+   }
+
+   
+   
+
+
+
+
+div.container10{
+	z-index: 10;
+	transform: translate(0%,-680%)
+	
+}
+div.container11{
+	z-index: 11;
+	transform: translate(0%,-1800%)
+	
+}
+div.container12{
+	z-index: 12;
+	transform: translate(0%,-500%)
+	
+}
+div.container1{
+	z-index: 6;
+	transform: translate(0%,-300%)
+	
+}
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: right;
+}
+

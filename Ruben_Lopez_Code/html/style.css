@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+ #LoginButton{   
+    cursor:pointer;
+    transition:.3s background ease;
+    &:hover{
+        background:#3498DB
+
+    }
+}
+
+
+
+.my_centerd_buttons { 
+	display: flex; 
+	justify-content: center;
+	margin:auto;
+	width:60%;
+	border: 20px solid #73AD21;
+	padding: 10px; 
+}
+
+body {
+   text-align: center;
+}
+.container{
+	text-align:center;
+}
+form {
+   display: inline-block;
+}
+
+h1 {
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+div.container4 {
+	z-index: 2;
+	top: 90px;
+   	height: 10em;
+   	
+   	
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	
+   	display:block;
+   }
+   div.container6 {
+   	z-index: 3;
+
+   	height: 10em;
+   	top: 50px;
+   	
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	mix-blend-mode: screen;
+  	
+   }
+   
+   div.container5 {
+   	z-index: 1;
+	top: 300px;
+	left: 18.5%;
+   	height: 10em;
+   	width:1000px;
+   	top: 300px;
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	background: magenta;
+   	mix-blend-mode: screen;
+   	display:block;
+   }
+   
+   
+div.container4 form {
+	opacity: 0.5;
+   	margin: 0;
+	top: 50%;
+   	left: 25%;
+   	mix-blend-mode: normal;
+   	/*margin-right: -50%; */
+   	transform: translate(-50%, -50%)
+}
+
+div.container4 form background {
+  background-blend-mode: normal;
+  background: url('http://www.sclance.com/pngs/white-png/white_png_1514081.png') no-repeat top center;
+  background-size: 100%;
+}
+
+#userName {
+	mix-blend-mode: normal;
+	background: white;
+}
+
+
+div.container5 {
+   height: 10em;
+   position: relative }
+#back { 
+  	
+   
+   background: url('http://www.desktopimages.org/preview/get_photo/770453/1920/1080') no-repeat top center;
+   background-size: 100%;
+   height:100vh;
+} 	
+ 

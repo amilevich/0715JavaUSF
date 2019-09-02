@@ -1,0 +1,104 @@
+@charset "ISO-8859-1";
+
+body { 
+  	
+   
+   background: url('https://wallpaperaccess.com/full/419326.jpg') no-repeat top center;
+   background-size: 100%;
+   height:100vh;
+} 	
+
+body {
+   text-align: center;
+}
+.container{
+	text-align:center;
+}
+form {
+   display: inline-block;
+}
+div.container5 {
+   	z-index: 1;
+	top: 300px;
+	left: 18.5%;
+   	height: 15em;
+   	width:1000px;
+   	top: 300px;
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	background: #eeff2e;
+   	mix-blend-mode: screen;
+   	display:block;
+   }
+   
+   div.container4 {
+	z-index: 2;
+	top: 22px;
+   	height: 10em;
+   	opacity: 0.8;
+   	
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	
+   	display:block;
+   }
+    div.container2 {
+	z-index: 6;
+	top: 200px;
+   	height: 10em;
+   	
+   	
+   	position: relative;
+   	 
+   	padding-top: 50px;
+  	padding-right: 50px;
+  	padding-bottom: 50px;
+  	padding-left: 50px;
+  	
+   	display:block;
+   }
+   
+   
+ h1 {
+   
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+
+label {
+    width: 30%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+/* only the submit button is matched by this selector,
+   but to be sure you could use an id or class for that button */
+input + input {
+    float: right;
+}

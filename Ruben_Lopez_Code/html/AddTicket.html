@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+		<link rel = "stylesheet"
+   type = "text/css"
+   href = "Home.css" />
+</head>
+<body>
+	<h1> ADD TICKET PAGE </h1>
+	<br>
+	
+	
+	<h4>Here is your user information</h4>
+	<div id="userId"></div>
+	<div id="userName"></div>
+
+	<div id="userFirstName"></div>
+	<div id="userLastName"></div>
+	<div id="userEmail"></div>
+	
+	
+	
+	
+	
+	<form method="POST" action="fart.do" >
+		<label>AMOUNT</label>
+		<input type="text" name="Amount" id="Amount" placeholder="Insert Amount" />
+			<br>
+		<label>DESCRIPTION</label>
+		<input type="text" name="description"
+			id="description" placeholder="Insert description" />
+			<br> 
+		<select id="TypeID" name="TypeID">
+  			<option value="1">Lodging</option>
+  			<option value="2" selected="selected">Travel</option>
+  			<option value="3">Food</option>
+  			<option value="4">Other</option>
+		</select>
+		<br>
+		<input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+		<br>
+		<input type="submit"
+			class="btn btn-primary" id="SubmitButton" value="Add ticket" />
+	</form>
+	<br>
+	<br>
+	<a href="http://localhost:8080/PROJECT1/html/Home.html"
+	class="btn btn-primary" id="NewTicketButton">Back to Home </a>
+	
+	
+	<script type="text/javascript" src="../js/Home.js"></script>
+</body>
+</html>
+

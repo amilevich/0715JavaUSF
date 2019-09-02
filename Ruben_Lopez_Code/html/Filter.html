@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+	<link rel = "stylesheet"
+   type = "text/css"
+   href = "Home.css" />
+</head>
+<body>
+
+	<h1>VIEW TICKET PAGE</h1>
+	
+	
+	<h4>Here is your user information</h4>
+	<div id="userId"></div>
+	<div id="userName"></div>
+	
+	<div id="userFirstName"></div>
+	<div id="userLastName"></div>
+	<div id="userEmail"></div>
+	
+	
+	
+	
+	
+	<table id="myTable" class="table">
+  		<tr>
+    		<th> ReimbID </th>
+    		<th> ReimbAmount</th>
+    		<th> Submitted time stamp</th>
+    		<th> Resolved time stamp</th>
+    		<th> Description </th>
+    		<th> Author ID</th>
+    		<th>  Resolver ID</th>
+    		<th> StatusID </th>
+    		<th> Type </th>
+  		</tr>
+	</table>
+	<br>
+	<button onclick="getReimbursementInfo1()" type="button" class="btn btn-info">View Pending</button>
+	<button onclick="getReimbursementInfo2()" type="button" class="btn btn-info">View Approved</button>
+	<button onclick="getReimbursementInfo3()" type="button" class="btn btn-info">View Declined</button>
+	<button onclick="getReimbursementInfo4()" type="button" class="btn btn-info">View All</button>
+	
+	
+	<script type="text/javascript" src="../js/Filter.js"></script>
+
+
+<a href="http://localhost:8080/PROJECT1/html/Home.html"
+	class="btn btn-primary" id="NewTicketButton">Go Back</a>
+</body>
+</html>
