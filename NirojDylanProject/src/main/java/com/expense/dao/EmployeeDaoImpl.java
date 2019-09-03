@@ -12,14 +12,14 @@ import com.expense.beans.Form;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 	
-/*private static String url = "jdbc:oracle:thin:@dylansrevaturedb.cpu77pyuv98o.us-east-2.rds.amazonaws.com:1521:orcl"; // endpoint: port: SID
+/*private static String url = ;
 	
-	private static String username = "Dboycerev";
-	private static String password = "Dylanrev91";
+	private static String username = ;
+	private static String password = ;
 	*/
-	private static String url = "jdbc:oracle:thin:@db0715java.ce8jdxpwtsbf.us-east-2.rds.amazonaws.com:1521:orcl";
-	private static String username = "niroj85";
-	private static String password = "niroj4401";
+	private static String url = ;
+	private static String username = ;
+	private static String password = ;
 	
 	static{
 

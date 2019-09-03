@@ -12,10 +12,10 @@ import com.banking.accounts.CustomerAccount;
 
 public class AccountAccessDao implements AccountAccessDaoInt {
 	
-private static String url = "jdbc:oracle:thin:@dylansrevaturedb.cpu77pyuv98o.us-east-2.rds.amazonaws.com:1521:orcl"; // endpoint: port: SID
+private static String url = ""; // endpoint: port: SID
 	
-	private static String username = "Dboycerev";
-	private static String password = "Dylanrev91";
+	private static String username = "";
+	private static String password = "";
 	
 
 	@Override

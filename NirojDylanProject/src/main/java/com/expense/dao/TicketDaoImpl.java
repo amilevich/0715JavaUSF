@@ -21,9 +21,9 @@ import com.twilio.type.PhoneNumber;
 //***********************************************
 
 public class TicketDaoImpl implements TicketDao {
-	private static String url = "jdbc:oracle:thin:@db0715java.ce8jdxpwtsbf.us-east-2.rds.amazonaws.com:1521:orcl";
-	private static String username = "niroj85";
-	private static String password = "niroj4401";
+	private static String url = "";
+	private static String username = "";
+	private static String password = "";
 	
 	static int EID; //For SMS method.
 	static String status;
