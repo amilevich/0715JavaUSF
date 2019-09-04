@@ -10,6 +10,9 @@ let requestBtn = document.getElementById('request-form-button');
 let editBtn = document.getElementById('edit-form-button');
 let pdfBtn = document.getElementById('pdf-button');
 let csvBtn = document.getElementById('csv-button');
+let welcome = document.getElementById('welcome');
+
+let urlParams = new URLSearchParams(window.location.search);
 
 /// table requests tabulator
 let requestHistoryTable = new Tabulator("#request-history-table", {
@@ -97,7 +100,6 @@ requestBtn.addEventListener('click', function() {
         /// reset and hide form
         requestForm.reset();
         $('#requestModal').modal('hide');
-        
     } else {
         alert('Values entered are not valid')
     }
@@ -121,11 +123,12 @@ dateRequest.setAttribute("placeholder", today.getMonth() + "/"
 	+ today.getDate() + "/" + today.getFullYear())
 	
 window.onload = function() {
+	welcome.innerHTML = "Welcome " + urlParams.get('fname') + " " + urlParams.get('lname');
 	pdfBtn.disabled = true;
 	csvBtn.disabled = true;
+	requestBtn.disabled = true;
 	getFormDataFromServer("/ers/user/info");
-	tableLoadBytes(requestHistoryTable, '/ers/reqs?n=0&type=j', [pdfBtn, csvBtn]);
-//	tableLoad(requestHistoryTable, '/ers/reqs?n=0&type=j', [pdfBtn, csvBtn])
+	tableLoad(requestHistoryTable, '/ers/reqs?n=0&type=m', [pdfBtn, csvBtn, requestBtn]);
 }
 
 /// add form to table
