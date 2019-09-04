@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Finance Manager Page </title> 
+</head>
+<link rel="stylesheet" type="text/css" href="Style.css" />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body id="body">
+	<header>
+		<div class="container">
+			<div id="branding">
+					<h1>
+					D<span class="highlight">Y</span>ROJ
+				</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Services</a></li>
+					<li><a href="index.html">Log Out</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+		
+
+<style>
+
+* {box-sizing: border-box}
+</style>
+
+<button class="tablink" onclick="openPage('dash', this, 'grey')" id="defaultOpen">Dash Board</button>
+<button class="tablink" onclick="openPage('pending', this, 'grey')">All Pending Requests</button>
+<!-- <button class="tablink" onclick="openPage('history', this, 'grey')">Employee Request History</button>-->
+ 
+  
+  
+<div id="dash" class="tabcontent" >
+<form method="POST" action="ManagerRequest.do" role="form">
+
+<label class="ticLabel">Claim ID :</label>
+<label class="ticdata" id="LCID"></label>
+
+<label class="ticLabel">EmpID :</label>
+<label class="ticdata" id="LEid"></label>
+
+
+<label class="ticLabel">Date Of Request :</label>
+<label class="ticdata" id="LDOR"></label>
+
+<label class="ticLabel">Date Of Expense :</label>
+<label class="ticdata" id="LDOE"></label>
+<br>
+<label class="ticheading">Expenses</label>
+<br>
+<label class="ticLabel">Travel :</label>
+<label class="ticdata" id="Ltravel"></label>
+
+<label class="ticLabel">Lodging :</label>
+<label class="ticdata" id="Llodging"></label>
+
+<label class="ticLabel">Food :</label>
+<label class="ticdata" id="Lfood"></label>
+
+<label class="ticLabel">Other :</label>
+<label class="ticdata" id="Lother"></label>
+
+<label class="ticLabel">Comments:</label>
+<label class="ticdata" id="Lcomments"></label>
+
+<br>
+<label class="ticheading">Total :</label>
+<label class="ticdata" id="Ltotal"></label>
+
+ </form>
+
+ <div>
+<form method="POST" action="approve.do" role="form">
+<input id="TCidapprove" type="hidden" name="cid1" value="">
+<button id="approve" type="Submit" class="btn btn-dark btn-lg btn-block">Approve</button>
+</form>
+</div>
+<br>
+<div>
+<form method="POST" action="deny.do" role="form">
+<input id="TCiddenied" type="hidden" name="cid" value="">
+<button id="deny" type="Submit" class="btn btn-secondary btn-lg btn-block">Reject</button>
+</form>
+  </div>
+ 
+  </div>
+
+  <div id="pending" class="tabcontent">
+ <form method="POST" action="ManagerPendingTickets.do" role="form">
+ <table id="ManagerTablePending" class="table">
+         <tr class="Trow">
+           <th> Claim ID </th>
+           <th> Employee ID</th>
+           <th> Manager ID</th>
+           <th> Travel Cost</th>
+           <th> Lodgeing Cost </th>
+           <th> Food Cost</th>
+           <th> Misc Cost</th>
+           <th> Total </th>
+           <th> Date of Claim </th>
+           <th> Claim Status </th>
+           <th> Comments </th>
+         </tr>
+    </table>
+    </form> 
+</div>
+  
+ 
+<div id="history" class="tabcontent">
+  <form method="POST" action="ManagerPastTickets.do" role="form">
+ <input type="text" name="Tid" value="">
+ 
+ <button id="Bticket" type="submit" class="btn btn-outline-light"  onclick=getpendingTicketInfoById()>View Request History</button>
+  
+ <table id="ManagerTable" class="table">
+         <tr class="Trow">
+           <th> Claim ID </th>
+           <th> Employee ID</th>
+           <th> Manager ID</th>
+           <th> Travel Cost</th>
+           <th> Lodgeing Cost </th>
+           <th> Food Cost</th>
+           <th> Misc Cost</th>
+           <th> Total </th>
+           <th> Date of Claim </th>
+           <th> Claim Status </th>
+           <th> Comments </th>
+         </tr>
+    </table>
+    </form>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+  
+}
+  
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+	<!-- ---------------------------------------------------------------------------------------------------------- -->
+	
+	<footer id="footerReimbusrtment" >
+		<p>Niroj & Dylan Project-01,Copyright &copy; 2019</p>
+	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript"	src="../js/manager.js"></script>
+
+</body>
+</html>

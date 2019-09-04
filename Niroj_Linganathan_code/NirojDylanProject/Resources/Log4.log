@@ -1,0 +1,1194 @@
+2019-09-02 21:17:34 INFO  LoginController:124 - admin Logged In
+2019-09-02 21:18:24 INFO  LoginController:90 - Dylan Logged In
+2019-09-02 21:19:30 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-02 21:19:30 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-02 21:19:30 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+2019-09-02 21:19:30 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-02 21:19:30 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-02 21:19:31 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.208.54.140:443
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.208.54.140:443 with timeout 10000
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-02 21:19:31 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-02 21:19:31 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:59732<->18.208.54.140:443
+2019-09-02 21:19:31 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-02 21:19:31 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-02 21:19:31 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-02 21:19:31 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 150
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-02 21:19:31 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 150[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:87 - http-outgoing-0 >> "To=work%40email.com&From=%2B12147176263&Body=Dear+John+Doe+your+Expense+Reimburstment+Request+for+Amount+of+400.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 400 BAD REQUEST[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 03 Sep 2019 01:19:32 GMT[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 147[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQ3f828f3c1d654ae1b0370f731f3ade8f[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.066[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-02 21:19:31 DEBUG wire:87 - http-outgoing-0 << "{"code": 21211, "message": "The 'To' number  is not a valid phone number.", "more_info": "https://www.twilio.com/docs/errors/21211", "status": 400}"
+2019-09-02 21:19:31 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 400 BAD REQUEST
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 03 Sep 2019 01:19:32 GMT
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Content-Length: 147
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQ3f828f3c1d654ae1b0370f731f3ade8f
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.066
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-02 21:19:31 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-02 21:19:31 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-02 21:19:31 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-02 21:19:31 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-02 21:19:31 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-02 21:21:05 INFO  LoginController:90 - niroj Logged In
+2019-09-02 21:21:23 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-02 21:21:23 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-02 21:21:23 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-02 21:21:23 DEBUG wire:87 - http-outgoing-0 << "end of stream"
+2019-09-02 21:21:23 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-09-02 21:21:23 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-02 21:21:23 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-02 21:21:23 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.212.47.248:443
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.212.47.248:443 with timeout 10000
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-02 21:21:23 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-02 21:21:23 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:59743<->18.212.47.248:443
+2019-09-02 21:21:23 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-02 21:21:23 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-02 21:21:23 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-02 21:21:23 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 158
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-02 21:21:23 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 158[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+1000.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Date: Tue, 03 Sep 2019 01:21:24 GMT[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 913[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQfca9c6aa5dbe446589faa19822b55d22[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.093[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-02 21:21:23 DEBUG wire:87 - http-outgoing-1 << "{"sid": "SM5a0cac8573514407bdd483d4aba2a71a", "date_created": "Tue, 03 Sep 2019 01:21:24 +0000", "date_updated": "Tue, 03 Sep 2019 01:21:24 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 1000.0 Has Been Received On 01/JAN/2000", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM5a0cac8573514407bdd483d4aba2a71a.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM5a0cac8573514407bdd483d4aba2a71a/Media.json"}}"
+2019-09-02 21:21:23 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 CREATED
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Date: Tue, 03 Sep 2019 01:21:24 GMT
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Content-Length: 913
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Twilio-Concurrent-Requests: 1
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQfca9c6aa5dbe446589faa19822b55d22
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.093
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-02 21:21:23 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-02 21:21:23 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-02 21:21:23 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-02 21:21:23 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-02 21:21:23 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-02 21:21:24 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-02 21:47:58 INFO  LoginController:90 - niroj Logged In
+2019-09-02 21:48:49 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:07:28 INFO  LoginController:90 - niroj Logged In
+2019-09-02 22:10:06 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:22:45 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:30:37 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:44:26 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:50:02 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:52:46 INFO  LoginController:124 - admin Logged In
+2019-09-02 22:58:28 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:06:14 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:07:12 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:25:16 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:28:57 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:40:41 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:45:33 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:46:54 INFO  LoginController:124 - admin Logged In
+2019-09-02 23:50:08 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:51:15 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:51:43 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:52:47 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:54:04 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:54:35 INFO  LoginController:90 - niroj Logged In
+2019-09-02 23:55:03 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:06:50 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:07:10 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-03 00:07:10 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-03 00:07:10 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+2019-09-03 00:07:10 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-03 00:07:11 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-03 00:07:11 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.211.224.155:443
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.211.224.155:443 with timeout 10000
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-03 00:07:11 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-03 00:07:11 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:63772<->18.211.224.155:443
+2019-09-03 00:07:11 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-03 00:07:11 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-03 00:07:11 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-03 00:07:11 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 157
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-03 00:07:11 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 157[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:87 - http-outgoing-0 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+100.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Date: Tue, 03 Sep 2019 04:07:12 GMT[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 912[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQ0170ec7aaad741f288df5a234283e86b[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.140[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-03 00:07:11 DEBUG wire:87 - http-outgoing-0 << "{"sid": "SM4efcdf6ac0a34ec9a6df265c447ca736", "date_created": "Tue, 03 Sep 2019 04:07:12 +0000", "date_updated": "Tue, 03 Sep 2019 04:07:12 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 100.0 Has Been Received On 01/JAN/2000", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM4efcdf6ac0a34ec9a6df265c447ca736.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM4efcdf6ac0a34ec9a6df265c447ca736/Media.json"}}"
+2019-09-03 00:07:11 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 CREATED
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Date: Tue, 03 Sep 2019 04:07:12 GMT
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Content-Length: 912
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Twilio-Concurrent-Requests: 1
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQ0170ec7aaad741f288df5a234283e86b
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.140
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-03 00:07:11 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-03 00:07:11 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-03 00:07:11 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-03 00:07:11 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-03 00:07:11 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-03 00:07:12 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-03 00:09:05 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:09:44 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:13:01 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:15:59 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:18:33 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:18:49 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:19:58 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:20:01 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:20:26 INFO  LoginController:90 - niroj Logged In
+2019-09-03 00:21:22 INFO  LoginController:90 - niroj Logged In
+2019-09-03 09:59:31 INFO  LoginController:90 - niroj Logged In
+2019-09-03 10:01:41 INFO  LoginController:90 - niroj Logged In
+2019-09-03 10:02:53 INFO  LoginController:90 - niroj Logged In
+2019-09-03 10:03:07 INFO  LoginController:124 - admin Logged In
+2019-09-03 10:04:32 INFO  LoginController:124 - admin Logged In
+2019-09-03 10:05:24 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:07:00 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:09:08 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:09:54 INFO  LoginController:90 - niroj Logged In
+2019-09-04 00:14:54 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-04 00:21:11 INFO  LoginController:90 - niroj Logged In
+2019-09-04 00:22:06 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:22:06 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:22:06 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+2019-09-04 00:22:06 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:22:06 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 00:22:06 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.211.224.155:443
+2019-09-04 00:22:06 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.211.224.155:443 with timeout 10000
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 00:22:07 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 00:22:07 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:52448<->18.211.224.155:443
+2019-09-04 00:22:07 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-04 00:22:07 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:22:07 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:22:07 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 158
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-04 00:22:07 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 158[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:87 - http-outgoing-0 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+3700.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Date: Wed, 04 Sep 2019 04:22:06 GMT[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 913[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQb607a81a3c7048e0be969dc2dc866131[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.107[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-04 00:22:07 DEBUG wire:87 - http-outgoing-0 << "{"sid": "SMefb1ba812dd24777bc43300ab85906bf", "date_created": "Wed, 04 Sep 2019 04:22:06 +0000", "date_updated": "Wed, 04 Sep 2019 04:22:06 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 3700.0 Has Been Received On 01/JAN/2000", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMefb1ba812dd24777bc43300ab85906bf.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMefb1ba812dd24777bc43300ab85906bf/Media.json"}}"
+2019-09-04 00:22:07 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 CREATED
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Date: Wed, 04 Sep 2019 04:22:06 GMT
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Content-Length: 913
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Twilio-Concurrent-Requests: 1
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQb607a81a3c7048e0be969dc2dc866131
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.107
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-04 00:22:07 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:22:07 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:22:07 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:22:07 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-04 00:22:07 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:22:08 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-04 00:23:28 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:23:54 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:23:54 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:23:54 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:23:54 DEBUG wire:87 - http-outgoing-0 << "end of stream"
+2019-09-04 00:23:54 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-09-04 00:23:54 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:23:54 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 00:23:54 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.212.47.248:443
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.212.47.248:443 with timeout 10000
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 00:23:54 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 00:23:54 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:52469<->18.212.47.248:443
+2019-09-04 00:23:54 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-04 00:23:54 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:23:54 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:23:54 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 151
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-04 00:23:54 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 151[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+1000.0+Has+Been+Approved.+Thank+You."
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Date: Wed, 04 Sep 2019 04:23:53 GMT[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 910[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQ6f0400098912445aadb786547e0c5696[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.076[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-04 00:23:54 DEBUG wire:87 - http-outgoing-1 << "{"sid": "SM5b872149658f4c6eade37820c7216d0e", "date_created": "Wed, 04 Sep 2019 04:23:53 +0000", "date_updated": "Wed, 04 Sep 2019 04:23:53 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 1000.0 Has Been Approved. Thank You.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM5b872149658f4c6eade37820c7216d0e.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM5b872149658f4c6eade37820c7216d0e/Media.json"}}"
+2019-09-04 00:23:54 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 CREATED
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Date: Wed, 04 Sep 2019 04:23:53 GMT
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Content-Length: 910
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Twilio-Concurrent-Requests: 1
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQ6f0400098912445aadb786547e0c5696
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.076
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-04 00:23:54 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:23:54 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:23:54 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:23:54 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:23:54 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:23:54 INFO  LoginController:266 - Claim Id 143 Approved
+2019-09-04 00:24:02 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:24:02 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:24:02 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:02 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2019-09-04 00:24:02 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:02 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:02 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-04 00:24:02 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:02 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:24:02 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 150
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-04 00:24:02 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 150[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+400.0+Has+Been+Approved.+Thank+You."
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Date: Wed, 04 Sep 2019 04:24:01 GMT[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 909[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQeac39169f599453bbd3d493c4799fd36[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.086[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-04 00:24:02 DEBUG wire:87 - http-outgoing-1 << "{"sid": "SM9760262883304ea9add7ebd148463e5b", "date_created": "Wed, 04 Sep 2019 04:24:01 +0000", "date_updated": "Wed, 04 Sep 2019 04:24:01 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 400.0 Has Been Approved. Thank You.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM9760262883304ea9add7ebd148463e5b.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM9760262883304ea9add7ebd148463e5b/Media.json"}}"
+2019-09-04 00:24:02 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 CREATED
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Date: Wed, 04 Sep 2019 04:24:01 GMT
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Content-Length: 909
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Twilio-Concurrent-Requests: 1
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQeac39169f599453bbd3d493c4799fd36
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.086
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-04 00:24:02 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:24:02 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:24:02 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:24:02 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:02 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:02 INFO  LoginController:266 - Claim Id 144 Approved
+2019-09-04 00:24:08 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:24:08 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:24:08 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:08 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2019-09-04 00:24:08 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:08 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:08 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-04 00:24:08 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:08 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:24:08 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 141
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-04 00:24:08 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 141[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18036733994&From=%2B12147176263&Body=Dear+John+Doe+your+Expense+Reimburstment+Request+for+Amount+of+400.0+Has+Been+Rejected.+Thank+You."
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 400 BAD REQUEST[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Date: Wed, 04 Sep 2019 04:24:08 GMT[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 314[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQabe48bf009b14eb7948ee59dadb5dfb9[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.132[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-04 00:24:08 DEBUG wire:87 - http-outgoing-1 << "{"code": 21608, "message": "The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.", "more_info": "https://www.twilio.com/docs/errors/21608", "status": 400}"
+2019-09-04 00:24:08 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 400 BAD REQUEST
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Date: Wed, 04 Sep 2019 04:24:08 GMT
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Content-Length: 314
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQabe48bf009b14eb7948ee59dadb5dfb9
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.132
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-04 00:24:08 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:24:08 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:24:08 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:24:08 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:08 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:57 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:24:57 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:24:57 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:57 DEBUG wire:87 - http-outgoing-1 << "[read] I/O error: Read timed out"
+2019-09-04 00:24:57 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:24:57 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:57 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-04 00:24:57 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:57 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:24:57 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 141
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-04 00:24:57 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 141[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18036733994&From=%2B12147176263&Body=Dear+John+Doe+your+Expense+Reimburstment+Request+for+Amount+of+400.0+Has+Been+Rejected.+Thank+You."
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 400 BAD REQUEST[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Date: Wed, 04 Sep 2019 04:24:57 GMT[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 314[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQc7593b6ea7d94664b4149d7596c6450e[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.134[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-04 00:24:57 DEBUG wire:87 - http-outgoing-1 << "{"code": 21608, "message": "The number  is unverified. Trial accounts cannot send messages to unverified numbers; verify  at twilio.com/user/account/phone-numbers/verified, or purchase a Twilio number to send messages to unverified numbers.", "more_info": "https://www.twilio.com/docs/errors/21608", "status": 400}"
+2019-09-04 00:24:57 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 400 BAD REQUEST
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Date: Wed, 04 Sep 2019 04:24:57 GMT
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Content-Length: 314
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQc7593b6ea7d94664b4149d7596c6450e
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.134
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-04 00:24:57 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:24:57 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:24:57 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:24:57 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 00:24:57 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:26:25 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:28:59 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:32:43 INFO  LoginController:90 - niroj Logged In
+2019-09-04 00:33:15 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:33:15 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:33:15 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+2019-09-04 00:33:15 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:33:15 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 00:33:15 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.208.54.140:443
+2019-09-04 00:33:15 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.208.54.140:443 with timeout 10000
+2019-09-04 00:33:15 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 00:33:15 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 00:33:15 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 00:33:16 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 00:33:16 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.41.75.70:52638<->18.208.54.140:443
+2019-09-04 00:33:16 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-04 00:33:16 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:33:16 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:33:16 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 155
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-04 00:33:16 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 155[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:87 - http-outgoing-0 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+0.0+Has+Been+Received+On+02%2FDec%2F2010"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Date: Wed, 04 Sep 2019 04:33:15 GMT[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 910[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQ70cccb71b8734279a26853a817483bf5[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.103[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-04 00:33:16 DEBUG wire:87 - http-outgoing-0 << "{"sid": "SMb7d211cb381e40ce8f064fb09cedffbd", "date_created": "Wed, 04 Sep 2019 04:33:15 +0000", "date_updated": "Wed, 04 Sep 2019 04:33:15 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 0.0 Has Been Received On 02/Dec/2010", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMb7d211cb381e40ce8f064fb09cedffbd.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMb7d211cb381e40ce8f064fb09cedffbd/Media.json"}}"
+2019-09-04 00:33:16 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 CREATED
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Date: Wed, 04 Sep 2019 04:33:15 GMT
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Content-Length: 910
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Twilio-Concurrent-Requests: 1
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQ70cccb71b8734279a26853a817483bf5
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.103
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-04 00:33:16 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:33:16 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:33:16 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:33:16 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-04 00:33:16 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:33:16 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-04 00:33:31 INFO  LoginController:124 - admin Logged In
+2019-09-04 00:33:43 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 00:33:43 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 00:33:43 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:33:43 DEBUG wire:87 - http-outgoing-0 << "[read] I/O error: Read timed out"
+2019-09-04 00:33:43 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:33:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-04 00:33:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-04 00:33:43 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:33:43 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 00:33:43 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 151
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-04 00:33:43 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 151[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:87 - http-outgoing-0 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+1000.0+Has+Been+Rejected.+Thank+You."
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Date: Wed, 04 Sep 2019 04:33:42 GMT[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 910[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQ214ae932667f46f1b141fa794b7230e4[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.090[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-04 00:33:43 DEBUG wire:87 - http-outgoing-0 << "{"sid": "SMcaff6888252d4e0d85f9f585d85082ab", "date_created": "Wed, 04 Sep 2019 04:33:42 +0000", "date_updated": "Wed, 04 Sep 2019 04:33:42 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 1000.0 Has Been Rejected. Thank You.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMcaff6888252d4e0d85f9f585d85082ab.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMcaff6888252d4e0d85f9f585d85082ab/Media.json"}}"
+2019-09-04 00:33:43 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 CREATED
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Date: Wed, 04 Sep 2019 04:33:42 GMT
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Content-Length: 910
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Twilio-Concurrent-Requests: 1
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQ214ae932667f46f1b141fa794b7230e4
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.090
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-04 00:33:43 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-04 00:33:43 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 00:33:43 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 00:33:43 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-04 00:33:43 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 00:33:43 INFO  LoginController:278 - Claim Id 162 Rejected
+2019-09-04 09:19:14 INFO  LoginController:90 - niroj Logged In
+2019-09-04 09:20:09 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 09:20:09 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 09:20:09 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 20]
+2019-09-04 09:20:09 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 09:20:09 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 09:20:09 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.212.47.248:443
+2019-09-04 09:20:09 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.212.47.248:443 with timeout 10000
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 09:20:10 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 09:20:10 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.99.180:55439<->18.212.47.248:443
+2019-09-04 09:20:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 30500
+2019-09-04 09:20:10 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 09:20:10 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 09:20:10 DEBUG headers:133 - http-outgoing-0 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> X-Twilio-Client: java-7.41.2
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Accept: application/json
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Accept-Encoding: utf-8
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Content-Length: 155
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Host: api.twilio.com
+2019-09-04 09:20:10 DEBUG headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Accept: application/json[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Content-Length: 155[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 >> "[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:87 - http-outgoing-0 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+0.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Date: Wed, 04 Sep 2019 13:20:10 GMT[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Content-Length: 910[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Id: RQa82e845a0533406c91b0d5907fa61c93[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Twilio-Request-Duration: 0.133[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:73 - http-outgoing-0 << "[\r][\n]"
+2019-09-04 09:20:10 DEBUG wire:87 - http-outgoing-0 << "{"sid": "SM91ec3414566841358df417aa72d6ac3a", "date_created": "Wed, 04 Sep 2019 13:20:10 +0000", "date_updated": "Wed, 04 Sep 2019 13:20:10 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 0.0 Has Been Received On 01/JAN/2000", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM91ec3414566841358df417aa72d6ac3a.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM91ec3414566841358df417aa72d6ac3a/Media.json"}}"
+2019-09-04 09:20:10 DEBUG headers:122 - http-outgoing-0 << HTTP/1.1 201 CREATED
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Date: Wed, 04 Sep 2019 13:20:10 GMT
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Content-Type: application/json
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Content-Length: 910
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Connection: keep-alive
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Twilio-Concurrent-Requests: 1
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Id: RQa82e845a0533406c91b0d5907fa61c93
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Twilio-Request-Duration: 0.133
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Origin: *
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Access-Control-Expose-Headers: ETag
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Access-Control-Allow-Credentials: true
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << X-Powered-By: AT-5000
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << X-Shenanigans: none
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << X-Home-Region: us1
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << X-API-Domain: api.twilio.com
+2019-09-04 09:20:10 DEBUG headers:125 - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+2019-09-04 09:20:10 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 09:20:10 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 0][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 09:20:10 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-0: set socket timeout to 0
+2019-09-04 09:20:10 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 0][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 09:20:11 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-04 09:20:57 INFO  LoginController:124 - admin Logged In
+2019-09-04 09:29:44 INFO  LoginController:124 - admin Logged In
+2019-09-04 09:29:59 INFO  LoginController:90 - niroj Logged In
+2019-09-04 10:02:35 INFO  LoginController:90 - niroj Logged In
+2019-09-04 10:04:07 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 10:04:07 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 10:04:07 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:04:07 DEBUG wire:87 - http-outgoing-0 << "end of stream"
+2019-09-04 10:04:07 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-0: Close connection
+2019-09-04 10:04:07 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:04:07 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 10:04:08 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.208.54.140:443
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.208.54.140:443 with timeout 10000
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 10:04:08 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 10:04:08 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.99.180:55685<->18.208.54.140:443
+2019-09-04 10:04:08 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 30500
+2019-09-04 10:04:08 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:04:08 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 10:04:08 DEBUG headers:133 - http-outgoing-1 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> X-Twilio-Client: java-7.41.2
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Accept: application/json
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Accept-Encoding: utf-8
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Content-Length: 158
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Host: api.twilio.com
+2019-09-04 10:04:08 DEBUG headers:136 - http-outgoing-1 >> Connection: Keep-Alive
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Accept: application/json[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Content-Length: 158[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 >> "[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:87 - http-outgoing-1 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+1100.0+Has+Been+Received+On+01%2FJAN%2F2000"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Date: Wed, 04 Sep 2019 14:04:08 GMT[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Content-Type: application/json[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Content-Length: 913[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Id: RQc2b788f630e84c0485ff3eacbdc95342[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Twilio-Request-Duration: 0.140[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:73 - http-outgoing-1 << "[\r][\n]"
+2019-09-04 10:04:08 DEBUG wire:87 - http-outgoing-1 << "{"sid": "SM66683bf3e5e049ab9c5867a53ea4f61e", "date_created": "Wed, 04 Sep 2019 14:04:08 +0000", "date_updated": "Wed, 04 Sep 2019 14:04:08 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 1100.0 Has Been Received On 01/JAN/2000", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM66683bf3e5e049ab9c5867a53ea4f61e.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM66683bf3e5e049ab9c5867a53ea4f61e/Media.json"}}"
+2019-09-04 10:04:08 DEBUG headers:122 - http-outgoing-1 << HTTP/1.1 201 CREATED
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Date: Wed, 04 Sep 2019 14:04:08 GMT
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Content-Type: application/json
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Content-Length: 913
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Connection: keep-alive
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Twilio-Concurrent-Requests: 1
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Id: RQc2b788f630e84c0485ff3eacbdc95342
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Twilio-Request-Duration: 0.140
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Origin: *
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Expose-Headers: ETag
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Access-Control-Allow-Credentials: true
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << X-Powered-By: AT-5000
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << X-Shenanigans: none
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << X-Home-Region: us1
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << X-API-Domain: api.twilio.com
+2019-09-04 10:04:08 DEBUG headers:125 - http-outgoing-1 << Strict-Transport-Security: max-age=31536000
+2019-09-04 10:04:08 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 10:04:08 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 1][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 10:04:08 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-1: set socket timeout to 0
+2019-09-04 10:04:08 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 1][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:04:08 INFO  DashboardController:82 - Employee No 9000 Submitted the Reimbursement request
+2019-09-04 10:04:57 INFO  LoginController:124 - admin Logged In
+2019-09-04 10:05:14 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 10:05:14 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 10:05:14 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:14 DEBUG wire:87 - http-outgoing-1 << "end of stream"
+2019-09-04 10:05:14 DEBUG DefaultManagedHttpClientConnection:79 - http-outgoing-1: Close connection
+2019-09-04 10:05:14 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 2][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:14 DEBUG MainClientExec:235 - Opening connection {s}->https://api.twilio.com:443
+2019-09-04 10:05:14 DEBUG DefaultHttpClientConnectionOperator:139 - Connecting to api.twilio.com/18.212.47.248:443
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:337 - Connecting socket to api.twilio.com/18.212.47.248:443 with timeout 10000
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:390 - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:391 - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:395 - Starting handshake
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:425 - Secure session established
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:426 -  negotiated protocol: TLSv1.2
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:427 -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:435 -  peer principal: CN=*.twilio.com, O="Twilio, Inc.", L=San Francisco, ST=California, C=US
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:444 -  peer alternative names: [*.twilio.com, twilio.com, *.us1.twilio.com, *.virginia.ie1.twilio.com, *.virginia.us1.twilio.com, *.us1-ix.ie1.twilio.com, *.us1-ix.us1.twilio.com]
+2019-09-04 10:05:14 DEBUG SSLConnectionSocketFactory:448 -  issuer principal: CN=Thawte RSA CA 2018, OU=www.digicert.com, O=DigiCert Inc, C=US
+2019-09-04 10:05:14 DEBUG DefaultHttpClientConnectionOperator:146 - Connection established 10.226.99.180:55701<->18.212.47.248:443
+2019-09-04 10:05:14 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 30500
+2019-09-04 10:05:14 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:05:14 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 10:05:14 DEBUG headers:133 - http-outgoing-2 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> X-Twilio-Client: java-7.41.2
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Accept: application/json
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Accept-Encoding: utf-8
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Content-Length: 150
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Host: api.twilio.com
+2019-09-04 10:05:14 DEBUG headers:136 - http-outgoing-2 >> Connection: Keep-Alive
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Accept: application/json[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Content-Length: 150[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 >> "[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:87 - http-outgoing-2 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+100.0+Has+Been+Approved.+Thank+You."
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Date: Wed, 04 Sep 2019 14:05:14 GMT[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Content-Length: 909[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Twilio-Request-Id: RQ85150e6190e54eb0bf5464379c1b3789[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Twilio-Request-Duration: 0.094[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:73 - http-outgoing-2 << "[\r][\n]"
+2019-09-04 10:05:14 DEBUG wire:87 - http-outgoing-2 << "{"sid": "SMffa196e3b7a048e2baafb6fc0188bac4", "date_created": "Wed, 04 Sep 2019 14:05:14 +0000", "date_updated": "Wed, 04 Sep 2019 14:05:14 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 100.0 Has Been Approved. Thank You.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMffa196e3b7a048e2baafb6fc0188bac4.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SMffa196e3b7a048e2baafb6fc0188bac4/Media.json"}}"
+2019-09-04 10:05:14 DEBUG headers:122 - http-outgoing-2 << HTTP/1.1 201 CREATED
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Date: Wed, 04 Sep 2019 14:05:14 GMT
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Content-Type: application/json
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Content-Length: 909
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Connection: keep-alive
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Twilio-Concurrent-Requests: 1
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Twilio-Request-Id: RQ85150e6190e54eb0bf5464379c1b3789
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Twilio-Request-Duration: 0.094
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Origin: *
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Access-Control-Expose-Headers: ETag
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Credentials: true
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << X-Powered-By: AT-5000
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << X-Shenanigans: none
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << X-Home-Region: us1
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << X-API-Domain: api.twilio.com
+2019-09-04 10:05:14 DEBUG headers:125 - http-outgoing-2 << Strict-Transport-Security: max-age=31536000
+2019-09-04 10:05:14 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 10:05:14 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 2][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 10:05:14 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 0
+2019-09-04 10:05:14 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 2][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:15 INFO  LoginController:266 - Claim Id 181 Approved
+2019-09-04 10:05:34 DEBUG RequestAddCookies:123 - CookieSpec selected: default
+2019-09-04 10:05:34 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2019-09-04 10:05:34 DEBUG PoolingHttpClientConnectionManager:265 - Connection request: [route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:34 DEBUG wire:87 - http-outgoing-2 << "[read] I/O error: Read timed out"
+2019-09-04 10:05:34 DEBUG PoolingHttpClientConnectionManager:309 - Connection leased: [id: 2][route: {s}->https://api.twilio.com:443][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:34 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 0
+2019-09-04 10:05:34 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 30500
+2019-09-04 10:05:34 DEBUG MainClientExec:256 - Executing request POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:05:34 DEBUG MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2019-09-04 10:05:34 DEBUG headers:133 - http-outgoing-2 >> POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Content-Type: application/x-www-form-urlencoded
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> X-Twilio-Client: java-7.41.2
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> User-Agent: twilio-java/7.41.2 (1.8.0_212)
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Accept: application/json
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Accept-Encoding: utf-8
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Content-Length: 151
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Host: api.twilio.com
+2019-09-04 10:05:34 DEBUG headers:136 - http-outgoing-2 >> Connection: Keep-Alive
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "POST /2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages.json HTTP/1.1[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Authorization: Basic QUNlNmVmNTlmYjg1NTQ0MzVmZmE1NzNiYTIwOWE0ZGExMzphYWNjYWEwM2FhODQ2ODNhOTQ0OWRkYmUyMjc2ZDRjYQ==[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Content-Type: application/x-www-form-urlencoded[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "X-Twilio-Client: java-7.41.2[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "User-Agent: twilio-java/7.41.2 (1.8.0_212)[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Accept: application/json[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Accept-Encoding: utf-8[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Content-Length: 151[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Host: api.twilio.com[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 >> "[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:87 - http-outgoing-2 >> "To=%2B18175839325&From=%2B12147176263&Body=Dear+Niroj+Linganathan+your+Expense+Reimburstment+Request+for+Amount+of+3700.0+Has+Been+Rejected.+Thank+You."
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "HTTP/1.1 201 CREATED[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Date: Wed, 04 Sep 2019 14:05:34 GMT[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Content-Type: application/json[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Content-Length: 910[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Connection: keep-alive[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Twilio-Concurrent-Requests: 1[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Twilio-Request-Id: RQ943f2f736bdc498f9f6069a8fa90e204[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Twilio-Request-Duration: 0.075[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Expose-Headers: ETag[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Access-Control-Allow-Credentials: true[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "X-Powered-By: AT-5000[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "X-Shenanigans: none[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "X-Home-Region: us1[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "X-API-Domain: api.twilio.com[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:73 - http-outgoing-2 << "[\r][\n]"
+2019-09-04 10:05:34 DEBUG wire:87 - http-outgoing-2 << "{"sid": "SM7c191c0a5b024e80b01a2674d08ce36f", "date_created": "Wed, 04 Sep 2019 14:05:34 +0000", "date_updated": "Wed, 04 Sep 2019 14:05:34 +0000", "date_sent": null, "account_sid": "ACe6ef59fb8554435ffa573ba209a4da13", "to": "+18175839325", "from": "+12147176263", "messaging_service_sid": null, "body": "Sent from your Twilio trial account - Dear Niroj Linganathan your Expense Reimburstment Request for Amount of 3700.0 Has Been Rejected. Thank You.", "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api", "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code": null, "error_message": null, "uri": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM7c191c0a5b024e80b01a2674d08ce36f.json", "subresource_uris": {"media": "/2010-04-01/Accounts/ACe6ef59fb8554435ffa573ba209a4da13/Messages/SM7c191c0a5b024e80b01a2674d08ce36f/Media.json"}}"
+2019-09-04 10:05:34 DEBUG headers:122 - http-outgoing-2 << HTTP/1.1 201 CREATED
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Date: Wed, 04 Sep 2019 14:05:34 GMT
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Content-Type: application/json
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Content-Length: 910
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Connection: keep-alive
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Twilio-Concurrent-Requests: 1
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Twilio-Request-Id: RQ943f2f736bdc498f9f6069a8fa90e204
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Twilio-Request-Duration: 0.075
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Origin: *
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Headers: Accept, Authorization, Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Access-Control-Expose-Headers: ETag
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Access-Control-Allow-Credentials: true
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << X-Powered-By: AT-5000
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << X-Shenanigans: none
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << X-Home-Region: us1
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << X-API-Domain: api.twilio.com
+2019-09-04 10:05:34 DEBUG headers:125 - http-outgoing-2 << Strict-Transport-Security: max-age=31536000
+2019-09-04 10:05:34 DEBUG MainClientExec:285 - Connection can be kept alive indefinitely
+2019-09-04 10:05:34 DEBUG PoolingHttpClientConnectionManager:341 - Connection [id: 2][route: {s}->https://api.twilio.com:443] can be kept alive indefinitely
+2019-09-04 10:05:34 DEBUG DefaultManagedHttpClientConnection:88 - http-outgoing-2: set socket timeout to 0
+2019-09-04 10:05:34 DEBUG PoolingHttpClientConnectionManager:348 - Connection released: [id: 2][route: {s}->https://api.twilio.com:443][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 20]
+2019-09-04 10:05:34 INFO  LoginController:278 - Claim Id 201 Rejected
