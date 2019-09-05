@@ -1,0 +1,43 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+<!-- Session Factory is an interface that configures Hibernate
+for the application and allows for Session object to be 
+instantiated. It also stores info on how to make connections
+to the DB. Once configured, it is immutable -->
+
+<session-factory>
+	<property name="hibernate.connection.username">user0715</property>
+	<property name="hibernate.connection.password">p4ssw0rd</property>
+	<property name="hibernate.connection.url">jdbc:oracle:thin:@db0715java.cjdso6ohuu1q.us-east-2.rds.amazonaws.com:1521:orcl</property>
+	<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+	
+	<!-- Additional Hibernate Options -->
+	<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+	<!-- Enable the logging of all the generated SQL statements to the console -->
+	<property name="hibernate.show_sql">false</property>
+	<!-- Format the generated SQL statements to make them more readable, but it
+	does take up more screen space -->
+	<property name="hibernate.format_sql">false</property>
+	
+	<!-- CREATE - drops all existing tables and create your schema
+	VALIDATE - hibernate checks to make sure that schema as expected
+	UPDATE - hibernate will not delete anything, it will only add to your schema
+	NONE - hibernate will not do anything to your schema automatically -->
+	<property name="hibernate.hbm2ddl.auto">create</property>
+	
+	<!-- Hibernate needs to know what tables it needs to create so you'll have to
+	inform it where to find them (the annotations that define the tables)-->
+	<mapping class="com.example.model.Character"/>
+	<mapping class="com.example.model.Movie"/>
+	<mapping class="com.example.model.Director"/>
+	
+	<!-- If you choose to NOT use annotations, each bean needs to have an XML 
+	configuration file and you have to link it from this file -->
+	<!-- <mapping resource = "Character.hbm.xml"/> -->
+</session-factory>
+
+
+</hibernate-configuration>
