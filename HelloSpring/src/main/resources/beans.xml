@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- The Bean Configuration file is an XML file created with the configuration 
+		metadata that you supply to the container. It contains the definitions of 
+		the beans and how beans are associated with each other. It is typically named 
+		beans.xml -->
+
+	<context:annotation-config />
+	<!-- is used to activate applied annotations in already registered beans in application context. -->
+	<context:component-scan
+		base-package="com.example.dao" />
+	<context:component-scan
+		base-package="com.example.service" />
+		
+	<!-- <bean name="villainDao" class="com.example.dao.VillainDaoImpl"/>
+	<bean name="villainService" class="com.example.service.VillainServiceImpl"/>
+ -->
+	<!-- SETTER INJECTION -->
+	<bean name="villainDao" scope="singleton" class="com.example.dao.VillainDaoImpl"/>
+	<bean name="villainService" class="com.example.service.VillainServiceImpl"/>
+	
+
+
+</beans>
