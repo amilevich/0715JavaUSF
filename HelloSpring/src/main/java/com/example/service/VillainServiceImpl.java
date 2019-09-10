@@ -20,6 +20,7 @@ public class VillainServiceImpl implements VillainService{
 	//private VillainDao vDao = new VillainDao();
 	
 	//with DI
+	@Autowired
 	private VillainDao villainDao;
 
 	public List<Villain> getAllVillains(){
@@ -30,6 +31,7 @@ public class VillainServiceImpl implements VillainService{
 		System.out.println("no args constructor");
 	}
 	
+	@Autowired
 	public VillainDao getVillainDao() {
 		return villainDao;
 	}
@@ -39,6 +41,13 @@ public class VillainServiceImpl implements VillainService{
 	//using the below method, can be a setter, can also be a constructor
 	public void setVillainDao(VillainDao vDao) {
 		this.villainDao=vDao;
+	}
+	
+	//@Autowired
+	//tells spring to attempt autowiring using this constructor
+	public VillainServiceImpl(VillainDao vDao) {
+		System.out.println("in DI constructor");
+		this.villainDao = vDao;
 	}
 		
 	}
