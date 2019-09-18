@@ -1,0 +1,8 @@
+2019-09-16 15:04:56 INFO  Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2019-09-16 15:04:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-09-16 15:04:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-09-16 15:04:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-09-16 15:05:18 INFO  LoggingAspect:25 - The /getMovie endpoint was accessed
+2019-09-16 15:05:29 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-09-16 15:05:30 INFO  LoggingAspect:19 - The /getAllShowtimes endpoint was accessed.
+2019-09-16 15:08:23 INFO  LoggingAspect:25 - The /getMovie endpoint was accessed
