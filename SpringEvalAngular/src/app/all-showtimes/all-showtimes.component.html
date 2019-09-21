@@ -1,0 +1,14 @@
+<div>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <th>Movie</th>
+        <th>Showtime</th>
+      </thead>
+      <tbody *ngFor="let movie of myresponse">
+        <tr *ngFor="let time of movie.showtimes">
+            <td>{{movie.movieName}}</td>
+            <td>{{time.time}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

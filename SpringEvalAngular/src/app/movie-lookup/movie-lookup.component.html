@@ -1,0 +1,20 @@
+<br>
+<div>
+    <input type="text" name="name" [(ngModel)]=name>
+
+    <button type="button" class="btn btn-dark" (click)="getMovie()">Search</button>
+</div>
+<br>
+
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+        <th>Showtimes</th>
+        </thead>
+        <tbody>
+        <tr *ngFor="let time of myresponse.showtimes">
+            <td>{{time.time}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
