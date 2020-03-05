@@ -1,5 +1,7 @@
 package com.example.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +18,12 @@ public class FoodController {
 	
 	@GetMapping("/food.app")
 	public @ResponseBody Food findFood() {
-		return foodDao.findByDishNameIgnoreCase("broCColi");
+		return foodDao.findByFoodId(1);
+	}
+	
+	@GetMapping("/allfood.app")
+	public @ResponseBody List<Food> findAllFood(){
+		return foodDao.findAll();
 	}
 
 }

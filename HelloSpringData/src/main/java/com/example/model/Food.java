@@ -7,30 +7,28 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
-@Table(name = "FOOD")
+@Table(name = "Food")
 public class Food {
-
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "food_id")
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int foodId;
+	private Integer foodId;
 
-	@Column(name = "dish_name", unique = true, nullable = false)
+	@Column(name = "dish_name")
 	private String dishName;
 
-	@Column(name = "is_tasty", nullable = false)
+	@Column(name = "is_tasty")
 	private Boolean isTasty;
 
 	public Food() {
 	}
 
-	public int getFoodId() {
+	public Integer getFoodId() {
 		return foodId;
 	}
 
-	public void setFoodId(int foodId) {
+	public void setFoodId(Integer foodId) {
 		this.foodId = foodId;
 	}
 
@@ -50,22 +48,16 @@ public class Food {
 		this.isTasty = isTasty;
 	}
 
-	@Override
-	public String toString() {
-		return "Food [foodId=" + foodId + ", dishName=" + dishName + ", isTasty=" + isTasty + "]";
-	}
-
-	public Food(int foodId, String dishName, Boolean isTasty) {
+	public Food(Integer foodId, String dishName, Boolean isTasty) {
 		super();
 		this.foodId = foodId;
 		this.dishName = dishName;
 		this.isTasty = isTasty;
 	}
 
-	public Food(String dishName, Boolean isTasty) {
-		super();
-		this.dishName = dishName;
-		this.isTasty = isTasty;
+	@Override
+	public String toString() {
+		return "Food [foodId=" + foodId + ", dishName=" + dishName + ", isTasty=" + isTasty + "]";
 	}
 
 }
